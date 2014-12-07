@@ -1,0 +1,237 @@
+div.clear {
+    clear: both;
+}
+
+.container-fluid, .container {
+	padding: 0;
+}
+
+textarea:focus, 
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="color"]:focus, 
+.uneditable-input:focus {
+	border-color: rgba(252, 107, 12, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(252, 107, 12, 0.6);
+	outline: 0 none;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: #CCCCCC;
+}
+
+/* carousel */
+
+.carousel { 
+	z-index: -99;
+}
+.carousel .item {
+    z-index: -98;
+    width: 100%; 
+    height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+ 
+}
+.carousel .one {
+	height: 640px;
+	background: url(../img/photos/paris.jpg) no-repeat center center;
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+}
+.carousel .two {
+    height: 640px;
+	background: url(../img/photos/feet.jpg) no-repeat center center;
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+}
+.carousel .three {
+    height: 640px;
+	background: url(../img/photos/beach.jpg) no-repeat center center;
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+}
+.carousel .active.left {
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* landing */
+
+#landing {
+	height: 640px;
+	font-family: 'Open Sans', Arial;
+}
+
+#overlay {  
+    background: rgba(0, 0, 0, .15);
+    opacity: 1;
+    position: absolute;
+    height: 640px;
+    width: 100%;
+    top: 0px;
+}
+
+.content {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	padding: 0 20px;
+}
+
+#logo {
+	font-family: 'Merienda';
+	font-size: 26px;
+	color: #FC6B0C;
+	float: left;
+}
+
+.hero-captions {
+	text-align: center;
+	padding-top: 100px;
+}
+
+.hero-captions h1 {
+	color: #ffffff;
+	padding-bottom: 14px;
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.hero-captions p {
+	color: #ffffff;
+	font-size: 24px;
+	padding-bottom: 40px;
+}
+
+.form-group {
+	padding-right: 6px;
+}
+
+.hero-captions .form-group #city-name {
+	width: 356px;
+	border-radius: 3px;
+}
+
+.hero-captions .form-group .datepicker {
+	width: 240px;
+	border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+	.hero-captions button {
+		display: block;
+	}
+	.hero-captions {
+		padding-top: 30px;
+	}
+	#landing,
+	.overlay {
+	height: 760px;
+	}
+}
+
+/* navbar */
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar {
+	float: right;
+}
+
+.navbar .navbar-collapse {
+	padding-right: 0px;
+}
+
+@media (max-width: 767px) {
+	.navbar .navbar-collapse {
+		padding-right: 15px;
+	}
+}
+
+.navbar-collapse .navbar-nav .text-link a {
+	top: 7px;
+}
+
+.navbar-collapse .nav li a {
+	color: #ffffff;
+	padding-left: 30px;
+	padding-right: 0;
+	padding-top: 0;
+}
+
+.navbar-collapse .nav li a:hover {
+	color: #FC6B0C;
+}
+
+.btn-primary,
+.btn-primary:focus {
+	background-color: #FC6B0C;
+	border-color: #FC6B0C;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus:active,
+.btn-primary:hover {
+	background: #b74a02;
+	border-color: #b74a02;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+li a .transparent:focus,
+li a .transparent {
+	background-color: transparent;
+	border-color: #FC6B0C;
+	color: #ffffff;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+li a .transparent:active
+li a .transparent.active,
+li a .transparent:focus:active,
+li a .transparent:hover {
+	background-color: #FC6B0C;
+	border-color: #FC6B0C;
+	color: #ffffff;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
