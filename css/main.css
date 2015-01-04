@@ -14,13 +14,16 @@
 	box-sizing: border-box;
 }
 
+.page {
+	height:620px;
+}
+
 #header {
 	background-color: black;
 	background-image: url(http://flickholdr.iwerk.org/700/700);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 620px;
 	color: rgb(203, 203, 203);
 	width: 100%;
 }
