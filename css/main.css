@@ -12,3 +12,12 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+#header {
+	background-color: black;
+	background-image: url(http://flickholdr.iwerk.org/700/700);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 620px;
+}
