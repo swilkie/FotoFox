@@ -19,12 +19,18 @@
 }
 
 #header {
-	background-color: black;
 	background-image: url(http://flickholdr.iwerk.org/700/700);
+}
+
+#poem {
+	background-image: url(../img/single_person.jpg);
+}
+
+.photo {
+	background-color: black;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	color: rgb(203, 203, 203);
 	width: 100%;
 }
 
