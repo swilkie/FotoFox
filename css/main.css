@@ -20,4 +20,23 @@
 	background-position: center center;
 	background-size: cover;
 	height: 620px;
+	color: rgb(203, 203, 203);
+	width: 100%;
+}
+
+.content {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navbar {
+	padding-top: 30px;
+	padding-left: 40px;
+}
+
+.title {
+	margin-top: 100px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	text-align: center;
 }
