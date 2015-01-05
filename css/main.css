@@ -15,6 +15,55 @@
 	box-sizing: border-box;
 }
 
+/* Button - general */
+.btn-primary,
+.btn-primary:focus {
+	background-color: #FC6B0C;
+	border-color: #FC6B0C;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus:active,
+.btn-primary:hover {
+	background: #b74a02;
+	border-color: #b74a02;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.button-transparent:focus,
+.button-transparent {
+	background-color: transparent;
+	border-color: #FC6B0C;
+	color: #ffffff;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.button-transparent:active
+.button-transparent.active,
+.button-transparent:focus:active,
+.button-transparent:hover {
+	background-color: #FC6B0C;
+	border-color: #FC6B0C;
+	color: #ffffff;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
 /* page */
 .page {
 	color: #252c2f;
@@ -66,6 +115,13 @@
 
 
 /* end page */
+
+/* Header */
+#header .button-transparent {
+	margin-top: 50px;
+}
+
+/* end header */
 
 #header {
 	background-image: url(http://flickholdr.iwerk.org/700/700);
