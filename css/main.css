@@ -15,15 +15,37 @@
 	box-sizing: border-box;
 }
 
+/* page */
 .page {
 	color: #252c2f;
 	padding-top:100px;
 	padding-bottom:120px;
 }
 
+.page .row {
+	text-align: center;
+}
+
+.page .content {
+	vertical-align:middle;
+
+	display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+
+    max-width: 37.5em; /*600px*/
+
+    padding: 25px;
+}
+
 .page h2 {
 	font-size: 38px;
 	font-weight: bold;
+
+	padding-bottom: 60px;
 }
 
 .page h4 {
@@ -35,6 +57,15 @@
 	font-size: 16px;
 	color: #5E696F;
 }
+
+
+.page-photo {
+	padding-bottom: 30px;
+	padding-right: 30px;
+}
+
+
+/* end page */
 
 #header {
 	background-image: url(http://flickholdr.iwerk.org/700/700);
@@ -57,7 +88,7 @@
 	color: #EBEBEB;
 }
 
-.content {
+.header-content {
 	margin-left: 20px;
 	margin-right: 20px;
 }
@@ -73,17 +104,6 @@
 	padding-bottom: 50px;
 	text-align: center;
 }
-
-.page-heading {
-	padding-bottom: 60px;
-	text-align:center;
-}
-
-.page-photo {
-	padding-bottom: 30px;
-	padding-right: 30px;
-}
-
 
 .quote {
 	margin-top: 150px;
