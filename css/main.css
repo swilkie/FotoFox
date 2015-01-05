@@ -107,4 +107,8 @@
 
 .quote {
 	margin-top: 150px;
+	font-family: 'Noticia Text', serif;
+	font-style: italic;
+	line-height: 150%;
+	color: #252c2f;
 }
