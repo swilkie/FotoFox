@@ -1,11 +1,12 @@
 * {
 	font-family: 'Lato', sans-serif;
-	color: #EBEBEB;
 }
 
+/*
 * {
 	border:1px solid red !important;
 }
+*/
 
 * {
 	-webkit-box-sizing: border-box;
@@ -15,7 +16,25 @@
 }
 
 .page {
-	height:620px;
+	color: #252c2f;
+	padding-top:100px;
+	padding-bottom:120px;
+}
+
+.page h2 {
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.page h4 {
+	font-weight: bold;
+	font-size: 26px;
+}
+
+.page li {
+	line-height: 28px;
+	font-size: 16px;
+	color: #5E696F;
 }
 
 #header {
@@ -24,14 +43,19 @@
 
 #poem {
 	background-image: url(../img/single_person.jpg);
+	background-position: left center;
 }
 
 .photo {
+	height:620px;
+
 	background-color: black;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	width: 100%;
+
+	color: #EBEBEB;
 }
 
 .content {
@@ -49,4 +73,19 @@
 	padding-top: 20px;
 	padding-bottom: 50px;
 	text-align: center;
+}
+
+.page-heading {
+	padding-bottom: 60px;
+	text-align:center;
+}
+
+.page-photo {
+	padding-bottom: 30px;
+	padding-right: 30px;
+}
+
+
+.quote {
+	margin-top: 150px;
 }
