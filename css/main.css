@@ -64,6 +64,26 @@
 	box-shadow: none;
 }
 
+/* end button - general */
+
+/* form - general */
+
+.form-group {
+	padding-right: 6px;
+}
+
+.form-group .city-name {
+	width: 356px;
+	border-radius: 3px;
+}
+
+.form-group .datepicker {
+	width: 240px;
+	border-radius: 3px;
+}
+
+/* end form - general */
+
 /* page */
 .page {
 	color: #252c2f;
@@ -101,6 +121,11 @@
 	font-size: 28px;
 }
 
+.page p {
+	font-size: 16px;
+	color: #5E696F;
+}
+
 .page li {
 	line-height: 28px;
 	font-size: 16px;
@@ -116,24 +141,9 @@
 
 /* end page */
 
-/* Header */
-#header .button-transparent {
-	margin-top: 50px;
-}
-
-/* end header */
-
-#header {
-	background-image: url(http://flickholdr.iwerk.org/700/700);
-}
-
-#poem {
-	background-image: url(../img/single_person.jpg);
-	background-position: left center;
-}
-
+/* photo sections */
 .photo {
-	height:620px;
+	min-height:620px;
 
 	background-color: black;
 	background-repeat: no-repeat;
@@ -144,27 +154,72 @@
 	color: #EBEBEB;
 }
 
-.header-content {
+.photo .content {
+    padding-top: 150px;
+    padding-bottom: 125px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* end photo sections */
+
+/* Header */
+#header .button-transparent {
+	margin-top: 50px;
+}
+
+#header {
+	background-image: url(http://flickholdr.iwerk.org/700/700);
+}
+
+
+#header .header-content {
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
-.navbar {
+#header .navbar {
 	padding-top: 30px;
 	padding-left: 40px;
 }
 
-.title {
+#header .title {
 	margin-top: 100px;
 	padding-top: 20px;
 	padding-bottom: 50px;
 	text-align: center;
 }
 
-.quote {
-	margin-top: 150px;
+/* end header */
+
+/* Poem */
+#poem {
+	background-image: url(../img/single_person.jpg);
+	background-position: left center;
+}
+
+#poem .quote {
+	
 	font-family: 'Noticia Text', serif;
 	font-style: italic;
 	line-height: 150%;
 	color: #252c2f;
 }
+
+/* end Poem */
+
+/* CTA */
+#cta {
+	background-image: url(../img/single_person.jpg);
+	background-position: left center;
+}
+
+#cta .title {
+	margin-bottom: 60px;
+}
+
+#cta .info {
+	margin-bottom: 50px;
+}
+
+/* end CTA */
