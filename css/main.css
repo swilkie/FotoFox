@@ -169,7 +169,7 @@
 }
 
 #header {
-	background-image: url(http://flickholdr.iwerk.org/700/700);
+	background-image: url(../img/purple_flowers.jpg);
 }
 
 
@@ -188,13 +188,16 @@
 	padding-top: 20px;
 	padding-bottom: 50px;
 	text-align: center;
+	color:white;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+
 }
 
 /* end header */
 
 /* Poem */
 #poem {
-	background-image: url(../img/single_person.jpg);
+	background-image: url(../img/quote_photo.jpg);
 	background-position: left center;
 }
 
@@ -203,7 +206,8 @@
 	font-family: 'Noticia Text', serif;
 	font-style: italic;
 	line-height: 150%;
-	color: #252c2f;
+	color: #EEEEEE;
+	padding-left: 30px;
 }
 
 /* end Poem */
