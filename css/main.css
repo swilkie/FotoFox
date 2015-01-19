@@ -72,7 +72,7 @@
 	padding-right: 6px;
 }
 
-.form-group .city-name {
+.form-group .email {
 	width: 356px;
 	border-radius: 3px;
 }
@@ -223,3 +223,17 @@
 }
 
 /* end CTA */
+
+/* Footer */
+#footer {
+	text-align: center;
+	background-color: #1F1F1F;
+	color: #4B5152;
+}
+
+.footer--content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* end Footer */
