@@ -8,63 +8,109 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:700italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
 <!-- Header -->
-	<section id="header" class="photo">
+	<header id="home" class="photo header">
 		<div class="container-fluid header-content">
 			<div class="row">
-				<div class="col-md-2 navbar"><h2>FotoFox</h2></div>
-			</div>
-			<div class="row">
 				<div class="col-md-12 title">
-					<h1>Find a photographer for your next event</h1>
-					<h3>Passion, memories, stories.  Capture yours.</h3>
-<!--					<a href="photographer.php" id="last-nav"><button type="button" class="btn btn-default button-transparent">I'm a Photographer</button></a>
--->
+					<h1 class="title_main">Find your wedding photographer</h1>
+					<h3 class="title_subtitle">Passion, memories, stories.  Capture yours.</h3>
+					<a href="#marketplace" id="last-nav"><button type="button" class="btn btn-default button-white header--button title_button">Learn More</button></a>
+
 				</div>
 			</div>
-			<div class="row">
-<!--				<div class="col-md-12">
-					<button>Learn More</button>
-				</div>
--->			</div>
 		</div>
-	</section>
+	</header>
 
-<!-- Marketplace -->
-	<section id="marketplace" class="page">
+<!-- rolling navbar -->
+	<section class="main_menu_outer">
+			<div role="navigation" class="navbar navbar-default menu_area">
+				<div class="container">
+					<div class="navbar-header">
+						<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand logo" rel="home" href="#" title="Find Your Photographer">
+					        <img class="logo_img" src="img/logo-fotofox.png">
+					    </a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<ul id="nav" class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#benefits">Benefits</a></li>
+							<li><a href="#howItWorks">How it Works</a></li>
+							<li><a href="#signUp">Sign Up</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+<!--BENEFITS -->
+	<section id="benefits" class="page">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<h2>This is the main catchphrase to draw attention</h2>
+					<h2 class="page_title">FIND YOUR PHOTOGRAPHER WITH ONE CLICK</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 content">
-					<img class="img-responsive" src="http://placehold.it/450x270">
-				</div>
-				<div class="col-md-4 content">
-					<h4>Here's a specific brief heading</h4>
-					<ul class="page-list">
-						<li>Here's a bunch of text in line 1</li>
-						<li>Here's a second imortant point of valuable information that needs to be portrayed to the consumer</li>
-						<li>Here's line 3 of important information</li>
-						<li>Line 4 here that tells info</li>
-					</ul>
+				<div class="col-md-10 col-md-offset-1">
+					<div class="row">
+						<div class="col-md-4 item">
+							<div class="row">
+								<img class="img-responsive icon" src="img/icons/clock.png">
+							</div>
+							<div class="row">
+								<h3>SAVE TIME.</h3>
+							</div>
+							<div class="row item_description">
+								<p>3,682,000 Google results?<br/>No thanks! Let FotoFox do the work for you and find the photographers that best fit your needs, budget, and style.</p>
+							</div>
+						</div>
+						<div class="col-md-4 item">
+							<div class="row">
+								<img class="img-responsive icon" src="img/icons/heart.png">
+							</div>
+							<div class="row">
+								<h3>BUILD TRUST.</h3>
+							</div>
+							<div class="row item_description">
+								<p>Rest assured with our quality guaranteed photographers.  Focus on what really matters:  your personal connection with your photographer. Let us take care of the rest.</p>
+							</div>
+						</div>
+						<div class="col-md-4 item">
+							<div class="row">
+								<img class="img-responsive icon" src="img/icons/smile.png">
+							</div>
+							<div class="row">
+								<h3>REDUCE STRESS.</h3>
+							</div>
+							<div class="row item_description">
+								<p>Make easy side-by-side comparisons. No more choice overload, no more calling for quotes, no more headaches!</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-<!-- Poem -->
-	<section id="poem" class="photo">
+<!-- Mission -->
+	<section id="mission" class="quote">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-5 content">
-					<h3 class="quote">
+				<div class="col-md-6 col-md-offset-3">
+					<p class="quote_text">
 						Life’s greatest moments aren’t manufactured.<br/>
 						They come when we are immersed,<br/>
 						Spontaneous.<br/>
@@ -73,37 +119,58 @@
 						These are the memories we’ve always wanted to share.<br/>
 						The stories we will tell.<br/>
 						These are the moments we capture.<br/>
-
-					</h3>
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-<!-- Snap Photography -->
-	<section id="marketplace" class="page">
+
+<!-- How it works -->
+	<section id="howItWorks" class="hiw">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h2>This is the main catchphrase to draw attention</h2>
+				<h2 class="hiw_title">How fotofox works</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-1 col-md-offset-1 hiw_icon">
+					<img class="img-responsive" src="img/icons/circle1.png">
+				</div>
+				<div class="col-md-6 hiw_text">
+					<h3 class="hiw_heading">Show us your style</h3>
+					<p class="hiw_description">We want to know you on a personal level. This is our chance to understand your needs, personality, and tastes. Let’s start by getting the generic questions out of the way at the link below, then we will personally follow up with you to help and to learn how we can make your ideas become real.</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 content">
-					<img class="img-responsive" src="http://placehold.it/450x270">
+				<div class="col-md-1 col-md-offset-2 hiw_icon">
+					<img class="img-responsive" src="img/icons/circle2.png">
 				</div>
-				<div class="col-md-4 content">
-					<h4>Here's a specific brief heading</h4>
-					<ul class="page-list">
-						<li>Here's a bunch of text in line 1</li>
-						<li>Here's a second imortant point of valuable information that needs to be portrayed to the consumer</li>
-						<li>Here's line 3 of important information</li>
-						<li>Line 4 here that tells info</li>
-					</ul>
+				<div class="col-md-6 hiw_text">
+					<h3 class="hiw_heading">We’ll find your best options</h3>
+					<p class="hiw_description">Once we understand your vision and personality, we use our experience and expertise to search through the thousands of photographers and narrow the options down to the top 3 to 5 photographers that we think will make you happiest.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 col-md-offset-3 hiw_icon">
+					<img class="img-responsive" src="img/icons/circle3.png">
+				</div>
+				<div class="col-md-6 hiw_text">
+					<h3 class="hiw_heading">Own your wedding</h3>
+					<p class="hiw_description">We know that you’re the only who can plan your perfect wedding. With the thousands of photographers cut down to a manageable size, you can now review each photographer’s portfolios, pricing, and personality in depth, to communicate with the photographer and make sure that they can make your perfect day just that.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 col-md-offset-4 hiw_icon">
+					<img class="img-responsive" src="img/icons/circle4.png">
+				</div>
+				<div class="col-md-6 hiw_text">
+					<h3 class="hiw_heading">Make it happen</h3>
+					<p class="hiw_description">Once you’ve found the photographer of your dreams, we make it a reality. We take care of scheduling, review all contracts before a photographer asks you to sign anything, verify photographers have valid insurance, and enable safe payments. From beginning to end, we are available at all times as your guide, explaining what you can expect and answer all questions you may have.</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 <!-- Call to Action -->
 	<section id="cta" class="photo">
@@ -114,7 +181,7 @@
 						<h2>Book your photo session today.</h2>
 					</div>
 					<div class="info">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Your wedding is personal, so we handle each request personally. Enter your email address here and we'll walk you through what we do, how we do it, and what you can expect.</p>
 					</div>
 				</div>
 			</div>
@@ -143,5 +210,20 @@
 			<p>© FotoFox 2015</p>
 		</div>
 	</section>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.loadie.min.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.sequence-min.js"></script>
+	<script src="js/sequencejs-options.js"></script>
+	<script type="text/javascript" src="js/jquery.retina.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
