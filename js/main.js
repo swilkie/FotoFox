@@ -153,6 +153,7 @@ jQuery(document).ready(function(){
 	  $container.isotope({ filter: filterValue });
 	  return false;
 	});
+
 });
 $(window).scroll(function(){
 	topMenuAnimate();
