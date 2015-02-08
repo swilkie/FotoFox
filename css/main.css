@@ -3,11 +3,11 @@
 	letter-spacing: 1px;
 }
 
-
+/*
 * {
 	border:1px solid red !important;
 }
-
+*/
 
 * {
 	-webkit-box-sizing: border-box;
@@ -100,8 +100,6 @@
 }
 
 .form-group .email {
-	/*min-width: 356px;*/
-	margin-bottom: 20px;
 	border-radius: 3px;
 }
 
@@ -474,6 +472,10 @@
     padding-left: 20px;
 }
 
+.submit_button_inline {
+	/*make sure there's a space if screen is resized*/
+	margin-bottom: 20px;
+}
 
 /* end CTA */
 
