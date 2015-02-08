@@ -99,12 +99,7 @@
 	padding-right: 6px;
 }
 
-.form-group .email {
-	border-radius: 3px;
-}
-
-.form-group .datepicker {
-	width: 240px;
+.form-group .input-lg {
 	border-radius: 3px;
 }
 
@@ -468,8 +463,8 @@
 #cta .content {
     padding-top: 100px;
     padding-bottom: 90px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .submit_button_inline {
