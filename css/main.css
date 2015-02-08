@@ -3,11 +3,11 @@
 	letter-spacing: 1px;
 }
 
-/*
+
 * {
 	border:1px solid red !important;
 }
-*/
+
 
 * {
 	-webkit-box-sizing: border-box;
@@ -100,7 +100,8 @@
 }
 
 .form-group .email {
-	width: 356px;
+	/*min-width: 356px;*/
+	margin-bottom: 20px;
 	border-radius: 3px;
 }
 
