@@ -1,0 +1,495 @@
+* {
+	font-family: 'Lato',sans-serif;
+	letter-spacing: 1px;
+}
+
+/*
+* {
+	border:1px solid red !important;
+}
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-mox-box-sizing:border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Button - general */
+.btn-primary,
+.btn-primary:focus {
+	background-color: #FC6B0C;
+	border-color: #FC6B0C;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus:active,
+.btn-primary:hover {
+	background: #b74a02;
+	border-color: #b74a02;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.button-transparent:focus,
+.button-transparent {
+	background-color: transparent;
+	border-color: #FC6B0C;
+	color: #ffffff;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.button-transparent:active
+.button-transparent.active,
+.button-transparent:focus:active,
+.button-transparent:hover {
+	background-color: #FC6B0C;
+	border-color: #FC6B0C;
+	color: #ffffff;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.button-white:focus,
+.button-white {
+	background-color: rgba(255, 255, 255, 0.85);
+	border-color: #FC6B0C;
+	color: #FC6B0C;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+	border: 2px solid;
+}
+
+.button-white:active
+.button-white.active,
+.button-white:focus:active,
+.button-white:hover {
+	background-color: #FC6B0C;
+	border-color: #FC6B0C;
+	color: #ffffff;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* end button - general */
+
+/* form - general */
+
+.form-group {
+	padding-right: 6px;
+}
+
+.form-group .email {
+	width: 356px;
+	border-radius: 3px;
+}
+
+.form-group .datepicker {
+	width: 240px;
+	border-radius: 3px;
+}
+
+/* end form - general */
+
+/* page */
+.page {
+	color: #252c2f;
+	padding-top:100px;
+	padding-bottom:150px;
+}
+
+.page .row {
+	text-align: center;
+}
+
+.page .content {
+	vertical-align:middle;
+
+	display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+
+    max-width: 37.5em; /*600px*/
+
+    padding: 25px;
+}
+
+.page h2 {
+	font-size: 38px;
+	font-weight: bold;
+	padding-bottom: 60px;
+	color: #26354A;
+	text-align: center;
+	margin:0 0 90px 0;
+	padding:0;
+	text-transform: uppercase;
+}
+
+.page h4 {
+	font-size: 28px;
+}
+
+.page p {
+	color: #5E696F;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 22px;
+	margin: 0 auto;
+	max-width: 862px;
+	padding: 9px 0 0;
+	text-align: center;
+}
+
+.page li {
+	line-height: 28px;
+	font-size: 16px;
+	color: #5E696F;
+}
+
+
+.page-photo {
+	padding-bottom: 30px;
+	padding-right: 30px;
+}
+
+/* end page */
+
+/* photo sections */
+.photo {
+	min-height:620px;
+
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+
+	color: #EBEBEB;
+}
+
+.photo .content {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* end photo sections */
+
+/* Header */
+.header .button-transparent {
+	margin-top: 50px;
+}
+
+.header {
+	min-height:800px;
+	background-image: url(../img/beach-wedding-dresses.jpg);
+}
+
+
+.header .header-content {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.header .title {
+	margin-top: 325px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	text-align: center;
+
+	color: #26354a;
+	text-shadow: 2px 2px 0px white
+}
+
+.header .title_main {
+	font-size: 50px;
+	font-weight: 900;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	/*text-shadow: 1px 1px 0px white;*/
+}
+
+.header .title_subtitle {
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 15px;
+	padding: 0;
+	letter-spacing: 2px;
+	/*text-transform: uppercase;
+	/*text-shadow: 1px 1px 0px white;*/
+}
+
+.header .title_button {
+	padding: 18px 36px 18px 36px;
+	border: 3px solid;
+	font-size: 24px;
+	margin-top: 130px;
+}
+
+/* end header */
+
+/* rolling navbar */
+
+.main_menu_outer{
+	min-height:60px;
+	margin:0;
+	padding:0;
+	width:100%;
+	position:relative;
+	top:0;
+	left:0;
+	z-index:1000;
+}
+
+.menu_area{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 0 none;
+	border-radius: 0 !important;
+	-moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	height: auto;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+.menu_area .navbar-header{}
+.menu_area .navbar-header .navbar-brand{
+	height: auto;
+	padding: 0;
+}
+
+.menu_area .navbar-collapse{}
+.menu_area .navbar-nav{}
+.menu_area .navbar-nav li{}
+.menu_area .navbar-nav li a{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #26354A;
+	font-weight: 800;
+	padding: 35px 11px;
+	text-transform: uppercase;
+}
+.topFixedMenu{
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+	left: 0;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+.topFixedMenu  .navbar-nav li a{
+	padding: 20px 11px;
+}
+.topFixedMenu .logo{
+	font-size: 30px;
+	line-height: 40px;
+	/*margin: 10px 0 0 0 !important;*/
+	padding: 0;
+}
+.menu_area .navbar-nav li.active a:hover,.menu_area .navbar-nav li.active a,.menu_area .navbar-nav li a:hover{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	-webkit-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: none;
+	color: #FF7F00;
+}
+
+.logo_img {
+	width:auto;
+	max-height: 45px;
+	margin-top: 10px;
+	position: relative;
+	display: block;
+}
+
+/*end rolling navbar */
+
+/* benefits */
+
+
+.icon {
+	margin: auto;
+	max-height: 150px;
+	width: auto;
+	margin-top: 40px;
+}
+
+.item_description {
+	max-width: 250px;
+	margin: auto;
+	text-align: justify;
+}
+/* end benefits */
+
+
+/* mission */
+
+#mission {
+	background-color: #222222;
+	color: #6E6C6C;
+	min-height: 300px;
+}
+
+.quote_text {
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0 auto;
+	padding: 70px 0 70px 0;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+/* end mission */
+
+
+/* How it works */
+
+#howItWorks {
+	background-color: #FFFFFF;
+	min-height: 600px;
+	padding-top: 120px;
+	padding-bottom: 140px;
+}
+
+.hiw_title {
+	font-size: 38px;
+	font-weight: bold;
+	padding-bottom: 60px;
+	color: #26354A;
+	text-align: center;
+	margin:0 0 90px 0;
+	padding:0;
+	text-transform: uppercase;
+}
+
+.hiw_icon {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 150px;
+	height: auto;
+}
+
+.hiw_text {
+	text-align: justify;
+
+	color: #5E696F;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 22px;
+	margin: 0 20px 40px 20px;
+	padding: 9px 20px 0;
+}
+
+.hiw_heading {
+	color: #252c2f;
+	text-transform: uppercase;
+}
+
+.hiw_description {
+	letter-spacing: 2px;
+	line-height: 26px;
+}
+
+
+/* end How it works */
+
+
+/* CTA */
+#cta {
+	background-image: url(../img/1541435Dim.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	background-position: right center;
+	color:#2A2A2A;
+	min-height:620px;
+	padding-bottom: 100px;
+
+}
+
+#cta .title {
+	margin-bottom: 60px;
+/*	color: #252c2f;
+	text-transform: uppercase;
+*/
+	font-weight: bold;
+	color: #26354A;
+	text-transform: uppercase;
+}
+
+#cta .info {
+	margin-bottom: 50px;
+	text-align: justify;
+
+	color: #5E696F;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	line-height: 26px;
+}
+
+#cta .content {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* end CTA */
+
+/* Footer */
+#footer {
+	text-align: center;
+	background-color: #1F1F1F;
+	color: #4B5152;
+}
+
+.footer--content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* end Footer */
+
+
+
+
