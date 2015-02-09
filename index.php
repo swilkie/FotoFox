@@ -1,27 +1,22 @@
 <?php
 
-date_default_timezone_set('America/Toronto');
-require 'vendor/autoload.php';
+    date_default_timezone_set('America/Toronto');
+    require 'vendor/autoload.php';
 
-use Parse\ParseClient;
+    use Parse\ParseClient;
 
-ParseClient::initialize('6AfySMVdTj3rlMdlbEfMZsXDODNt3qN1hjkKgkFL', 'PbOHLiTseJGbESn9R7SJtERiojVmrMPGlIvSDfQW', 'YpPLLthhGPY6PhnayNvULNKIU3EALd1SmFL6ZRSG');
+    ParseClient::initialize('6AfySMVdTj3rlMdlbEfMZsXDODNt3qN1hjkKgkFL', 'PbOHLiTseJGbESn9R7SJtERiojVmrMPGlIvSDfQW', 'YpPLLthhGPY6PhnayNvULNKIU3EALd1SmFL6ZRSG');
 
-use Parse\ParseObject;
-
- 
-$testObject = ParseObject::create("TestObject");
-$testObject->set("foo", "bar");
-$testObject->save();
+    use Parse\ParseObject;
 
 
-if (isset($_POST["action"]))
-{	
-    if (!isset($_POST["name"]) || empty($_POST["name"]))
-    {
-    	$errorName = true;
-    	$error = true;
-    }
+    if (isset($_POST["action"]))
+    {	
+        if (!isset($_POST["name"]) || empty($_POST["name"]))
+        {
+        	$errorName = true;
+        	$error = true;
+        }
 
 /*
     if (!isset($_POST["phone"]) || empty($_POST["phone"]))
@@ -39,8 +34,12 @@ if (isset($_POST["action"]))
 
     //Send data to Parse
     if(!isset($error))
-    {
-    	echo "<script type='text/javascript'>alert('Entered ');</script>";
+    {       
+        $customer = ParseObject::create("Customer");
+        $customer->set("name", $_POST["name"]);
+        $customer->set("phoneNumber", $_POST["phone"]);
+        $customer->set("email", $_POST["email"]);
+        $customer->save();
     }
 }
 
