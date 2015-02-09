@@ -198,7 +198,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-5 col-sm-offset-6">
-					<form action="index.php#cta" method="post" class="form-horizontal" role="form">
+					<form action="index.php#cta" method="post" class="form-horizontal" role="form" onsubmit="return validateCtaForm(this);">
 
 					<!-- Name input -->
 						<?php if (isset($errorName)): ?>
@@ -238,6 +238,7 @@
 							</div>
 						<?php endif ?>
 
+						<!-- Email Input -->
 						<?php if (isset($errorEmail)): ?>
 							<div class="form-group has-error has-feedback">
 								<label class="sr-only control-label" for="email">Email</label>
@@ -265,6 +266,21 @@
 						} ?>
 
 					</form>
+					<script>
+						function validateCtaForm(f) {
+							if (f.email.value == "") {
+								alert("You must provide a valid email address.");
+								return false;
+							}
+							else if(f.name.value == "") {
+								alert("Please tell us your name and resubmit form.");
+								return false;
+							}
+
+							return true;
+						}
+					</script>
+
 				</div>
 			</div>
 			<div class="row">
