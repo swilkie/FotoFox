@@ -198,26 +198,71 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-5 col-sm-offset-6">
-					<form class="form-horizontal" role="form">
-						<div class="form-group">
-							<label class="sr-only" for="name">Name</label>
-							<div class="col-lg-8 col-sm-10">
-								<input type="text" class="form-control input-lg" placeholder="Name">
+					<form action="index.php#cta" method="post" class="form-horizontal" role="form">
+
+					<!-- Name input -->
+						<?php if (isset($errorName)): ?>
+						 	<div class="form-group has-error has-feedback">
+								<label class="sr-only control-label" for="name">Name</label>
+								<div class="col-lg-8 col-sm-10">
+									<input name="name" type="text" class="form-control input-lg" placeholder="Name" aria-describedby="inputErrorStatus">
+							  		<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="phone">Phone Number</label>
-							<div class="col-lg-8 col-sm-10">
-								<input type="text" class="form-control input-lg" placeholder="Phone Number">
+						<? else: ?>
+							<div class="form-group">
+								<label class="sr-only control-label" for-"name">Name</label>
+								<div class="col-lg-8 col-sm-10">
+									<input name="name" type="text" class="form-control input-lg" placeholder="Name" value="<? if (isset($_POST["name"])) echo htmlspecialchars($_POST["name"]) ?>">
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="email">Email</label>
-							<div class="col-lg-8">
-								<input type="email" class="form-control input-lg email submit_button_inline" placeholder="Email Address">
+						<?endif?>
+
+
+
+						<!-- Phone Number Input -->
+						<? if (isset($errorPhone)): ?>
+							<div class="form-group has-error has-feedback">
+								<label class="sr-only control-label" for="phone">Phone</label>
+								<div class="col-lg-8 col-sm-10">
+									<input name="phone" type="text" class="form-control input-lg" placeholder="Phone Number" aria-describedby="inputErrorStatus2">
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								</div>
 							</div>
-							<button type="submit" class="btn btn-primary btn-lg">Submit</button>
-						</div>
+						<? else: ?>
+							<div class="form-group">
+								<label class="sr-only control-label" for="phone">Phone Number</label>
+								<div class="col-lg-8 col-sm-10">
+									<input name="phone" type="text" class="form-control input-lg" placeholder="Phone Number" value="<? if (isset($_POST["phone"])) echo htmlspecialchars($_POST["phone"]) ?>">
+								</div>
+							</div>
+						<? endif ?>
+
+						<? if (isset($errorEmail)): ?>
+							<div class="form-group has-error has-feedback">
+								<label class="sr-only control-label" for="email">Email</label>
+								<div class="col-lg-8">
+									<input name="email" type="email" class="form-control input-lg submit_button_inline" placeholder="Email Address" aria-describedby="inputErrorStatus3">
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								</div>
+
+								<button name="action" type="submit" class="btn btn-primary btn-lg">Submit</button>
+							</div>
+						<? else: ?>
+							<div class="form-group">
+								<label class="sr-only control-label" for="email">Email</label>
+								<div class="col-lg-8">
+									<input name="email" type="email" class="form-control input-lg submit_button_inline" placeholder="Email Address" value="<? if (isset($_POST["email"])) echo htmlspecialchars($_POST["email"]) ?>">
+								</div>
+								
+								<button name="action" type="submit" class="btn btn-primary btn-lg">Submit</button>
+							</div>
+						<? endif ?>
+
+						<?php if (isset($errorName) || isset($errorEmail))
+						{
+						 	echo '<p style="color:red; font-weight:bold">*Form did not submit, please fix errors and try again</p>';
+						} ?>
 
 					</form>
 				</div>

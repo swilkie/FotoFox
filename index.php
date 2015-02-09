@@ -1,18 +1,48 @@
 <?php
-/*
+
 require 'vendor/autoload.php';
 
 use Parse\ParseClient;
 
 ParseClient::initialize('6AfySMVdTj3rlMdlbEfMZsXDODNt3qN1hjkKgkFL', 'PbOHLiTseJGbESn9R7SJtERiojVmrMPGlIvSDfQW', 'YpPLLthhGPY6PhnayNvULNKIU3EALd1SmFL6ZRSG');
 
-
 use Parse\ParseObject;
+
  
 $testObject = ParseObject::create("TestObject");
 $testObject->set("foo", "bar");
 $testObject->save();
-*/
+
+
+if (isset($_POST["action"]))
+{	
+    if (!isset($_POST["name"]) || empty($_POST["name"]))
+    {
+    	$errorName = true;
+    	$error = true;
+    }
+
+/*
+    if (!isset($_POST["phone"]) || empty($_POST["phone"]))
+    {
+    	$errorPhone = true;
+    	$error = true;
+    }
+    */
+
+    if (!isset($_POST["email"]) || empty($_POST["email"]))
+    {
+        $errorEmail = true;
+    	$error = true;
+    }
+
+    //Send data to Parse
+    if(!isset($error))
+    {
+    	echo "<script type='text/javascript'>alert('Entered ');</script>";
+    }
+}
+
 include_once("main.html");
 
 ?>
