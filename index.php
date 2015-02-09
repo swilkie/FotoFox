@@ -1,5 +1,6 @@
 <?php
 
+date_default_timezone_set('America/Toronto');
 require 'vendor/autoload.php';
 
 use Parse\ParseClient;
