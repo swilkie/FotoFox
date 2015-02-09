@@ -209,19 +209,19 @@
 							  		<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
 								</div>
 							</div>
-						<? else: ?>
+						<?php else: ?>
 							<div class="form-group">
 								<label class="sr-only control-label" for-"name">Name</label>
 								<div class="col-lg-8 col-sm-10">
-									<input name="name" type="text" class="form-control input-lg" placeholder="Name" value="<? if (isset($_POST["name"])) echo htmlspecialchars($_POST["name"]) ?>">
+									<input name="name" type="text" class="form-control input-lg" placeholder="Name" value="<?php if (isset($_POST["name"])) echo htmlspecialchars($_POST["name"]) ?>">
 								</div>
 							</div>
-						<?endif?>
+						<?php endif ?>
 
 
 
 						<!-- Phone Number Input -->
-						<? if (isset($errorPhone)): ?>
+						<?php if (isset($errorPhone)): ?>
 							<div class="form-group has-error has-feedback">
 								<label class="sr-only control-label" for="phone">Phone</label>
 								<div class="col-lg-8 col-sm-10">
@@ -229,16 +229,16 @@
 									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
 								</div>
 							</div>
-						<? else: ?>
+						<?php else: ?>
 							<div class="form-group">
 								<label class="sr-only control-label" for="phone">Phone Number</label>
 								<div class="col-lg-8 col-sm-10">
-									<input name="phone" type="text" class="form-control input-lg" placeholder="Phone Number" value="<? if (isset($_POST["phone"])) echo htmlspecialchars($_POST["phone"]) ?>">
+									<input name="phone" type="text" class="form-control input-lg" placeholder="Phone Number" value="<?php if (isset($_POST["phone"])) echo htmlspecialchars($_POST["phone"]) ?>">
 								</div>
 							</div>
-						<? endif ?>
+						<?php endif ?>
 
-						<? if (isset($errorEmail)): ?>
+						<?php if (isset($errorEmail)): ?>
 							<div class="form-group has-error has-feedback">
 								<label class="sr-only control-label" for="email">Email</label>
 								<div class="col-lg-8">
@@ -248,16 +248,16 @@
 
 								<button name="action" type="submit" class="btn btn-primary btn-lg">Submit</button>
 							</div>
-						<? else: ?>
+						<?php else: ?>
 							<div class="form-group">
 								<label class="sr-only control-label" for="email">Email</label>
 								<div class="col-lg-8">
-									<input name="email" type="email" class="form-control input-lg submit_button_inline" placeholder="Email Address" value="<? if (isset($_POST["email"])) echo htmlspecialchars($_POST["email"]) ?>">
+									<input name="email" type="email" class="form-control input-lg submit_button_inline" placeholder="Email Address" value="<?php if (isset($_POST["email"])) echo htmlspecialchars($_POST["email"]) ?>">
 								</div>
 								
 								<button name="action" type="submit" class="btn btn-primary btn-lg">Submit</button>
 							</div>
-						<? endif ?>
+						<?php endif ?>
 
 						<?php if (isset($errorName) || isset($errorEmail))
 						{
