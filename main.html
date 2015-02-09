@@ -191,10 +191,6 @@
 						<h2>Find your perfect photographer today.</h2>
 					</div>
 
-
-
-
-<!--
 					<div class="info">
 						<p>Your wedding is personal, so we handle each request personally. Enter your email address here and we'll walk you through what we do, how we do it, and what you can expect.</p>
 					</div>
@@ -202,17 +198,72 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-5 col-sm-offset-6">
-					<form class="form-inline cta_form" role="form">
-						<div class="form-group">
-							<label class="sr-only" for="email">Email</label>
-							<input type="text" class="form-control input-lg email" placeholder="Email Address">
-						</div>
-<!--						<div class="form-group">
-							<label class="sr-only" for="day">Day</label>
-							<input class="datepicker form-control input-lg" type="text" placeholder="Day   (not necessary)" readonly="readonly" />
-						</div>
--->	<!--					
-						<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+					<form action="index.php#cta" method="post" class="form-horizontal" role="form">
+
+					<!-- Name input -->
+						<?php if (isset($errorName)): ?>
+						 	<div class="form-group has-error has-feedback">
+								<label class="sr-only control-label" for="name">Name</label>
+								<div class="col-lg-8 col-sm-10">
+									<input name="name" type="text" class="form-control input-lg" placeholder="Name" aria-describedby="inputErrorStatus">
+							  		<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								</div>
+							</div>
+						<?php else: ?>
+							<div class="form-group">
+								<label class="sr-only control-label" for-"name">Name</label>
+								<div class="col-lg-8 col-sm-10">
+									<input name="name" type="text" class="form-control input-lg" placeholder="Name" value="<?php if (isset($_POST["name"])) echo htmlspecialchars($_POST["name"]) ?>">
+								</div>
+							</div>
+						<?php endif ?>
+
+
+
+						<!-- Phone Number Input -->
+						<?php if (isset($errorPhone)): ?>
+							<div class="form-group has-error has-feedback">
+								<label class="sr-only control-label" for="phone">Phone</label>
+								<div class="col-lg-8 col-sm-10">
+									<input name="phone" type="text" class="form-control input-lg" placeholder="Phone Number" aria-describedby="inputErrorStatus2">
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								</div>
+							</div>
+						<?php else: ?>
+							<div class="form-group">
+								<label class="sr-only control-label" for="phone">Phone Number</label>
+								<div class="col-lg-8 col-sm-10">
+									<input name="phone" type="text" class="form-control input-lg" placeholder="Phone Number" value="<?php if (isset($_POST["phone"])) echo htmlspecialchars($_POST["phone"]) ?>">
+								</div>
+							</div>
+						<?php endif ?>
+
+						<?php if (isset($errorEmail)): ?>
+							<div class="form-group has-error has-feedback">
+								<label class="sr-only control-label" for="email">Email</label>
+								<div class="col-lg-8">
+									<input name="email" type="email" class="form-control input-lg submit_button_inline" placeholder="Email Address" aria-describedby="inputErrorStatus3">
+									<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								</div>
+
+								<button name="action" type="submit" class="btn btn-primary btn-lg">Submit</button>
+							</div>
+						<?php else: ?>
+							<div class="form-group">
+								<label class="sr-only control-label" for="email">Email</label>
+								<div class="col-lg-8">
+									<input name="email" type="email" class="form-control input-lg submit_button_inline" placeholder="Email Address" value="<?php if (isset($_POST["email"])) echo htmlspecialchars($_POST["email"]) ?>">
+								</div>
+								
+								<button name="action" type="submit" class="btn btn-primary btn-lg">Submit</button>
+							</div>
+						<?php endif ?>
+
+						<?php if (isset($errorName) || isset($errorEmail))
+						{
+						 	echo '<p style="color:red; font-weight:bold">*Form did not submit, please fix errors and try again</p>';
+						} ?>
+
 					</form>
 				</div>
 			</div>
@@ -221,12 +272,13 @@
 					<div class="info">
 						<p><br/>For a quicker response, you can start by getting the generic questions out of the way at the survey below!</p>
 					</div>
--->
+
+<!--
 					<div class="info">
 						<p>Your wedding is personal, so we handle each request personally.<br/>
 						For a quicker response, you can start by getting the generic questions out of the way at the survey below. We'll then walk you through what we do, how we do it, and how you can get the most out of your wedding.</p>
 					</div>
-
+-->
 
 
 
