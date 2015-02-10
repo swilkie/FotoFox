@@ -18,31 +18,43 @@
         	$error = true;
         }
 
-/*
-    if (!isset($_POST["phone"]) || empty($_POST["phone"]))
-    {
-    	$errorPhone = true;
-    	$error = true;
-    }
-    */
+        /*
+        if (!isset($_POST["phone"]) || empty($_POST["phone"]))
+        {
+        	$errorPhone = true;
+        	$error = true;
+        }
+        */
 
-    if (!isset($_POST["email"]) || empty($_POST["email"]))
-    {
-        $errorEmail = true;
-    	$error = true;
+        if (!isset($_POST["email"]) || empty($_POST["email"]))
+        {
+            $errorEmail = true;
+        	$error = true;
+        }
+
+        //Send data to Parse
+        if(!isset($error))
+        {       
+            $customer = ParseObject::create("Customer");
+            $customer->set("name", $_POST["name"]);
+            $customer->set("phoneNumber", $_POST["phone"]);
+            $customer->set("email", $_POST["email"]);
+            
+            
+
+            try {
+                $customer->save();
+                //echo 'New object created with objectId: ' . $customer->getObjectId();
+                $submitSuccess = true;
+            } catch (ParseException $ex) {  
+                // Execute any logic that should take place if the save fails.
+                // error is a ParseException object with an error code and message.
+                $submitSuccess = false;
+                //echo 'Failed to create new object, with error message: ' + $ex->getMessage();
+            }
+        }
     }
 
-    //Send data to Parse
-    if(!isset($error))
-    {       
-        $customer = ParseObject::create("Customer");
-        $customer->set("name", $_POST["name"]);
-        $customer->set("phoneNumber", $_POST["phone"]);
-        $customer->set("email", $_POST["email"]);
-        $customer->save();
-    }
-}
-
-include_once("main.html");
+    include_once("main.html");
 
 ?>
