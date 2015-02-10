@@ -11,6 +11,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script>
+
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -191,10 +192,6 @@
 						<h2>Find your perfect photographer today.</h2>
 					</div>
 
-
-
-
-<!--
 					<div class="info">
 						<p>Your wedding is personal, so we handle each request personally. Enter your email address here and we'll walk you through what we do, how we do it, and what you can expect.</p>
 					</div>
@@ -202,18 +199,106 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-5 col-sm-offset-6">
-					<form class="form-inline cta_form" role="form">
-						<div class="form-group">
-							<label class="sr-only" for="email">Email</label>
-							<input type="text" class="form-control input-lg email" placeholder="Email Address">
+					<form action="index.php#cta" method="post" class="form-horizontal" role="form" onsubmit="return validateCtaForm(this);">
+
+					<!-- Name input -->
+					 	<div id="name_input" class="form-group">
+							<label class="sr-only control-label" for="name">Name</label>
+							<div class="col-lg-8 col-sm-10">
+								<input name="name" type="text" class="form-control input-lg" placeholder="Name" aria-describedby="inputErrorStatus">
+						  		<span id="name_ErrorGlyph" style="display:none" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+							</div>
 						</div>
-<!--						<div class="form-group">
-							<label class="sr-only" for="day">Day</label>
-							<input class="datepicker form-control input-lg" type="text" placeholder="Day   (not necessary)" readonly="readonly" />
+
+
+						<!-- Phone Number Input -->
+						<div name="phone_input" class="form-group">
+							<label class="sr-only control-label" for="phone">Phone</label>
+							<div class="col-lg-8 col-sm-10">
+								<input name="phone" type="text" class="form-control input-lg" placeholder="Phone Number" aria-describedby="inputErrorStatus2">
+								<span id="phone_ErrorGlyph" style="display:none" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+							</div>
 						</div>
--->	<!--					
-						<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+
+						<!-- Email Input -->
+							<div id="email_input" class="form-group">
+								<label class="sr-only control-label" for="email">Email</label>
+								<div class="col-lg-8">
+									<input name="email" type="email" class="form-control input-lg submit_button_inline" placeholder="Email Address" aria-describedby="inputErrorStatus3">
+									<span id="email_ErrorGlyph" style="display:none" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+								</div>
+
+								<button name="action" type="submit" class="btn btn-primary btn-lg">Submit</button>
+							</div>
+
+						<div id="didNotSubmit" style="display:none" class="alert alert-danger" role="alert">
+							<strong>Form did not Submit!</strong> Please fix errors and try again.
+						</div>
+
 					</form>
+					<?php if(isset($_POST["action"])):
+						if(isset($submitSuccess) && $submitSuccess): ?>
+							<div class="alert alert-success" role="alert">
+								<strong>Congratulations!</strong> You're one step closer! We will contact you soon with more information.
+							</div>
+							<script type="text/javascript">
+								window.setTimeout(function() {
+								    $(".alert-success").fadeTo(500, 0).slideUp(500, function(){
+								        $(this).remove(); 
+								    });
+								}, 5000);
+							</script>
+						<?php elseif (isset($submitSuccess) && !$submitSuccess): ?>
+							<div class="alert alert-danger .alert-dismissible" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<strong>Error!</strong> It looks like we're having problems saving your info, try again in a minute or else email us directly at <a href="mailto:info@fotofox.co?
+									&amp;subject=Sign Me Up!
+									&amp;body=There was an error submitting my form, please sign me up!" class="alert-link">info@fotofox.co</a>.
+							</div>
+						<?php endif;
+					endif; ?>
+						
+					<script>
+
+						function validateCtaForm(f) {
+							
+							var err = false;
+
+							var d = document.getElementById("name_input");
+							var e = document.getElementById("name_ErrorGlyph");
+							if(f.name.value == "") {
+								d.className = "form-group has-error has-feedback";
+								e.style.display = "block";
+								var err = true;
+							} else {	
+								d.className = "form-group";
+								e.style.display = "none";
+							}
+
+							var g = document.getElementById("email_input");
+							var h = document.getElementById("email_ErrorGlyph");
+							if(f.email.value == "") {
+								g.className = "form-group has-error has-feedback";
+								h.style.display = "block";
+								var err = true;
+							} else {	
+								g.className = "form-group";
+								h.style.display = "none";
+							}
+
+							var p = document.getElementById("didNotSubmit");
+							if (err) {
+								p.style.display = "block"
+								return false;
+							} else {
+								p.style.display = "none"
+							}
+
+							return true;
+						}
+					</script>
+
 				</div>
 			</div>
 			<div class="row">
@@ -221,12 +306,13 @@
 					<div class="info">
 						<p><br/>For a quicker response, you can start by getting the generic questions out of the way at the survey below!</p>
 					</div>
--->
+
+<!--
 					<div class="info">
 						<p>Your wedding is personal, so we handle each request personally.<br/>
 						For a quicker response, you can start by getting the generic questions out of the way at the survey below. We'll then walk you through what we do, how we do it, and how you can get the most out of your wedding.</p>
 					</div>
-
+-->
 
 
 
@@ -245,7 +331,7 @@
 <!-- Footer -->
 	<section id="footer">
 		<div class="container-fluid footer--content">
-			<p>© FotoFox 2015</p>
+			<p>&copy; FotoFox 2015 &nbsp;&nbsp;&nbsp; &middot; &nbsp;&nbsp;&nbsp; <a class="contactUs" href="mailto:info@fotofox.co">Contact Us</a></p>
 		</div>
 	</section>
 
