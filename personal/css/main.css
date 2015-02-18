@@ -1,0 +1,163 @@
+/*
+* {
+	border:1px solid red !important;
+}
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-mox-box-sizing:border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+/* hr's */
+hr {
+	border: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #333;
+}
+
+.hr1 {
+	height: 1px;
+}
+.hr2 {
+	height: 2px;
+}
+.hr3 {
+	height: 3px;
+}
+.hr4 {
+	height: 4px;
+}
+.hr5 {
+	height: 5px;
+}
+
+.hr-light {
+	background-color: #212121;
+}
+
+/* header */
+.toolbar {
+
+	width: 100%;
+	padding: 30px 20px 24px 20px;
+	margin: 0;
+
+}
+
+.logo {
+	float: left;
+	position: relative;
+}
+
+.contact {
+	float: right;
+	position: relative;
+}
+
+.welcome {
+	text-align: center;
+	height: 190px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.navigation {
+	padding-top: 27px;
+	padding-bottom: 25px;
+}
+
+/* notes */
+.note {
+	margin:46px 0 46px 0;
+}
+
+.note-title {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.note-text {
+	text-align: left;
+}
+
+/* title */
+.title {
+	text-align: center;
+	margin: 43px 0 36px 0;
+
+	text-transform: uppercase;
+}
+
+/* portfolio */
+.portfolio {
+	padding-top: 32px;
+	padding-bottom:46px;
+	text-align: center;
+}
+
+.portfolio-title {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.portfolio-photo {
+	margin-bottom: 22px;
+}
+
+/* package */
+.packages {
+	text-align: center;
+	margin-top: 42px;
+}
+
+.package-header {
+	margin-bottom: 26px;
+}
+
+.package-left {
+	padding: 30px 30px 30px 30px;
+}
+
+.package-right {
+	padding: 30px 30px 30px 30px;
+	border-left: 2px solid #333;
+}
+
+.package-bottom {
+	margin-bottom: 92px;
+}
+
+
+/* Footer */
+#footer {
+	text-align: center;
+	color: #4B5152;
+}
+
+.footer--content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.contactUs {
+	color: #4B5152;
+}
