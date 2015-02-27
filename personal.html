@@ -19,93 +19,98 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+				<section id="toolbar">
+					<div class="header">
+						<div class="row toolbar">
+							<div class="logo">FotoFox</div>
+							<div class="contact">Contact Us</div>
+						</div>
+						<hr class="hr1 hr-light">
+						<div class="row welcome">
+							<h1> Welcome,<br>
+							<?php echo $firstName ?></h1>
+						</div>
+						<hr class="hr3">
+						<div class="row row-centered navigation">
+							<div class="col-md-2 col-centered">Get Started</div>
+							<div class="col-md-2 col-centered">Photographers</div>
+							<div class="col-md-2 col-centered">Portfolio</div>
+							<div class="col-md-2 col-centered">Packages</div>
+						</div>
+						<hr class="hr1">
+					</div>
+				</section>
+
+				<section id="banner">
+					<div class="note">
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<h2 class="note-title">A Note From Jona</h2>
+								<p class="note-text"><?php echo nl2br($welcomeNote) ?></p>
+							</div>
+						</div>
+					</div>
+				</section>
 				
-				<div class="header">
-					<div class="row toolbar">
-						<div class="logo">FotoFox</div>
-						<div class="contact">Contact Us</div>
-					</div>
-					<hr class="hr1 hr-light">
-					<div class="row welcome">
-						<h1> Welcome,<br>
-						<?php echo $firstName ?></h1>
-					</div>
-					<hr class="hr3">
-					<div class="row row-centered navigation">
-						<div class="col-md-2 col-centered">Get Started</div>
-						<div class="col-md-2 col-centered">Photographers</div>
-						<div class="col-md-2 col-centered">Portfolio</div>
-						<div class="col-md-2 col-centered">Packages</div>
-					</div>
-					<hr class="hr1">
-				</div>
-				
-				<div class="note">
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<h2 class="note-title">A Note From Jona</h2>
-							<p class="note-text"><?php echo nl2br($welcomeNote) ?></p>
+				<section id="Portfolio">
+					<div class="heading">
+						<hr class="hr1">
+						<div class="row">
+							<h3 class="title">Portfolio</h3>
 						</div>
+						<hr class="hr3 hr-light">
 					</div>
-				</div>
 
-				<div class="heading">
-					<hr class="hr1">
-					<div class="row">
-						<h3 class="title">Portfolio</h3>
-					</div>
-					<hr class="hr3 hr-light">
-				</div>
-
-				<div class="portfolio">
-					<h4>February 18, 2015</h4>
-					<h2 class="portfolio-title">Photographer One</h2>
-					<div class="row">
-						<div class="col-xs-12">
-							<img class="fullwidth portfolio-photo" src="http://placehold.it/350x150">
+					<div class="portfolio">
+						<h4>February 18, 2015</h4>
+						<h2 class="portfolio-title">Photographer One</h2>
+						<div class="row">
+							<div class="col-xs-12">
+								<img class="fullwidth portfolio-photo" src="http://placehold.it/350x150">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								<p class="note-text"><?php echo nl2br($photographerNote) ?></p>
+							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-sm-8 col-sm-offset-2">
-							<p class="note-text"><?php echo nl2br($photographerNote) ?></p>
-						</div>
-					</div>
-				</div>
+				</section>
 
 
 
 				
 
 
-
-				<div class="heading">
-					<hr class="hr1">
-					<div class="row">
-						<h3 class="title">Packages</h3>
+				<section id="Packages">
+					<div class="heading">
+						<hr class="hr1">
+						<div class="row">
+							<h3 class="title">Packages</h3>
+						</div>
+						<hr class="hr3 hr-light">
 					</div>
-					<hr class="hr3 hr-light">
-				</div>
 
 
-				<div class="packages">
-					<div class="row">
-						<div class="col-sm-6 col-sm-offset-3">
-							<p class="package-header"><?php echo nl2br($packageHeader) ?> </p>
+					<div class="packages">
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3">
+								<p class="package-header"><?php echo nl2br($packageHeader) ?> </p>
+							</div>
+						</div>
+						<div class="row package-bottom">
+							<div class="col-sm-6 package-left">
+								<p><?php echo nl2br($packageLeft) ?> </p>
+							</div>
+							<div class="col-sm-6 package-right">
+								<p><?php echo nl2br($packageRight) ?> </p>
+							</div>
 						</div>
 					</div>
-					<div class="row package-bottom">
-						<div class="col-sm-6 package-left">
-							<p><?php echo nl2br($packageLeft) ?> </p>
-						</div>
-						<div class="col-sm-6 package-right">
-							<p><?php echo nl2br($packageRight) ?> </p>
-						</div>
-					</div>
-				</div>
-
-				<hr class="hr1 hr-light">
+				</section>
 
 				<section id="footer">
+					<hr class="hr1 hr-light">
 					<div class="container-fluid footer--content">
 						<p>&copy; FotoFox 2015 &nbsp;&nbsp;&nbsp; &middot; &nbsp;&nbsp;&nbsp; <a class="contactUs" href="mailto:info@fotofox.co">Contact Us</a></p>
 					</div>
