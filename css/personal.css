@@ -107,6 +107,58 @@ hr {
 	text-transform: uppercase;
 }
 
+/* photographers */
+
+.photographer {
+	padding-top: 32px;
+	padding-bottom:30px;
+	text-align: center;
+}
+
+.photographer-instructions {
+	margin-bottom: 48px;
+}
+
+.photographer-choices {
+	padding: 20px;
+	background-color: #F2F2E5;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 6px;
+}
+
+.photographer-border {
+	border-right: 1px solid #DDDDDD;
+}
+
+.photographer-border-active {
+	-webkit-box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.3);
+	background-color: white;
+	border-radius: 6px;
+}
+
+.photographer-name {
+
+}
+
+.photographer-photo {
+	padding-top: 8px;
+	padding-bottom:46px;
+}
+
+.photographer-notes {
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+
+.photographer-commonNotes {
+	padding-top: 46px;
+}
+
+
 /* portfolio */
 .portfolio {
 	padding-top: 32px;
@@ -120,8 +172,72 @@ hr {
 }
 
 .portfolio-photo {
-	margin-bottom: 22px;
+	width:100%;
+    height:auto;
 }
+
+.carousel .carousel-control {
+	visibility: hidden;
+}
+.carousel:hover .carousel-control {
+	visibility: visible;
+}
+
+.carousel-indicators {
+  bottom:-50px;
+}
+
+.carousel-indicators li {
+  border-color:#999;
+  background-color:#ccc;
+}
+
+.carousel-inner {
+   margin-bottom:50px;
+}
+
+.portfolio-note {
+	margin-top: 20px;
+}
+
+/* Portfolio slider */
+/*
+.slider-nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.slider-dots .dot {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 50px;
+  margin-right: 5px;
+}
+
+.slider-dots .active-dot {
+  color: #363636;
+}
+*/
 
 /* package */
 .packages {
