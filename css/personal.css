@@ -121,10 +121,13 @@ hr {
 
 .photographer-choices {
 	padding: 20px;
+	/*
 	background-color: #F2F2E5;
 	border-bottom: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 	border-radius: 6px;
+	*/
+
 }
 
 .photographer-border {
@@ -132,11 +135,13 @@ hr {
 }
 
 .photographer-border-active {
-	-webkit-box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.3);
-	background-color: white;
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+	/*background-color: white;*/
 	border-radius: 6px;
+	background-color: #F2F2E5;
+
 }
 
 .photographer-name {
