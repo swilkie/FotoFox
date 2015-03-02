@@ -1,0 +1,338 @@
+/*
+* {
+	border:1px solid red !important;
+}
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-mox-box-sizing:border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+/* hr's */
+hr {
+	border: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #333;
+}
+
+.hr1 {
+	height: 1px;
+}
+.hr2 {
+	height: 2px;
+}
+.hr3 {
+	height: 3px;
+}
+.hr4 {
+	height: 4px;
+}
+.hr5 {
+	height: 5px;
+}
+
+.hr-light {
+	background-color: #212121;
+}
+
+/* header */
+.toolbar {
+
+	width: 100%;
+	padding: 30px 20px 14px 20px;
+	margin: 0;
+
+}
+
+.logo {
+	float: left;
+	position: relative;
+}
+
+.logo-img {
+	width:auto;
+	max-height: 30px;
+}
+
+.contact {
+	margin-top: 5px;
+	float: right;
+	position: relative;
+}
+
+.welcome {
+	text-align: center;
+	height: 190px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.navigation {
+	padding-top: 27px;
+	padding-bottom: 25px;
+}
+
+.navigation-button {
+	text-decoration: none;
+	color: #333;
+}
+
+.navigation-button:hover {
+	text-decoration: none;
+	color:#FC6B0C;
+	font-weight: bold;
+}
+
+
+/* notes */
+.note {
+	margin:46px 0 46px 0;
+}
+
+.note-title {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.note-text {
+	text-align: left;
+}
+
+/* title */
+.title {
+	text-align: center;
+	margin: 43px 0 36px 0;
+
+	text-transform: uppercase;
+}
+
+/* photographers */
+
+.photographer {
+	padding-top: 32px;
+	padding-bottom:30px;
+	text-align: center;
+}
+
+.photographer-instructions {
+	margin-bottom: 48px;
+}
+
+.photographer-choices {
+	padding: 20px;
+	/*
+	background-color: #F2F2E5;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 6px;
+	*/
+
+}
+
+.photographer-button {
+	text-decoration: none;
+	color: black;
+}
+
+.photographer-button:hover {
+	text-decoration: none;
+}
+
+.photographer-button:hover .photographer-border{
+	text-decoration: none;
+	color: white;
+	background-color: #FC6B0C;
+}
+
+.photographer-button:hover .photographer-name {
+	color: white;
+}
+
+
+.photographer-border {
+	border: 1px solid #DDDDDD;
+	border-radius: 12px;
+	background-color: white;
+}
+
+.photographer-border-active {
+	border: 2px solid #FC6B0C;
+	/*-webkit-box-shadow: 0 0 0px 2px #FC6B0C;
+    -moz-box-shadow: 0 0 0px 2px #FC6B0C;
+    box-shadow: 0 0 0px 2px #FC6B0C;*/
+
+}
+
+.photographer-option {
+	padding:20px;
+	min-height: 582px;
+}
+
+.photographer-name {
+	color: black;
+}
+
+.photographer-border-active .photographer-name {
+	color: #FC6B0C;
+}
+
+.photographer-photo-frame {
+    
+}
+
+.photographer-photo {
+	margin-top: 40px;
+	margin-bottom:46px;
+	border-radius:6px;
+    overflow:hidden;
+    max-height: 131px;
+}
+
+.photographer-notes {
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+
+.photographer-commonNotes {
+	padding-top: 46px;
+}
+
+
+/* portfolio */
+.portfolio {
+	padding-top: 72px;
+	padding-bottom:46px;
+	text-align: center;
+}
+
+.portfolio-title {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.portfolio-photo {
+	width:100%;
+    height:auto;
+}
+
+.carousel .carousel-control {
+	visibility: hidden;
+}
+.carousel:hover .carousel-control {
+	visibility: visible;
+}
+
+.carousel-indicators {
+  bottom:-50px;
+}
+
+.carousel-indicators li {
+  border-color:#999;
+  background-color:#ccc;
+}
+
+.carousel-inner {
+   margin-bottom:50px;
+}
+
+.portfolio-note {
+	margin-top: 20px;
+}
+
+/* Portfolio slider */
+/*
+.slider-nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.slider-dots .dot {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 50px;
+  margin-right: 5px;
+}
+
+.slider-dots .active-dot {
+  color: #363636;
+}
+*/
+
+/* package */
+.packages {
+	text-align: center;
+	margin-top: 42px;
+}
+
+.package-header {
+	margin-bottom: 26px;
+}
+
+.package-left {
+	padding: 30px 30px 30px 30px;
+}
+
+.package-right {
+	padding: 30px 30px 30px 30px;
+	border-left: 2px solid #333;
+}
+
+.package-bottom {
+	margin-bottom: 92px;
+}
+
+
+/* Footer */
+#footer {
+	text-align: center;
+	color: #4B5152;
+}
+
+.footer--content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.contactUs {
+	color: #4B5152;
+}
