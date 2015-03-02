@@ -12,6 +12,7 @@ Because all of them match your budget, availability, and location, you can focus
 
 
 $photographerName1 = "Dzesika & Eddie";
+$photo1 = "img/portfolio/love-couple-wallpaper.jpg";
 $price1 = "<b>Price:</b> $3,400";
 $experience1 = "<b>Experience:</b> 13 years";
 $reviews1 = "<b>Reviews:</b> 9.3/10 (4 testimonials)";
@@ -23,6 +24,7 @@ $package1 =
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online gallery";
 
 $photographerName2 = "Thomas";
+$photo2 = "img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg";
 $price2 = "<b>Price:</b> $2,990";
 $experience2 = "<b>Experience:</b> 13 years";
 $reviews2 = "<b>Reviews:</b> 9.1/10 (3 testimonials)";
@@ -33,6 +35,7 @@ $package2 =
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online gallery";
 
 $photographerName3 = "Michelle";
+$photo3 = "img/portfolio/Most-Romantic-Love-Couple-Hd-Wallpaper.jpg";
 $price3 = "<b>Price:</b> $3,158";
 $experience3 = "<b>Experience:</b> 9 years";
 $reviews3 = "<b>Reviews:</b> 8.9/10 (3 testimonials)";
