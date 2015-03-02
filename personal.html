@@ -87,7 +87,7 @@
 									echo 'class="col-md-4 col-sm-6 photographer-border">';
 								} ?>
 									<div class="photographer-option">
-										<h3 class="photographer-name">Sean</h3>
+										<h3 class="photographer-name"><?php echo $photographerName1 ?></h3>
 										<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
 										<div class="photographer-notes">
 											<p>info 1: stuff here</p>
@@ -107,7 +107,7 @@
 									echo 'class="col-md-4 col-sm-6 photographer-border">';
 								} ?>
 									<div class="photographer-option">
-										<h3 class="photographer-name">Sean</h3>
+										<h3 class="photographer-name"><?php echo $photographerName2 ?></h3>
 										<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
 										<div class="photographer-notes">
 											<p>info 1: stuff here</p>
@@ -126,7 +126,7 @@
 									echo 'class="col-md-4 col-sm-6 photographer-border">';
 								} ?>
 									<div class="photographer-option">
-										<h3 class="photographer-name">Sean</h3>
+										<h3 class="photographer-name"><?php echo $photographerName3 ?></h3>
 										<div class="photographer-photo-frame">
 											<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
 										</div>
@@ -165,8 +165,16 @@
 					</div>
 
 					<div class="portfolio">
-						<h4>February 18, 2015</h4>
-						<h2 class="portfolio-title">Photographer One</h2>
+						<!--
+						<h2 class="portfolio-title"><?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
+							echo $photographerName1;
+						} elseif ($_GET["photog"] == "2") {
+							echo $photographerName2;
+						} elseif ($_GET["photog"] == "3") {
+							echo $photographerName3;
+						}
+						?></h2>
+						-->
 						
 						
 

@@ -37,15 +37,17 @@ Who can tell the truth and look the world right in the eye. Who neither brag nor
 
 /*****************    Photographer 1    *************************/
 
-$photographerName = "Jacob";
+$photographerName1 = "Jacob";
+$photographerName2 = "Thomas";
+$photographerName3 = "Michelle";
 
 //if first time visiting, or photographer 1 selected.
 if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 {
 	$portfolio = array(
-		"img/portfolio/1541435.jpg",
-		"img/portfolio/1622519.jpg",
 		"img/portfolio/love-couple-wallpaper.jpg",
+		"img/portfolio/1622519.jpg",
+		"img/portfolio/ate_feelings_balls_love_mood_54201_2560x1440.jpg",
 		"img/portfolio/girl_bride_dress_window_holiday_wedding_95974_2560x1440.jpg"
 		);
 
