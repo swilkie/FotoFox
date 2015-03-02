@@ -28,6 +28,18 @@ Not only will they be better prepared to fulfil their duties as a citizen, they 
 
 – Athol Murray";
 
+$photographerCommon = 
+"The world today is looking for men and women, Who are not for sale, Who are honest, sound from centre to circumference, true to the heart's core.
+With consciences as steady as the needle to the pole. Who will stand for the right if the heavens totter and the earth reels
+Who can tell the truth and look the world right in the eye. Who neither brag nor run";
+
+
+
+/*****************    Photographer 1    *************************/
+
+$photogUniqueID = "1";
+$photographerName = "Jacob";
+
 
 $photographerNote = 
 "The world today is looking for men and women,

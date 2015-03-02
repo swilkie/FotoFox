@@ -130,27 +130,61 @@ hr {
 
 }
 
+.photographer-button {
+	text-decoration: none;
+	color: black;
+}
+
+.photographer-button:hover {
+	text-decoration: none;
+}
+
+.photographer-button:hover .photographer-border{
+	text-decoration: none;
+	color: white;
+	background-color: #FC6B0C;
+}
+
+.photographer-button:hover .photographer-name {
+	color: white;
+}
+
+
 .photographer-border {
-	border-right: 1px solid #DDDDDD;
+	border: 1px solid #DDDDDD;
+	border-radius: 12px;
+	background-color: white;
 }
 
 .photographer-border-active {
-	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
-	/*background-color: white;*/
-	border-radius: 6px;
-	background-color: #F2F2E5;
+	border: 2px solid #FC6B0C;
+	/*-webkit-box-shadow: 0 0 0px 2px #FC6B0C;
+    -moz-box-shadow: 0 0 0px 2px #FC6B0C;
+    box-shadow: 0 0 0px 2px #FC6B0C;*/
 
+}
+
+.photographer-option {
+	padding:20px;
 }
 
 .photographer-name {
+	color: black;
+}
 
+.photographer-border-active .photographer-name {
+	color: #FC6B0C;
+}
+
+.photographer-photo-frame {
+    
 }
 
 .photographer-photo {
-	padding-top: 8px;
-	padding-bottom:46px;
+	margin-top: 8px;
+	margin-bottom:46px;
+	border-radius:6px;
+    overflow:hidden;
 }
 
 .photographer-notes {

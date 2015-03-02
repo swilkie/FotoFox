@@ -27,7 +27,7 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row photographer-options">
+		<div class="row">
 			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 				<section id="toolbar">
 					<div class="header">
@@ -79,65 +79,60 @@
 						<p class="photographer-instructions">Please click a photographer to view more information below.</p>
 						
 						<div class="row photographer-choices">
-							<div class="col-md-3 col-sm-6 photographer-border-active">
-								<h3 class="photographer-name">Sean</h3>
-								<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
-								<div class="photographer-notes">
-									<p>info 1: stuff here</p>
-									<p>info 2: stuff</p>
-									<p>Recommended Package: $2200</p>
-									<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
+							
+							<a class="photographer-button" href="#">
+								<div class="col-md-4 col-sm-6 photographer-border photographer-border-active">
+									<div class="photographer-option">
+										<h3 class="photographer-name">Sean</h3>
+										<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
+										<div class="photographer-notes">
+											<p>info 1: stuff here</p>
+											<p>info 2: stuff</p>
+											<p>Recommended Package: $2200</p>
+											<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
+										</div>
+									</div>
 								</div>
+							</a>
 
-							</div>
 
-							<div class="col-md-3 col-sm-6 photographer-border">
-								<h3 class="photographer-name">Sean</h3>
-								<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
-								<div class="photographer-notes">
-									<p>info 1: stuff here</p>
-									<p>info 2: stuff</p>
-									<p>info 3: more stuff</p>
-									<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder. Longer note in one column compared to the others.</p>
+							<a class="photographer-button" href="#">
+								<div class="col-md-4 col-sm-6 photographer-border">
+									<div class="photographer-option">
+										<h3 class="photographer-name">Sean</h3>
+										<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
+										<div class="photographer-notes">
+											<p>info 1: stuff here</p>
+											<p>info 2: stuff</p>
+											<p>Recommended Package: $2200</p>
+											<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
+										</div>
+									</div>
 								</div>
+							</a>
 
-							</div>
-
-							<div class="col-md-3 col-sm-6 photographer-border">
-								<h3 class="photographer-name">Sean</h3>
-								<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
-								<div class="photographer-notes">
-									<p>info 1: stuff here</p>
-									<p>info 2: stuff</p>
-									<p>info 3: more stuff</p>
-									<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
+							<a class="photographer-button" href="#">
+								<div class="col-md-4 col-sm-6 photographer-border">
+									<div class="photographer-option">
+										<h3 class="photographer-name">Sean</h3>
+										<div class="photographer-photo-frame">
+											<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
+										</div>
+									
+										<div class="photographer-notes">
+											<p>info 1: stuff here</p>
+											<p>info 2: stuff</p>
+											<p>Recommended Package: $2200</p>
+											<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
+										</div>
+									</div>
 								</div>
-
-							</div>
-
-							<div class="col-md-3 col-sm-6">
-								<h3 class="photographer-name">Sean</h3>
-								<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
-								<div class="photographer-notes">
-									<p>info 1: stuff here</p>
-									<p>info 2: stuff</p>
-									<p>info 3: more stuff</p>
-									<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
-								</div>
-
-							</div>
+							</a>
 
 						</div>
 						<div class="row row-centered">
 							<div class="col-sm-8 col-centered photographer-commonNotes">
-								<p>The world today is looking for men and women,
-									Who are not for sale
-									Who are honest, sound from centre to circumference, true to the heart's core
-									With consciences as steady as the needle to the pole
-									Who will stand for the right if the heavens totter and the earth reels
-									Who can tell the truth and look the world right in the eye
-									Who neither brag nor run
-									</p>
+								<p><?php echo nl2br($photographerCommon) ?></p>
 							</div>
 						</div>
 					</div>
