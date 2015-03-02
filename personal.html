@@ -80,7 +80,7 @@
 						
 						<div class="row photographer-choices">
 							
-							<a class="photographer-button" href="#">
+							<a class="photographer-button" href="testPerson.php?photog=1">
 								<div class="col-md-4 col-sm-6 photographer-border photographer-border-active">
 									<div class="photographer-option">
 										<h3 class="photographer-name">Sean</h3>
@@ -96,7 +96,7 @@
 							</a>
 
 
-							<a class="photographer-button" href="#">
+							<a class="photographer-button" href="testPerson.php?photog=2">
 								<div class="col-md-4 col-sm-6 photographer-border">
 									<div class="photographer-option">
 										<h3 class="photographer-name">Sean</h3>
@@ -111,7 +111,7 @@
 								</div>
 							</a>
 
-							<a class="photographer-button" href="#">
+							<a class="photographer-button" href="testPerson.php?photog=3">
 								<div class="col-md-4 col-sm-6 photographer-border">
 									<div class="photographer-option">
 										<h3 class="photographer-name">Sean</h3>
@@ -162,13 +162,58 @@
 
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
+								<?php 
+									for ($i = 0; $i < count($portfolio); $i++) {
+									    if ($i == 0) {
+									    	echo '<li data-target="#myCarousel" data-slide-to="' . $i . '" class="active"></li>';
+											
+										}else {
+											echo '<li data-target="#myCarousel" data-slide-to="' . $i . '"></li>';
+										}
+
+									} 
+								?>
+
+								<!--
 								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 								<li data-target="#myCarousel" data-slide-to="1"></li>
 								<li data-target="#myCarousel" data-slide-to="2"></li>
+								-->
 							</ol>
 
+							<!--
+							for(i = 0, i < array.length; i++){
+								if i = 0 {
+									echo:
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								} else {
+									echo:
+									<li data-target="#myCarousel" data-slide-to="  i  "></li>
+									</div>
+								}
+							}
+							-->
 
 							<div class="carousel-inner">
+								<?php 
+									for ($i = 0; $i < count($portfolio); $i++) {
+									    if ($i == 0) {
+									    	echo '<div class="item active">';
+												echo '<img class="portfolio-photo" src="' . $portfolio[$i] . '"/>';
+											echo '</div>';
+										}else {
+											echo '<div class="item">';
+												echo '<img class="portfolio-photo" src="' . $portfolio[$i] .'"/>';
+											echo '</div>';
+										}
+
+									} 
+								?>
+							</div>
+
+
+
+<!--
 								<div class="item active">
 									<img class="portfolio-photo" src="img/engagement.jpg"/>
 								</div>
@@ -178,7 +223,23 @@
 								<div class="item">
 									<img class="portfolio-photo" src="img/purple_flowers.jpg"/>
 								</div>
-							</div>
+-->
+
+							<!--
+							for(i = 0, i < array.length; i++){
+								if i = 0 {
+									echo:
+									<div class="item active">
+										<img class="portfolio-photo" src="obj1"/>
+									</div>
+								} else {
+									echo:
+									<div class="item">
+										<img class="portfolio-photo" src="obj2"/>
+									</div>
+								}
+							}
+							-->
 
 							<!-- Controls -->
 							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
