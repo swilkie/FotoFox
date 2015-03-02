@@ -37,44 +37,50 @@ Who can tell the truth and look the world right in the eye. Who neither brag nor
 
 /*****************    Photographer 1    *************************/
 
-$photogUniqueID = "1";
 $photographerName = "Jacob";
 
-
-$photographerNote = 
-"The world today is looking for men and women,
-Who are not for sale
-Who are honest, sound from centre to circumference, true to the heart's core
-With consciences as steady as the needle to the pole
-Who will stand for the right if the heavens totter and the earth reels
-Who can tell the truth and look the world right in the eye
-Who neither brag nor run
-Who neither flag or flinch";
-
-
-$packageHeader = 
-"<b>Wedding collections start at $2,000</b>
-All wedding packages include digital negatives and a proof album (custom image box with 4x6 prints of your full gallery).";
+//if first time visiting, or photographer 1 selected.
+if (!isset($_POST["photographerSelected"]) || $_POST["photographerSelected"] == "photographer1")
+{
+	$photographerNote = 
+	"The world today is looking for men and women,
+	Who are not for sale
+	Who are honest, sound from centre to circumference, true to the heart's core
+	With consciences as steady as the needle to the pole
+	Who will stand for the right if the heavens totter and the earth reels
+	Who can tell the truth and look the world right in the eye
+	Who neither brag nor run
+	Who neither flag or flinch";
 
 
-$packageLeft = 
-"Traditional Portrait Session Fee (2-3 hours):
-<b>$500</b>
-
-Documentary Lifestyple Session Fee (6-8 hours):
-<b>$900</b>
-
-Engagement Session (2-3 hours, 2 locations):
-<b>$750</b>";
+	$packageHeader = 
+	"<b>Wedding collections start at $2,000</b>
+	All wedding packages include digital negatives and a proof album (custom image box with 4x6 prints of your full gallery).";
 
 
-$packageRight = 
-"Enjoy single person coverage with Maggie for a minimum of 8 hours. Or, to capture every moment of your special day, choose 2 person coverage with Maggie and James for a minimum of 8 hours.
+	$packageLeft = 
+	"Traditional Portrait Session Fee (2-3 hours):
+	<b>$500</b>
 
-Album packages start at <b>$1200</b>
-DVD packages start at <b>$900</b>
-Deluxe album packages start at <b>$2150</b>
-Deluxe DVD packages start at <b>$1500</b>";
+	Documentary Lifestyple Session Fee (6-8 hours):
+	<b>$900</b>
+
+	Engagement Session (2-3 hours, 2 locations):
+	<b>$750</b>";
+
+
+	$packageRight = 
+	"Enjoy single person coverage with Maggie for a minimum of 8 hours. Or, to capture every moment of your special day, choose 2 person coverage with Maggie and James for a minimum of 8 hours.
+
+	Album packages start at <b>$1200</b>
+	DVD packages start at <b>$900</b>
+	Deluxe album packages start at <b>$2150</b>
+	Deluxe DVD packages start at <b>$1500</b>";
+}
+//else if, photographer 2 selected
+
+//else if, photographer 3 selected
+
 
 
 include_once("personal.html");
