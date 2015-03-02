@@ -81,7 +81,11 @@
 						<div class="row photographer-choices">
 							
 							<a class="photographer-button" href="testPerson.php?photog=1">
-								<div class="col-md-4 col-sm-6 photographer-border photographer-border-active">
+								<div <?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
+									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
+								} else {
+									echo 'class="col-md-4 col-sm-6 photographer-border">';
+								} ?>
 									<div class="photographer-option">
 										<h3 class="photographer-name">Sean</h3>
 										<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
@@ -97,7 +101,11 @@
 
 
 							<a class="photographer-button" href="testPerson.php?photog=2">
-								<div class="col-md-4 col-sm-6 photographer-border">
+								<div <?php if (!isset($_GET["photog"]) || $_GET["photog"] == "2") {
+									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
+								} else {
+									echo 'class="col-md-4 col-sm-6 photographer-border">';
+								} ?>
 									<div class="photographer-option">
 										<h3 class="photographer-name">Sean</h3>
 										<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
@@ -112,7 +120,11 @@
 							</a>
 
 							<a class="photographer-button" href="testPerson.php?photog=3">
-								<div class="col-md-4 col-sm-6 photographer-border">
+								<div <?php if (!isset($_GET["photog"]) || $_GET["photog"] == "3") {
+									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
+								} else {
+									echo 'class="col-md-4 col-sm-6 photographer-border">';
+								} ?>
 									<div class="photographer-option">
 										<h3 class="photographer-name">Sean</h3>
 										<div class="photographer-photo-frame">
