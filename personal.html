@@ -32,8 +32,8 @@
 				<section id="toolbar">
 					<div class="header">
 						<div class="row toolbar">
-							<div class="logo">FotoFox</div>
-							<div class="contact">Contact Us</div>
+							<div class="logo"><img class="logo-img" src="img/logo-fotofox.png"></div>
+							<div class="contact"><a class="contactUs" href="mailto:info@fotofox.me">Contact Us</a></div>
 						</div>
 						<hr class="hr1 hr-light">
 						<div class="row welcome">
@@ -42,10 +42,10 @@
 						</div>
 						<hr class="hr3">
 						<div class="row row-centered navigation">
-							<div class="col-md-2 col-centered">Get Started</div>
-							<div class="col-md-2 col-centered">Photographers</div>
-							<div class="col-md-2 col-centered">Portfolio</div>
-							<div class="col-md-2 col-centered">Packages</div>
+							<div class="col-md-2 col-centered"><a class="navigation-button" href="#banner">Get Started</a></div>
+							<div class="col-md-2 col-centered"><a class="navigation-button" href="#Photographers">Photographers</a></div>
+							<div class="col-md-2 col-centered"><a class="navigation-button" href="#Portfolio">Portfolio</a></div>
+							<div class="col-md-2 col-centered"><a class="navigation-button" href="#Packages">Packages</a></div>
 						</div>
 						<hr class="hr1">
 					</div>
@@ -64,8 +64,6 @@
 
 
 
-
-				<section id="Photographers">
 					<div class="heading">
 						<hr class="hr1">
 						<div class="row">
@@ -73,6 +71,9 @@
 						</div>
 						<hr class="hr3 hr-light">
 					</div>
+					
+				<section id="Photographers">
+					
 
 
 					<div class="photographer">
@@ -82,7 +83,7 @@
 						
 						<div class="row photographer-choices">
 							
-							<a class="photographer-button" href="testPerson.php?photog=1">
+							<a class="photographer-button" href="testPerson.php?photog=1#Photographers">
 								<div <?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
 									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
 								} else {
@@ -102,7 +103,7 @@
 							</a>
 
 
-							<a class="photographer-button" href="testPerson.php?photog=2">
+							<a class="photographer-button" href="testPerson.php?photog=2#Photographers">
 								<div <?php if ($_GET["photog"] == "2") {
 									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
 								} else {
@@ -121,7 +122,7 @@
 								</div>
 							</a>
 
-							<a class="photographer-button" href="testPerson.php?photog=3">
+							<a class="photographer-button" href="testPerson.php?photog=3#Photographers">
 								<div <?php if ($_GET["photog"] == "3") {
 									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
 								} else {
@@ -337,7 +338,7 @@
 				<section id="footer">
 					<hr class="hr1 hr-light">
 					<div class="container-fluid footer--content">
-						<p>&copy; FotoFox 2015 &nbsp;&nbsp;&nbsp; &middot; &nbsp;&nbsp;&nbsp; <a class="contactUs" href="mailto:info@fotofox.co">Contact Us</a></p>
+						<p>&copy; FotoFox 2015 &nbsp;&nbsp;&nbsp; &middot; &nbsp;&nbsp;&nbsp; <a class="contactUs" href="mailto:info@fotofox.me">Contact Us</a></p>
 					</div>
 				</section>
 
