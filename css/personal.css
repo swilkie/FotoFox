@@ -92,7 +92,7 @@ hr {
 
 .note-title {
 	text-align: center;
-	margin-bottom: 16px;
+	margin-bottom: 32px;
 }
 
 .note-text {
@@ -166,6 +166,7 @@ hr {
 
 .photographer-option {
 	padding:20px;
+	min-height: 582px;
 }
 
 .photographer-name {

@@ -54,7 +54,7 @@
 				<section id="banner">
 					<div class="note">
 						<div class="row">
-							<div class="col-sm-8 col-sm-offset-2">
+							<div class="col-sm-6 col-sm-offset-3">
 								<h2 class="note-title">A Note From Jona</h2>
 								<p class="note-text"><?php echo nl2br($welcomeNote) ?></p>
 							</div>
@@ -76,7 +76,9 @@
 
 
 					<div class="photographer">
-						<p class="photographer-instructions">Please click a photographer to view more information below.</p>
+						<div class="row row-centered">
+							<p class="col-sm-8 col-centered photographer-instructions">Based on your preferences, we've created a custom package and pricing for each photographer. However, clicking a photographer lists alternative package and pricing options in the "Package" section lower in this website.</p>
+						</div>
 						
 						<div class="row photographer-choices">
 							
@@ -90,10 +92,10 @@
 										<h3 class="photographer-name"><?php echo $photographerName1 ?></h3>
 										<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
 										<div class="photographer-notes">
-											<p>info 1: stuff here</p>
-											<p>info 2: stuff</p>
-											<p>Recommended Package: $2200</p>
-											<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
+											<p><?php echo $price1 ?></p>
+											<p><?php echo $experience1 ?></p>
+											<p><?php echo $reviews1 ?></p>
+											<p><?php echo nl2br($package1) ?></p>
 										</div>
 									</div>
 								</div>
@@ -101,7 +103,7 @@
 
 
 							<a class="photographer-button" href="testPerson.php?photog=2">
-								<div <?php if (!isset($_GET["photog"]) || $_GET["photog"] == "2") {
+								<div <?php if ($_GET["photog"] == "2") {
 									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
 								} else {
 									echo 'class="col-md-4 col-sm-6 photographer-border">';
@@ -110,17 +112,17 @@
 										<h3 class="photographer-name"><?php echo $photographerName2 ?></h3>
 										<img class="fullwidth photographer-photo" src="http://placehold.it/150x150">
 										<div class="photographer-notes">
-											<p>info 1: stuff here</p>
-											<p>info 2: stuff</p>
-											<p>Recommended Package: $2200</p>
-											<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
+											<p><?php echo $price2 ?></p>
+											<p><?php echo $experience2 ?></p>
+											<p><?php echo $reviews2 ?></p>
+											<p><?php echo nl2br($package2) ?></p>
 										</div>
 									</div>
 								</div>
 							</a>
 
 							<a class="photographer-button" href="testPerson.php?photog=3">
-								<div <?php if (!isset($_GET["photog"]) || $_GET["photog"] == "3") {
+								<div <?php if ($_GET["photog"] == "3") {
 									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
 								} else {
 									echo 'class="col-md-4 col-sm-6 photographer-border">';
@@ -132,10 +134,10 @@
 										</div>
 									
 										<div class="photographer-notes">
-											<p>info 1: stuff here</p>
-											<p>info 2: stuff</p>
-											<p>Recommended Package: $2200</p>
-											<p>specific brief 150 character write up about photographer that works as a quick sell line and reminder</p>
+											<p><?php echo $price3 ?></p>
+											<p><?php echo $experience3 ?></p>
+											<p><?php echo $reviews3 ?></p>
+											<p><?php echo nl2br($package3) ?></p>
 										</div>
 									</div>
 								</div>
