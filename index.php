@@ -12,11 +12,13 @@
 
     if (isset($_POST["action"]))
     {	
+        /*
         if (!isset($_POST["name"]) || empty($_POST["name"]))
         {
         	$errorName = true;
         	$error = true;
         }
+        */
 
         /*
         if (!isset($_POST["phone"]) || empty($_POST["phone"]))
@@ -33,12 +35,12 @@
         }
 
         //Send data to Parse
-        if(!isset($error))
+       if(!isset($error))
         {       
             $customer = ParseObject::create("Customer");
-            $customer->set("name", $_POST["name"]);
+        /*    $customer->set("name", $_POST["name"]);
             $customer->set("phoneNumber", $_POST["phone"]);
-            $customer->set("email", $_POST["email"]);
+        */    $customer->set("email", $_POST["email"]);
             
             
 
@@ -53,8 +55,9 @@
                 //echo 'Failed to create new object, with error message: ' + $ex->getMessage();
             }
         }
+        
     }
 
-    include_once("main.html");
+    include_once("landing.html");
 
 ?>
