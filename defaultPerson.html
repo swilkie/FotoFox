@@ -75,6 +75,80 @@
 
 				<section id="Photographers">
 					
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								
+								<div class="modal-body">
+						        	<div>
+						        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        	</div>
+						        	<br>
+		        					<br>
+		        					<div id="surveyCarousel" class="carousel" data-interval="false">
+
+										<!-- Indicators -->
+										<!--
+										<ol class="carousel-indicators">
+											<?php 
+												for ($i = 0; $i < count($portfolio); $i++) {
+												    if ($i == 0) {
+												    	echo '<li data-target="#myCarousel" data-slide-to="' . $i . '" class="active"></li>';
+														
+													}else {
+														echo '<li data-target="#myCarousel" data-slide-to="' . $i . '"></li>';
+													}
+
+												} 
+											?>
+										-->
+											<!--
+											<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+											<li data-target="#myCarousel" data-slide-to="1"></li>
+											<li data-target="#myCarousel" data-slide-to="2"></li>
+											-->
+										</ol>
+
+										<!--
+										for(i = 0, i < array.length; i++){
+											if i = 0 {
+												echo:
+												<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+											} else {
+												echo:
+												<li data-target="#myCarousel" data-slide-to="  i  "></li>
+												</div>
+											}
+										}
+										-->
+
+
+										<div class="carousel-inner">
+											<?php 
+												for ($i = 0; $i < count($portfolio); $i++) {
+												    if ($i == 0) {
+												    	echo '<div class="item active">';
+															echo '<img class="portfolio-photo" src="' . $portfolio[$i] . '"/>';
+														echo '</div>';
+													}else {
+														echo '<div class="item">';
+															echo '<img class="portfolio-photo" src="' . $portfolio[$i] .'"/>';
+														echo '</div>';
+													}
+
+												} 
+											?>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
 
 					<div class="photographer">
@@ -84,66 +158,102 @@
 						
 						<div class="row photographer-choices">
 							
-							<a class="photographer-button" href="testPerson.php?photog=1#Photographers">
-								<div <?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
+								
+								<div <?php 
+								if (!isset($_POST[surveyCompleted]) || $_POST[surveyCompleted]==false) {
+									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
+								}else if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
 									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
 								} else {
 									echo 'class="col-md-4 col-sm-6 photographer-border">';
 								} ?>
-									<div class="photographer-option">
-										<h3 class="photographer-name"><?php echo $photographerName1 ?></h3>
-										<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo1.'"'; ?> >
-										<div class="photographer-notes">
-											<p><?php echo $price1 ?></p>
-											<p><?php echo $experience1 ?></p>
-											<p><?php echo $reviews1 ?></p>
-											<p><?php echo nl2br($package1) ?></p>
+									<a class="photographer-button" href="testPerson.php?photog=1#Photographers">
+										<div class="photographer-option">
+											<h3 class="photographer-name"><?php echo $photographerName1 ?></h3>
+											<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo1.'"'; ?> >
+											<div class="photographer-notes">
+												<p><?php echo $price1 ?></p>
+												<p><?php echo $experience1 ?></p>
+												<p><?php echo $reviews1 ?></p>
+												<p><?php echo nl2br($package1) ?></p>
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
-							</a>
+							
 
 
-							<a class="photographer-button" href="testPerson.php?photog=2#Photographers">
-								<div <?php if ($_GET["photog"] == "2") {
+
+						
+								<div <?php 
+								if (!isset($_POST[surveyCompleted]) || $_POST[surveyCompleted]==false) {
+									echo 'class="col-md-4 col-sm-6 photographer-border disabled">';
+									?> <div class="photographer-survey">
+										<h3><b>To find the best photographer for your needs, click the button below!</b></h3>
+										
+										<!-- Button trigger modal -->
+										<button type="button" class="btn btn-primary btn-lg photographer-survey-button" data-toggle="modal" data-target="#myModal">
+											Find More
+										</button>
+
+									</div>
+								<?php }else if (isset($_GET["photog"]) && $_GET["photog"] == "2") {
 									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
 								} else {
 									echo 'class="col-md-4 col-sm-6 photographer-border">';
 								} ?>
-									<div class="photographer-option">
-										<h3 class="photographer-name"><?php echo $photographerName2 ?></h3>
-										<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo2.'"'; ?> >
-										<div class="photographer-notes">
-											<p><?php echo $price2 ?></p>
-											<p><?php echo $experience2 ?></p>
-											<p><?php echo $reviews2 ?></p>
-											<p><?php echo nl2br($package2) ?></p>
+									<?php if (isset($_POST[surveyCompleted]) && $_POST[surveyCompleted]==true) {
+										echo '<a class="photographer-button" href="testPerson.php?photog=2#Photographers">';
+									} ?>
+										
+										<div class="photographer-option">
+											<h3 class="photographer-name"><?php echo $photographerName2 ?></h3>
+											<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo2.'"'; ?> >
+											<div class="photographer-notes">
+												<p><?php echo $price2 ?></p>
+												<p><?php echo $experience2 ?></p>
+												<p><?php echo $reviews2 ?></p>
+												<p><?php echo nl2br($package2) ?></p>
+											</div>
 										</div>
-									</div>
+									<?php if (isset($_POST[surveyCompleted]) && $_POST[surveyCompleted]==true) {
+										echo '</a>';
+									} ?>
 								</div>
-							</a>
+							
 
-							<a class="photographer-button" href="testPerson.php?photog=3#Photographers">
-								<div <?php if ($_GET["photog"] == "3") {
+							
+								
+								<div <?php 
+								if (!isset($_POST[surveyCompleted]) || $_POST[surveyCompleted]==false) {
+									echo 'class="col-md-4 col-sm-6 photographer-border disabled">';
+								}else if (isset($_GET["photog"]) && $_GET["photog"] == "3") {
 									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
 								} else {
-									echo 'class="col-md-4 col-sm-6 photographer-border">';
+									echo 'class="col-md-4 col-sm-6 photographer-border disabled">';
 								} ?>
-									<div class="photographer-option">
-										<h3 class="photographer-name"><?php echo $photographerName3 ?></h3>
-										<div class="photographer-photo-frame">
-											<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo3.'"'; ?> >
+									<?php if (isset($_POST[surveyCompleted]) && $_POST[surveyCompleted]==true) {
+										echo '<a class="photographer-button" href="testPerson.php?photog=2#Photographers">';
+									} ?>
+										<div class="photographer-option">
+											<div class=""></div>
+											<h3 class="photographer-name"><?php echo $photographerName3 ?></h3>
+											<div class="photographer-photo-frame">
+												<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo3.'"'; ?> >
+											</div>
+										
+											<div class="photographer-notes">
+												<p><?php echo $price3 ?></p>
+												<p><?php echo $experience3 ?></p>
+												<p><?php echo $reviews3 ?></p>
+												<p><?php echo nl2br($package3) ?></p>
+											</div>
 										</div>
-									
-										<div class="photographer-notes">
-											<p><?php echo $price3 ?></p>
-											<p><?php echo $experience3 ?></p>
-											<p><?php echo $reviews3 ?></p>
-											<p><?php echo nl2br($package3) ?></p>
-										</div>
-									</div>
+									<?php if (isset($_POST[surveyCompleted]) && $_POST[surveyCompleted]==true) {
+										echo '</a>';
+									} ?>
 								</div>
-							</a>
+							
 
 						</div>
 						<div class="row row-centered">
