@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_POST["surveyCompleted"]) || $_POST["surveyCompleted"] == false) {
+	$_POST["surveyCompleted"] = false;
+}
+
 $firstName = "Sarah and Dan";
 
 

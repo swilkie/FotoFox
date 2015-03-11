@@ -1,0 +1,210 @@
+* {
+	font-family: 'Lato', sans-serif;
+	/*letter-spacing: 1px;*/
+}
+
+/*
+* {
+	border:1px solid red !important;
+}
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-mox-box-sizing:border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1F1F1F;
+}
+
+/* Button - general */
+.btn-primary,
+.btn-primary:focus {
+	background-color: #FC6B0C;
+	border-color: #FC6B0C;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus:active,
+.btn-primary:hover {
+	background: #b74a02;
+	border-color: #b74a02;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* logo */
+
+.logo {
+	float: left;
+	position: relative;
+}
+
+.logo-img {
+	margin-top: 30px;
+	margin-left: 20px;
+	width:auto;
+	max-height: 55px;
+}
+
+
+/* Header */
+
+.main {
+	background-color: black;
+	height:100vh;
+
+	background: url(../img/photographer.jpg) no-repeat left top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	position: relative;
+	overflow: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header-content {
+	width: 95%; height: 70vh; /* must be present. No matter the value */
+    position: absolute;          /* to props top/bottom take effect */
+    margin: auto;                /* here's the magic. */
+
+
+    top: 30%; 
+
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.title {
+	position: relative;
+}
+
+.title_main {
+	font-size: 80px;
+	font-weight: 100;
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	letter-spacing: 1px;
+	color: white;
+	/*text-shadow: 1px 1px 0px white;*/
+}
+
+.title_subtitle {
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 0px;
+	padding: 0;
+	padding-left: 10px;
+	letter-spacing: 2px;
+	color: white;
+	/*text-transform: uppercase;
+	/*text-shadow: 1px 1px 0px white;*/
+}
+
+/* form - general */
+
+.form {
+	margin-top: 30px;
+	margin-right:10px;
+	padding-left: 10px;
+}
+.form-group {
+	padding-right: 6px;
+}
+
+.form-group .input-lg {
+	border-radius: 3px;
+}
+
+.form--info {
+	margin-bottom: 10px;
+}
+
+.email {
+	min-width: 245px;
+}
+
+/* social links */
+
+.social-icons {
+	position: absolute;
+	bottom: 30px;
+	padding-left: 10px;
+}
+
+.social-icons i {
+	padding-right: 24px;
+	color: #FC6B0C;
+}
+
+.social-icons .right i {
+	padding-left: 24px;
+}
+
+.social-icons i:hover {
+	color: #b74a02;
+}
+
+/* Footer */
+#footer {
+	text-align: center;
+	background-color: #1F1F1F;
+	color: #4B5152;
+}
+
+.footer--content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.ending {
+		color: #4B5152;
+		font-size: 14px;
+}
+
+.contactUs {
+	color: #4B5152;
+}
+
+/* media queries */
+@media only screen and (max-width : 520px) {
+/* Styles */
+	.title_main {
+		font-size: 60px;
+	}
+
+}
+
+@media only screen and (max-width : 410px) {
+/* Styles */
+	.title_main {
+		font-size: 40px;
+	}
+
+}
+
+/* this is when photographer goes to the next line */
+@media only screen and (max-width : 872px)  , screen and (max-height : 470px) {
+/* Styles */
+
+	.social-icons {
+		position: relative;
+		margin-top: 70px;
+	}
+}

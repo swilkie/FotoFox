@@ -53,6 +53,37 @@ hr {
 	background-color: #212121;
 }
 
+
+* {
+	font-family: 'Cabin', sans-serif;
+}
+
+.btn-primary,
+.btn-primary:focus {
+	background-color: #FC6B0C;
+	border-color: white;
+	border-width: 3px;
+	padding-left: 18px;
+	padding-right: 18px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus:active,
+.btn-primary:hover {
+	color: #FC6B0C;
+	background: white;
+	border-color: #FC6B0C;
+	border-width: 3px;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
 /* header */
 .toolbar {
 
@@ -153,17 +184,16 @@ hr {
 	color: black;
 }
 
-.photographer-button:hover {
-	text-decoration: none;
-}
-
-.photographer-button:hover .photographer-border{
+.photographer-button:hover:not(.disabled) {
 	text-decoration: none;
 	color: white;
+}
+
+.photographer-border:hover:not(.disabled){
 	background-color: #FC6B0C;
 }
 
-.photographer-button:hover .photographer-name {
+.photographer-button:hover .photographer-name{
 	color: white;
 }
 
@@ -217,6 +247,25 @@ hr {
 	padding-top: 46px;
 }
 
+.disabled .photographer-option {
+	opacity: 0.1;
+}
+
+.photographer-survey {
+	text-align: center;
+	z-index: 1000;
+	vertical-align: middle;
+	opacity: 1.0;
+	position: absolute;
+	left: 100%;
+	transform: translateX(-50%);
+	top: 35%;
+	width:150%;
+}
+.photographer-survey-button {
+	
+	border-radius: 3px;
+}
 
 /* portfolio */
 .portfolio {
