@@ -176,27 +176,18 @@
 				</section>
 
 
-				
-				<section id="Portfolio">
-					<div class="heading">
-						<hr class="hr1">
-						<div class="row">
-							<h3 class="title">Portfolio</h3>
-						</div>
-						<hr class="hr3 hr-light">
+				<div class="heading">
+					<hr class="hr1">
+					<div class="row">
+						<h3 class="title">Portfolio</h3>
 					</div>
+					<hr class="hr3 hr-light">
+				</div>
+				
 
-					<div class="portfolio section--content">
-						
-						<h2 class="note--title"><?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
-							echo $photographerName1;
-						} elseif ($_GET["photog"] == "2") {
-							echo $photographerName2;
-						} elseif ($_GET["photog"] == "3") {
-							echo $photographerName3;
-						}
-						?></h2>
+				<section id="Portfolio">
 					
+					<div class="portfolio section--content">
 						
 						
 
@@ -215,26 +206,9 @@
 
 									} 
 								?>
-
-								<!--
-								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-								<li data-target="#myCarousel" data-slide-to="1"></li>
-								<li data-target="#myCarousel" data-slide-to="2"></li>
-								-->
 							</ol>
 
-							<!--
-							for(i = 0, i < array.length; i++){
-								if i = 0 {
-									echo:
-									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-								} else {
-									echo:
-									<li data-target="#myCarousel" data-slide-to="  i  "></li>
-									</div>
-								}
-							}
-							-->
+							
 
 							<div class="carousel-inner">
 								<?php 
@@ -254,35 +228,6 @@
 							</div>
 
 
-
-<!--
-								<div class="item active">
-									<img class="portfolio-photo" src="img/engagement.jpg"/>
-								</div>
-								<div class="item">
-									<img class="portfolio-photo" src="img/forest_wedding.jpg"/>
-								</div>
-								<div class="item">
-									<img class="portfolio-photo" src="img/purple_flowers.jpg"/>
-								</div>
--->
-
-							<!--
-							for(i = 0, i < array.length; i++){
-								if i = 0 {
-									echo:
-									<div class="item active">
-										<img class="portfolio-photo" src="obj1"/>
-									</div>
-								} else {
-									echo:
-									<div class="item">
-										<img class="portfolio-photo" src="obj2"/>
-									</div>
-								}
-							}
-							-->
-
 							<!-- Controls -->
 							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 								<span class="glyphicon glyphicon-chevron-left"></span>
@@ -293,33 +238,18 @@
 							</a>
 
 						</div>
-
-
-<!--
-						<div class="row">
-							<div class="col-xs-12">
-								<img class="fullwidth portfolio-photo" src="http://placehold.it/350x150">
-							</div>
-						</div>
-
-
-						
-						<div class="row">
-							<div class="slider-nav">
-						     	<a href="#" class="arrow-prev"><img src="img/personal/arrow-prev.png"></a>
-						    	<ul class="slider-dots">
-							        <li class="dot active-dot">&bull;</li>
-							        <li class="dot">&bull;</li>
-							        <li class="dot">&bull;</li>
-							        <li class="dot">&bull;</li>
-					      		</ul>
-					      		<a href="#" class="arrow-next"><img src="img/personal/arrow-next.png"></a>
-						    </div>
-						</div>
--->
+					
 
 						<div class="row">
 							<div class="col-sm-8 col-sm-offset-2">
+								<h2 class="portfolio--name"><?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
+									echo $photographerName1;
+								} elseif ($_GET["photog"] == "2") {
+									echo $photographerName2;
+								} elseif ($_GET["photog"] == "3") {
+									echo $photographerName3;
+								}
+								?></h2>
 								<p class="note--text"><?php echo nl2br($photographerNote) ?></p>
 							</div>
 						</div>
