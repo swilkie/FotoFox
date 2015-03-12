@@ -17,7 +17,7 @@ Because all of them match your budget, availability, and location, you can focus
 - Fotofox";
 
 
-$photographerName1 = "Henrique";
+$photographerName1 = "Michelle";
 $photo1 = "img/portfolio/love-couple-wallpaper.jpg";
 $price1 = "<b>Price:</b> $3,400";
 $experience1 = "<b>Experience:</b> 13 years";
@@ -40,7 +40,7 @@ $package2 =
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25 prints (6 x 8)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online gallery";
 
-$photographerName3 = "Michelle";
+$photographerName3 = "Henrique";
 $photo3 = "img/portfolio/Most-Romantic-Love-Couple-Hd-Wallpaper.jpg";
 $price3 = "<b>Price:</b> $3,158";
 $experience3 = "<b>Experience:</b> 9 years";
@@ -67,7 +67,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 		);
 
 	$photographerNote = 
-	"Dzesika is the lead photographer. Her outgoing personality, fearless creativity, and unique eye for anticipating and capturing emotions are second to none. Her passion is not just taking photos, but in personally connecting with every couple that she photographs. From climbing trees to shooting in extreme weathers, she never lets anything get in the way of capturing the perfect angle, the perfect timing, or the perfect lighting!";
+	"Michelle is the lead photographer. Her outgoing personality, fearless creativity, and unique eye for anticipating and capturing emotions are second to none. Her passion is not just taking photos, but in personally connecting with every couple that she photographs. From climbing trees to shooting in extreme weathers, she never lets anything get in the way of capturing the perfect angle, the perfect timing, or the perfect lighting!";
 
 
 	$packageHeader = 
@@ -90,7 +90,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	$packageRight = 
-	"Enjoy single person coverage with Dzesika for a minimum of 8 hours. Or, to capture every moment of your special day, choose 2 person coverage with Dzesika and Eddie for a minimum of 10 hours.
+	"Enjoy single person coverage with Michelle for a minimum of 8 hours. Or, to capture every moment of your special day, choose 2 person coverage for a minimum of 10 hours.
 
 
 	boudoir session (1 or 2 hours): <b>$135/hr</b>
