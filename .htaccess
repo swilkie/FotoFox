@@ -1,5 +1,6 @@
 RewriteEngine On    # Turn on the rewriting engine
 RewriteRule    ^testperson/?$    testPerson.php    [NC,L]    # Handle requests for "testPerson"
+RewriteRule    ^[A-Za-z-]+/?$    $1.php    [NC,L]    # Process all products
 
 <Files *>
 order deny,allow
