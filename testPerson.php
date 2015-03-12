@@ -17,7 +17,7 @@ Because all of them match your budget, availability, and location, you can focus
 - Fotofox";
 
 
-$photographerName1 = "Dzesika & Eddie";
+$photographerName1 = "Henrique";
 $photo1 = "img/portfolio/love-couple-wallpaper.jpg";
 $price1 = "<b>Price:</b> $3,400";
 $experience1 = "<b>Experience:</b> 13 years";
