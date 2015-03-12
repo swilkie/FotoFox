@@ -1,8 +1,6 @@
-RewriteEngine on
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^([A-Za-z-]+)/?$    $1.php    [NC,L]    # Process all products
 
-RewriteCond %{HTTP_HOST} ^(.*)\.fotofox\.me/?$
-# RewriteCond %{REQUEST_URI} !^/subdomains/subdomain
-RewriteRule ^(.*)$ /$1.php [L] 
 
 <Files *>
 order deny,allow
