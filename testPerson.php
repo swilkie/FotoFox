@@ -10,14 +10,14 @@ $firstName = "Sarah and Dan";
 $welcomeNote = 
 "Dear Sarah and Dan, 
 
-Here are the top three photographers we feel best match your criteria, and most importantly, your preferences. Since your wedding is winter-themed and you specially requested outdoor photography in a snowy background, we selected photographers who have experience shooting winter weddings. Their styles are photojournalistic and fine arts photography. 
+This is an opportunity for us to read back our previous discussions with the customer, to confirm that what we have found is perfectly in line with what they are looking for, and describe why we think the selected photographers are the best fit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
 
-Because all of them match your budget, availability, and location, you can focus solely on choosing the photographer with the portfolio that you like best, as well as the personal connection. Scroll down to quickly compare all three photographers at a glance. Click on the photographers’ profile boxes to view their respective portfolios, package details, and reviews.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
 
 - Fotofox";
 
 
-$photographerName1 = "Dzesika & Eddie";
+$photographerName1 = "Michelle";
 $photo1 = "img/portfolio/love-couple-wallpaper.jpg";
 $price1 = "<b>Price:</b> $3,400";
 $experience1 = "<b>Experience:</b> 13 years";
@@ -26,8 +26,8 @@ $package1 =
 "<b>Package Perks:</b>
 10 hours of coverage
 album
-boudoir session
-online gallery";
+Boudoir session
+Online gallery";
 
 $photographerName2 = "Thomas";
 $photo2 = "img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg";
@@ -36,20 +36,20 @@ $experience2 = "<b>Experience:</b> 13 years";
 $reviews2 = "<b>Reviews:</b> 9.1/10 (3 testimonials)";
 $package2 = 
 "<b>Package Perks:</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 hours of coverage
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25 prints (6 x 8)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online gallery";
+8 hours of coverage
+25 prints (6 x 8)
+Online gallery";
 
-$photographerName3 = "Michelle";
+$photographerName3 = "Henrique";
 $photo3 = "img/portfolio/Most-Romantic-Love-Couple-Hd-Wallpaper.jpg";
 $price3 = "<b>Price:</b> $3,158";
 $experience3 = "<b>Experience:</b> 9 years";
 $reviews3 = "<b>Reviews:</b> 8.9/10 (3 testimonials)";
 $package3 = 
 "<b>Package Perks:</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;full-day coverage
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel fee
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online gallery";
+Full-day coverage
+Travel fee
+Online gallery";
 
 $photographerCommon = 
 "Included in all three:  2nd shooter, all photos post-processed in non-watermark HD resolution, digital files on DVD/USB, and a full day engagement shoot.  They all have liability insurance and sufficient backup equipment.";
@@ -67,12 +67,12 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 		);
 
 	$photographerNote = 
-	"Dzesika is the lead photographer. Her outgoing personality, fearless creativity, and unique eye for anticipating and capturing emotions are second to none. Her passion is not just taking photos, but in personally connecting with every couple that she photographs. From climbing trees to shooting in extreme weathers, she never lets anything get in the way of capturing the perfect angle, the perfect timing, or the perfect lighting!";
+	"We use this section to give a personal upsell about the photographer. Our experience shows that it is much easier for customers to trust our opinion as a third party than to hear a photographer sell themselves. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
 
 	$packageHeader = 
 	"<b>Wedding collections start at $2,000</b>
-	All wedding packages include digital negatives and a proof album (custom image box with 4x6 prints of your full gallery).";
+	This section is unique for each photographer. It describes how a bride can \"create their own\" package with custom add-ons and upselling.";
 
 
 	$packageLeft = 
@@ -90,13 +90,35 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	$packageRight = 
-	"Enjoy single person coverage with Dzesika for a minimum of 8 hours. Or, to capture every moment of your special day, choose 2 person coverage with Dzesika and Eddie for a minimum of 10 hours.
+	"Enjoy single person coverage with Michelle for a minimum of 8 hours. Or, to capture every moment of your special day, choose 2 person coverage for a minimum of 10 hours.
 
 
 	boudoir session (1 or 2 hours): <b>$135/hr</b>
+
 	Online Gallery: <b>$225</b>
+
 	Engagement Session (2-3 hours): <b>$550</b>
+
+	
 	5 canvas prints (8 x 10): <b>$425</b>";
+
+	$reviews = array(
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit",
+	    "author" => "Janice"
+	    ],
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+	    "author" => "Allison"
+	    ],
+	    [
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
+	    "author" => "Jessica"
+	    ]
+    );
+
+
+
 } else {
 	$portfolio = array(
 		"img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg",
@@ -137,8 +159,22 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	Lorem ipsum dolor: <b>$225</b>
 	Lorem ipsum dolor: (2-3 hours): <b>$550</b>
 	Lorem ipsum (8 x 10): <b>$425</b>";
-}
 
+	$reviews = array(
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit",
+	    "author" => "Janice"
+	    ],
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+	    "author" => "Allison"
+	    ],
+	    [
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
+	    "author" => "Jessica"
+	    ]
+    );
+}
 
 
 include_once("personal.html");

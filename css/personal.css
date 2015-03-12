@@ -18,7 +18,6 @@
 .col-centered {
     display:inline-block;
     float:none;
-
 }
 
 .fullwidth {
@@ -52,6 +51,22 @@
         display: table-cell;
         float: none !important;
     }
+}
+
+/* firefox fix */
+.img-responsive {
+    width: 100%;
+}
+
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
 }
 
 /* hr's */
@@ -242,16 +257,16 @@ h1, h2, h3, h4 {
 	color: black;
 }
 
-.photographer-button:hover:not(.disabled) {
+.photographer-button:hover {
 	text-decoration: none;
-	color: white;
 }
 
-.photographer-border:hover:not(.disabled){
+.photographer-border:hover{
 	background-color: #FC6B0C;
 }
 
-.photographer-button:hover .photographer-name{
+.photographer-border:hover .photographer-name,
+.photographer-border:hover .photographer-button {
 	color: white;
 }
 
@@ -260,6 +275,7 @@ h1, h2, h3, h4 {
 	border: 1px solid #DDDDDD;
 	border-radius: 12px;
 	background-color: white;
+	padding: 0;
 }
 
 .photographer-border-active {
@@ -272,7 +288,7 @@ h1, h2, h3, h4 {
 
 
 .photographer-option {
-	padding:20px;
+	padding:20px 35px 20px 35px;
 }
 
 .photographer-name {
@@ -401,6 +417,10 @@ h1, h2, h3, h4 {
 }
 */
 
+.portfolio--name {
+	margin-top: 30px
+}
+
 /* package */
 .packages {
 	text-align: center;
@@ -419,8 +439,23 @@ h1, h2, h3, h4 {
 	border-left: 2px solid #333;
 }
 
+.package-left p, .package-right p {
+
+	margin: 0;
+}
+
 .package-bottom {
 }
+
+/* Reviews */
+.review-author {
+
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold; 
+	color: gray;
+}
+
 
 
 /* Footer */
