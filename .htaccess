@@ -2,9 +2,6 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^([A-Za-z-]+)\.fotofox\.me/?$
 RewriteRule ^(.*)$ http://www.fotofox.me/$1.php [L]
 
-RewriteCond %{HTTP_HOST} ^([A-Za-z-]+)\.s-fotofox\.herokuapp\.com/?$
-RewriteRule ^(.*)$ http://s-fotofox.herokuapp.com/$1.php [L]
-
 <Files *>
 order deny,allow
 ###
