@@ -1,6 +1,6 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^([A-Za-z-]+)\.fotofox\.me/?$
-RewriteRule ^(.*)$ http://www.fotofox.me/$1.php [L]
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([A-Za-z-]+)/?$ $1.php [L]    # Process all products
 
 <Files *>
 order deny,allow
