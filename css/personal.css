@@ -258,16 +258,16 @@ h1, h2, h3, h4 {
 	color: black;
 }
 
-.photographer-button:hover:not(.disabled) {
+.photographer-button:hover {
 	text-decoration: none;
-	color: white;
 }
 
-.photographer-border:hover:not(.disabled){
+.photographer-border:hover{
 	background-color: #FC6B0C;
 }
 
-.photographer-button:hover .photographer-name{
+.photographer-border:hover .photographer-name,
+.photographer-border:hover .photographer-button {
 	color: white;
 }
 
@@ -276,6 +276,7 @@ h1, h2, h3, h4 {
 	border: 1px solid #DDDDDD;
 	border-radius: 12px;
 	background-color: white;
+	padding: 0;
 }
 
 .photographer-border-active {
@@ -288,7 +289,7 @@ h1, h2, h3, h4 {
 
 
 .photographer-option {
-	padding:20px;
+	padding:20px 35px 20px 35px;
 }
 
 .photographer-name {
