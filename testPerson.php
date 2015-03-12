@@ -94,8 +94,12 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	boudoir session (1 or 2 hours): <b>$135/hr</b>
+
 	Online Gallery: <b>$225</b>
+
 	Engagement Session (2-3 hours): <b>$550</b>
+
+	
 	5 canvas prints (8 x 10): <b>$425</b>";
 
 	$reviews = array(

@@ -54,6 +54,22 @@
     }
 }
 
+/* firefox fix */
+.img-responsive {
+    width: 100%;
+}
+
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
+}
+
 /* hr's */
 hr {
 	border: none;
@@ -417,6 +433,11 @@ h1, h2, h3, h4 {
 .package-right {
 	padding: 30px 30px 30px 30px;
 	border-left: 2px solid #333;
+}
+
+.package-left p, .package-right p {
+
+	margin: 0;
 }
 
 .package-bottom {
