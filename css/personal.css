@@ -422,6 +422,16 @@ h1, h2, h3, h4 {
 .package-bottom {
 }
 
+/* Reviews */
+.review-author {
+
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold; 
+	color: gray;
+}
+
+
 
 /* Footer */
 #footer {

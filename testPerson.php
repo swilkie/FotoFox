@@ -97,6 +97,24 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	Online Gallery: <b>$225</b>
 	Engagement Session (2-3 hours): <b>$550</b>
 	5 canvas prints (8 x 10): <b>$425</b>";
+
+	$reviews = array(
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit",
+	    "author" => "Janice"
+	    ],
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+	    "author" => "Allison"
+	    ],
+	    [
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
+	    "author" => "Jessica"
+	    ]
+    );
+
+
+
 } else {
 	$portfolio = array(
 		"img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg",
