@@ -10,9 +10,9 @@ $firstName = "Sarah and Dan";
 $welcomeNote = 
 "Dear Sarah and Dan, 
 
-Here are the top three photographers we feel best match your criteria, and most importantly, your preferences. Since your wedding is winter-themed and you specially requested outdoor photography in a snowy background, we selected photographers who have experience shooting winter weddings. Their styles are photojournalistic and fine arts photography. 
+This is an opportunity for us to read back our previous discussions with the customer, to confirm that what we have found is perfectly in line with what they are looking for, and describe why we think the selected photographers are the best fit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
 
-Because all of them match your budget, availability, and location, you can focus solely on choosing the photographer with the portfolio that you like best, as well as the personal connection. Scroll down to quickly compare all three photographers at a glance. Click on the photographers’ profile boxes to view their respective portfolios, package details, and reviews.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
 
 - Fotofox";
 
@@ -26,8 +26,8 @@ $package1 =
 "<b>Package Perks:</b>
 10 hours of coverage
 album
-boudoir session
-online gallery";
+Boudoir session
+Online gallery";
 
 $photographerName2 = "Thomas";
 $photo2 = "img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg";
@@ -36,9 +36,9 @@ $experience2 = "<b>Experience:</b> 13 years";
 $reviews2 = "<b>Reviews:</b> 9.1/10 (3 testimonials)";
 $package2 = 
 "<b>Package Perks:</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 hours of coverage
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25 prints (6 x 8)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online gallery";
+8 hours of coverage
+25 prints (6 x 8)
+Online gallery";
 
 $photographerName3 = "Henrique";
 $photo3 = "img/portfolio/Most-Romantic-Love-Couple-Hd-Wallpaper.jpg";
@@ -47,9 +47,9 @@ $experience3 = "<b>Experience:</b> 9 years";
 $reviews3 = "<b>Reviews:</b> 8.9/10 (3 testimonials)";
 $package3 = 
 "<b>Package Perks:</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;full-day coverage
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel fee
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online gallery";
+Full-day coverage
+Travel fee
+Online gallery";
 
 $photographerCommon = 
 "Included in all three:  2nd shooter, all photos post-processed in non-watermark HD resolution, digital files on DVD/USB, and a full day engagement shoot.  They all have liability insurance and sufficient backup equipment.";
@@ -67,12 +67,12 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 		);
 
 	$photographerNote = 
-	"Michelle is the lead photographer. Her outgoing personality, fearless creativity, and unique eye for anticipating and capturing emotions are second to none. Her passion is not just taking photos, but in personally connecting with every couple that she photographs. From climbing trees to shooting in extreme weathers, she never lets anything get in the way of capturing the perfect angle, the perfect timing, or the perfect lighting!";
+	"We use this section to give a personal upsell about the photographer. Our experience shows that it is much easier for customers to trust our opinion as a third party than to hear a photographer sell themselves. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
 
 	$packageHeader = 
 	"<b>Wedding collections start at $2,000</b>
-	All wedding packages include digital negatives and a proof album (custom image box with 4x6 prints of your full gallery).";
+	This section is unique for each photographer. It describes how a bride can \"create their own\" package with custom add-ons and upselling.";
 
 
 	$packageLeft = 

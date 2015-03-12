@@ -417,6 +417,10 @@ h1, h2, h3, h4 {
 }
 */
 
+.portfolio--name {
+	margin-top: 30px
+}
+
 /* package */
 .packages {
 	text-align: center;
