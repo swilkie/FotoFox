@@ -47,8 +47,8 @@
 							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#banner">Get Started</a></div>
 							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Photographers">Photographers</a></div>
 							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Portfolio">Portfolio</a></div>
-							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Packages">Packages</a></div>
 							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Reviews">Reviews</a></div>
+							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Packages">Packages</a></div>
 						</div>
 						<hr class="hr1">
 					</div>
@@ -327,6 +327,40 @@
 				</section>
 
 
+
+				<section id="Reviews">
+					<div class="heading">
+						<hr class="hr1">
+						<div class="row">
+							<h3 class="title">Reviews</h3>
+						</div>
+						<hr class="hr3 hr-light">
+					</div>
+
+					<div class="section--content">
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								
+									<?php for ($i = 0; $i < count($reviews); $i++) {
+										$tempReview = $reviews[$i]; ?>
+										<div class="note--text">
+											<p class="review-message">
+												<?php echo nl2br($tempReview["comment"]) ?>
+											</p>
+											<p class="review-author">- <?php 
+												echo nl2br($tempReview["author"]) ?>
+											</p> 
+										</div> <?php
+									} ?>
+
+								
+							</div>
+						</div>
+					</div>
+
+
+				</section>
+
 				<section id="Packages">
 					<div class="heading">
 						<hr class="hr1">
@@ -355,62 +389,7 @@
 						</div>
 					</div>
 				</section>
-
-				<section id="Reviews">
-					<div class="heading">
-						<hr class="hr1">
-						<div class="row">
-							<h3 class="title">Reviews</h3>
-						</div>
-						<hr class="hr3 hr-light">
-					</div>
-
-					<div class="section--content">
-						<div class="row">
-							<div class="col-sm-8 col-sm-offset-2">
-								
-									<?php for ($i = 0; $i < count($reviews); $i++) {
-										$tempReview = $reviews[$i]; ?>
-										<div class="note--text">
-											<p class="review-message">
-												<?php echo nl2br($tempReview["comment"]) ?>
-											</p>
-											<p class="review-author">- <?php 
-												echo nl2br($tempReview["author"]) ?>
-											</p> 
-										</div> <?php
-									} ?>
-								<!--
-								<div class="note--text">
-									<p class="review-message"><?php 
-										$tempReview = $reviews[0];
-										echo nl2br($tempReview["comment"]) ?></p>
-									<p class="review-author">- <?php 
-										echo nl2br($tempReview["author"]) ?></p>
-								</div>
-
-								<div class="note--text">
-									<p class="review-message"><?php 
-										$tempReview = $reviews[1];
-										echo nl2br($tempReview["comment"]) ?></p>
-									<p class="review-author">- <?php 
-										echo nl2br($tempReview["author"]) ?></p>
-								</div>
-								<div class="note--text">
-									<p class="review-message"><?php 
-										$tempReview = $reviews[2];
-										echo nl2br($tempReview["comment"]) ?></p>
-									<p class="review-author">- <?php 
-										echo nl2br($tempReview["author"]) ?></p>
-								</div>
-								-->
-								
-							</div>
-						</div>
-					</div>
-
-
-				</section>
+				
 
 				<section id="footer">
 					<hr class="hr1 hr-light">
