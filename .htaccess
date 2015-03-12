@@ -1,6 +1,6 @@
-RewriteEngine On    # Turn on the rewriting engine
-RewriteRule    ^([A-Za-z-]+)/?$    $1.php    [NC,L]    # Process all products
-
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 <Files *>
 order deny,allow
