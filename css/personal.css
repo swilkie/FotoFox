@@ -258,16 +258,16 @@ h1, h2, h3, h4 {
 	color: black;
 }
 
-.photographer-button:hover:not(.disabled) {
+.photographer-button:hover {
 	text-decoration: none;
-	color: white;
 }
 
-.photographer-border:hover:not(.disabled){
+.photographer-border:hover{
 	background-color: #FC6B0C;
 }
 
-.photographer-button:hover .photographer-name{
+.photographer-border:hover .photographer-name,
+.photographer-border:hover .photographer-button {
 	color: white;
 }
 
