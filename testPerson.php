@@ -12,7 +12,9 @@ $welcomeNote =
 
 Here are the top three photographers we feel best match your criteria, and most importantly, your preferences. Since your wedding is winter-themed and you specially requested outdoor photography in a snowy background, we selected photographers who have experience shooting winter weddings. Their styles are photojournalistic and fine arts photography. 
 
-Because all of them match your budget, availability, and location, you can focus solely on choosing the photographer with the portfolio that you like best, as well as the personal connection. Scroll down to quickly compare all three photographers at a glance. Click on the photographers’ profile boxes to view their respective portfolios, package details, and reviews.";
+Because all of them match your budget, availability, and location, you can focus solely on choosing the photographer with the portfolio that you like best, as well as the personal connection. Scroll down to quickly compare all three photographers at a glance. Click on the photographers’ profile boxes to view their respective portfolios, package details, and reviews.
+
+- Fotofox";
 
 
 $photographerName1 = "Dzesika & Eddie";
@@ -22,10 +24,10 @@ $experience1 = "<b>Experience:</b> 13 years";
 $reviews1 = "<b>Reviews:</b> 9.3/10 (4 testimonials)";
 $package1 = 
 "<b>Package Perks:</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 hours of coverage
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;album
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boudoir session
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;online gallery";
+10 hours of coverage
+album
+boudoir session
+online gallery";
 
 $photographerName2 = "Thomas";
 $photo2 = "img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg";
@@ -92,9 +94,31 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	boudoir session (1 or 2 hours): <b>$135/hr</b>
+
 	Online Gallery: <b>$225</b>
+
 	Engagement Session (2-3 hours): <b>$550</b>
+
+	
 	5 canvas prints (8 x 10): <b>$425</b>";
+
+	$reviews = array(
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit",
+	    "author" => "Janice"
+	    ],
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+	    "author" => "Allison"
+	    ],
+	    [
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
+	    "author" => "Jessica"
+	    ]
+    );
+
+
+
 } else {
 	$portfolio = array(
 		"img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg",

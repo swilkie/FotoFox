@@ -25,6 +25,51 @@
 	width: 100%;
 }
 
+/* columns of same height styles */
+.row-same-height {
+    display: table;
+    width: 100%;
+}
+.col-xs-height {
+    display: table-cell;
+    float: none !important;
+}
+
+@media (min-width: 768px) {
+    .col-sm-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+
+/* firefox fix */
+.img-responsive {
+    width: 100%;
+}
+
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
+}
+
 /* hr's */
 hr {
 	border: none;
@@ -53,10 +98,36 @@ hr {
 	background-color: #212121;
 }
 
-
+/*
 * {
 	font-family: 'Cabin', sans-serif;
 }
+*/
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+/*
+h1, h2, h3, h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+*/
+
+
+.section--content {
+	padding:30px 0 30px 0;
+}
+
+.note--title {
+	margin:48px 0 0 0;
+	text-align: center;
+}
+
+.note--text {
+	margin:48px 0 48px 0;
+}
+
 
 .btn-primary,
 .btn-primary:focus {
@@ -118,8 +189,13 @@ hr {
 }
 
 .navigation {
-	padding-top: 27px;
-	padding-bottom: 25px;
+	padding-top: 22px;
+	padding-bottom: 15px;
+}
+
+.navigation-cell {
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 
 .navigation-button {
@@ -135,13 +211,9 @@ hr {
 
 
 /* notes */
-.note {
-	margin:46px 0 46px 0;
-}
 
 .note-title {
 	text-align: center;
-	margin-bottom: 32px;
 }
 
 .note-text {
@@ -158,18 +230,20 @@ hr {
 
 /* photographers */
 
+
 .photographer {
-	padding-top: 32px;
-	padding-bottom:30px;
 	text-align: center;
 }
 
-.photographer-instructions {
-	margin-bottom: 48px;
+.photographer-notes {
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px; 
 }
 
 .photographer-choices {
-	padding: 20px;
+	padding: 0 20px 0 20px;
+	overflow: hidden;
 	/*
 	background-color: #F2F2E5;
 	border-bottom: 1px solid #ddd;
@@ -212,9 +286,9 @@ hr {
 
 }
 
+
 .photographer-option {
 	padding:20px;
-	min-height: 582px;
 }
 
 .photographer-name {
@@ -226,25 +300,26 @@ hr {
 }
 
 .photographer-photo-frame {
-    
+    height:150px;
+    margin-top: 40px;
+	margin-bottom:46px;
+	border-radius:6px;
+	background-color: rgb(244, 244, 244);
+	overflow: hidden;
 }
 
 .photographer-photo {
-	margin-top: 40px;
-	margin-bottom:46px;
-	border-radius:6px;
-    overflow:hidden;
-    max-height: 131px;
+
+	min-height: 150px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .photographer-notes {
 	text-align: left;
 	padding-left: 10px;
 	padding-right: 10px; 
-}
-
-.photographer-commonNotes {
-	padding-top: 46px;
 }
 
 .disabled .photographer-option {
@@ -269,14 +344,11 @@ hr {
 
 /* portfolio */
 .portfolio {
-	padding-top: 72px;
-	padding-bottom:46px;
 	text-align: center;
 }
 
-.portfolio-title {
-	margin-top: 16px;
-	margin-bottom: 32px;
+.portfolio-slideDeck {
+	margin-top:48px;
 }
 
 .portfolio-photo {
@@ -293,6 +365,7 @@ hr {
 
 .carousel-indicators {
   bottom:-50px;
+  margin-bottom: 0px;
 }
 
 .carousel-indicators li {
@@ -304,9 +377,6 @@ hr {
    margin-bottom:50px;
 }
 
-.portfolio-note {
-	margin-top: 20px;
-}
 
 /* Portfolio slider */
 /*
@@ -350,7 +420,6 @@ hr {
 /* package */
 .packages {
 	text-align: center;
-	margin-top: 42px;
 }
 
 .package-header {
@@ -366,9 +435,23 @@ hr {
 	border-left: 2px solid #333;
 }
 
-.package-bottom {
-	margin-bottom: 92px;
+.package-left p, .package-right p {
+
+	margin: 0;
 }
+
+.package-bottom {
+}
+
+/* Reviews */
+.review-author {
+
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold; 
+	color: gray;
+}
+
 
 
 /* Footer */

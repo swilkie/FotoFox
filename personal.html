@@ -9,7 +9,8 @@
 	<title>FotoFox</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
-	
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
 
 <!--
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
@@ -43,21 +44,23 @@
 						</div>
 						<hr class="hr3">
 						<div class="row row-centered navigation">
-							<div class="col-md-2 col-centered"><a class="navigation-button" href="#banner">Get Started</a></div>
-							<div class="col-md-2 col-centered"><a class="navigation-button" href="#Photographers">Photographers</a></div>
-							<div class="col-md-2 col-centered"><a class="navigation-button" href="#Portfolio">Portfolio</a></div>
-							<div class="col-md-2 col-centered"><a class="navigation-button" href="#Packages">Packages</a></div>
+							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#banner">Get Started</a></div>
+							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Photographers">Photographers</a></div>
+							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Portfolio">Portfolio</a></div>
+							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Reviews">Reviews</a></div>
+							<div class="col-md-2 col-centered navigation-cell"><a class="navigation-button" href="#Packages">Packages</a></div>
 						</div>
 						<hr class="hr1">
 					</div>
 				</section>
 
+
 				<section id="banner">
-					<div class="note">
+					<div class="note section--content">
 						<div class="row">
 							<div class="col-sm-6 col-sm-offset-3">
-								<h2 class="note-title">A Note From Jona</h2>
-								<p class="note-text"><?php echo nl2br($welcomeNote) ?></p>
+								<h2 class="note--title">A Note From FotoFox</h2>
+								<p class="note--text"><?php echo nl2br($welcomeNote) ?></p>
 							</div>
 						</div>
 					</div>
@@ -76,80 +79,95 @@
 				<section id="Photographers">
 					
 
-
-					<div class="photographer">
+					<div class="photographer section--content">
 						<div class="row row-centered">
-							<p class="col-sm-8 col-centered photographer-instructions">Based on your preferences, we've created a custom package and pricing for each photographer. However, clicking a photographer lists alternative package and pricing options in the "Package" section lower in this website.</p>
+							<p class="col-sm-8 col-centered note--text">Based on your preferences, we've created a custom package and pricing for each photographer. However, clicking a photographer lists alternative package and pricing options in the "Package" section lower in this website.</p>
 						</div>
 						
-						<div class="row photographer-choices">
+						<div class="row  photographer-choices">
+							<div class="row-same-height">
+								
 							
-							<a class="photographer-button" href="testPerson.php?photog=1#Photographers">
 								<div <?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
-									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
+									echo 'class="col-sm-height col-sm-4 photographer-border photographer-border-active">';
 								} else {
-									echo 'class="col-md-4 col-sm-6 photographer-border">';
+									echo 'class="col-sm-height col-sm-4 photographer-border">';
 								} ?>
-									<div class="photographer-option">
-										<h3 class="photographer-name"><?php echo $photographerName1 ?></h3>
-										<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo1.'"'; ?> >
-										<div class="photographer-notes">
-											<p><?php echo $price1 ?></p>
-											<p><?php echo $experience1 ?></p>
-											<p><?php echo $reviews1 ?></p>
-											<p><?php echo nl2br($package1) ?></p>
+									<a class="photographer-button" href="testPerson.php?photog=1#Photographers">
+										<div class="photographer-option">
+											<h3 class="photographer-name"><?php echo $photographerName1 ?></h3>
+											<div class="photographer-photo-frame">
+												<div class="fullwidth photographer-photo" <?php echo 'style="background-image: url('.$photo1.');"' ?> >
+												</div>
+											</div>
+										
+											<div class="col-centered">
+											<div class="photographer-notes">
+												<p><?php echo $price1 ?></p>
+												<p><?php echo $experience1 ?></p>
+												<p><?php echo $reviews1 ?></p>
+												<p><?php echo nl2br($package1) ?></p>
+											</div>
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
-							</a>
 
 
-							<a class="photographer-button" href="testPerson.php?photog=2#Photographers">
+
 								<div <?php if ($_GET["photog"] == "2") {
-									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
+									echo 'class="col-sm-height col-sm-4 photographer-border photographer-border-active">';
 								} else {
-									echo 'class="col-md-4 col-sm-6 photographer-border">';
+									echo 'class="col-sm-height col-sm-4 photographer-border">';
 								} ?>
-									<div class="photographer-option">
-										<h3 class="photographer-name"><?php echo $photographerName2 ?></h3>
-										<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo2.'"'; ?> >
-										<div class="photographer-notes">
-											<p><?php echo $price2 ?></p>
-											<p><?php echo $experience2 ?></p>
-											<p><?php echo $reviews2 ?></p>
-											<p><?php echo nl2br($package2) ?></p>
+									<a class="photographer-button" href="testPerson.php?photog=2#Photographers">
+										<div class="photographer-option">
+											<h3 class="photographer-name"><?php echo $photographerName2 ?></h3>
+											<div class="photographer-photo-frame">
+												<div class="fullwidth photographer-photo" <?php echo 'style="background-image: url('.$photo2.');"' ?> >
+												</div>
+											</div>
+										
+											<div class="photographer-notes">
+												<p><?php echo $price2 ?></p>
+												<p><?php echo $experience2 ?></p>
+												<p><?php echo $reviews2 ?></p>
+												<p><?php echo nl2br($package2) ?></p>
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
-							</a>
 
-							<a class="photographer-button" href="testPerson.php?photog=3#Photographers">
+
+								
 								<div <?php if ($_GET["photog"] == "3") {
-									echo 'class="col-md-4 col-sm-6 photographer-border photographer-border-active">';
+									echo 'class="col-sm-height col-sm-4 photographer-border photographer-border-active">';
 								} else {
-									echo 'class="col-md-4 col-sm-6 photographer-border">';
+									echo 'class="col-sm-height col-sm-4 photographer-border">';
 								} ?>
-									<div class="photographer-option">
-										<h3 class="photographer-name"><?php echo $photographerName3 ?></h3>
-										<div class="photographer-photo-frame">
-											<img class="fullwidth photographer-photo" <?php echo 'src="'.$photo3.'"'; ?> >
+									<a class="photographer-button" href="testPerson.php?photog=3#Photographers">
+										<div class="photographer-option">
+											<h3 class="photographer-name"><?php echo $photographerName3 ?></h3>
+											<div class="photographer-photo-frame">
+												<div class="fullwidth photographer-photo" <?php echo 'style="background-image: url('.$photo3.');"' ?> >
+												</div>
+											</div>
+										
+											<div class="photographer-notes">
+												<p><?php echo $price3 ?></p>
+												<p><?php echo $experience3 ?></p>
+												<p><?php echo $reviews3 ?></p>
+												<p><?php echo nl2br($package3) ?></p>
+											</div>
 										</div>
-									
-										<div class="photographer-notes">
-											<p><?php echo $price3 ?></p>
-											<p><?php echo $experience3 ?></p>
-											<p><?php echo $reviews3 ?></p>
-											<p><?php echo nl2br($package3) ?></p>
-										</div>
-									</div>
+									</a>
 								</div>
-							</a>
-
-						</div>
-						<div class="row row-centered">
-							<div class="col-sm-8 col-centered photographer-commonNotes">
-								<p><?php echo nl2br($photographerCommon) ?></p>
+								
 							</div>
+						</div>
+
+						<div class="row row-centered">
+							<p class="col-sm-8 col-centered note--text"><?php echo nl2br($photographerCommon) ?></p>
 						</div>
 					</div>
 
@@ -168,9 +186,9 @@
 						<hr class="hr3 hr-light">
 					</div>
 
-					<div class="portfolio">
-						<!--
-						<h2 class="portfolio-title"><?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
+					<div class="portfolio section--content">
+						
+						<h2 class="note--title"><?php if (!isset($_GET["photog"]) || $_GET["photog"] == "1") {
 							echo $photographerName1;
 						} elseif ($_GET["photog"] == "2") {
 							echo $photographerName2;
@@ -178,11 +196,11 @@
 							echo $photographerName3;
 						}
 						?></h2>
-						-->
+					
 						
 						
 
-						<div id="myCarousel" class="carousel" data-interval="false">
+						<div id="myCarousel" class="carousel portfolio-slideDeck" data-interval="false">
 
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
@@ -302,12 +320,46 @@
 
 						<div class="row">
 							<div class="col-sm-8 col-sm-offset-2">
-								<p class="portfolio-note note-text"><?php echo nl2br($photographerNote) ?></p>
+								<p class="note--text"><?php echo nl2br($photographerNote) ?></p>
 							</div>
 						</div>
 					</div>
 				</section>
 
+
+
+				<section id="Reviews">
+					<div class="heading">
+						<hr class="hr1">
+						<div class="row">
+							<h3 class="title">Reviews</h3>
+						</div>
+						<hr class="hr3 hr-light">
+					</div>
+
+					<div class="section--content">
+						<div class="row">
+							<div class="col-sm-8 col-sm-offset-2">
+								
+									<?php for ($i = 0; $i < count($reviews); $i++) {
+										$tempReview = $reviews[$i]; ?>
+										<div class="note--text">
+											<p class="review-message">
+												<?php echo nl2br($tempReview["comment"]) ?>
+											</p>
+											<p class="review-author">- <?php 
+												echo nl2br($tempReview["author"]) ?>
+											</p> 
+										</div> <?php
+									} ?>
+
+								
+							</div>
+						</div>
+					</div>
+
+
+				</section>
 
 				<section id="Packages">
 					<div class="heading">
@@ -319,22 +371,28 @@
 					</div>
 
 
-					<div class="packages">
-						<div class="row">
-							<div class="col-sm-6 col-sm-offset-3">
-								<p class="package-header"><?php echo nl2br($packageHeader) ?> </p>
+					<div class="packages section--content">
+						<div class="note--text">
+							<div class="row">
+								<div class="col-sm-6 col-sm-offset-3">
+									<p class="package-header"><?php echo nl2br($packageHeader) ?> </p>
+								</div>
 							</div>
-						</div>
-						<div class="row package-bottom">
-							<div class="col-sm-6 package-left">
-								<p><?php echo nl2br($packageLeft) ?> </p>
-							</div>
-							<div class="col-sm-6 package-right">
-								<p><?php echo nl2br($packageRight) ?> </p>
+							<div class="row package-bottom">
+								<div class="row-same-height">
+									<div class="col-sm-height col-middle col-sm-6 package-left">
+										<p><?php echo nl2br($packageLeft) ?> </p>
+									</div>
+									<div class="col-sm-height col-middle col-sm-6 package-right">
+										<p><?php echo nl2br($packageRight) ?> </p>
+									</div>
+								</div>
+								
 							</div>
 						</div>
 					</div>
 				</section>
+
 
 				<section id="footer">
 					<hr class="hr1 hr-light">
