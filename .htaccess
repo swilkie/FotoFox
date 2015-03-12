@@ -1,6 +1,16 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^([A-Za-z-]+)/?$    $1.php    [NC,L]    # Process all products
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^([A-Za-z-]+)\.fotofox\.me/?$
+RewriteRule ^(.*)$ http://www.fotofox.me/$1.php [L]
+
+RewriteCond %{HTTP_HOST} ^([A-Za-z-]+)\.s-fotofox\.herokuapp\.com/?$
+RewriteRule ^(.*)$ http://s-fotofox.herokuapp.com/$1.php [L]
 
 <Files *>
 order deny,allow
