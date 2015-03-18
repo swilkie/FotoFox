@@ -304,16 +304,18 @@ h1, h2, h3, h4 {
     margin-top: 40px;
 	margin-bottom:46px;
 	border-radius:6px;
-	background-color: rgb(244, 244, 244);
+	background-color: transparent;
 	overflow: hidden;
 }
 
 .photographer-photo {
 
 	min-height: 150px;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	border-radius:6px;
+	overflow: hidden;
 }
 
 .photographer-notes {
@@ -419,6 +421,10 @@ h1, h2, h3, h4 {
 
 .portfolio--name {
 	margin-top: 30px
+}
+
+.portfolio--text {
+	margin-top: 35px;
 }
 
 /* package */
