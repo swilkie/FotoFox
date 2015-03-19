@@ -70,6 +70,8 @@ var main = function() {
 	    	opacity: 1.0
 	    }, 500);
 	    
+	    var idx = $(".active", "#myCarousel" ).index();
+	    $( "#fullscreenCarousel" ).carousel(idx);
 	};
 
 };

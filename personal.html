@@ -361,22 +361,59 @@
 
 	<!--  This is the full screen view  -->
 	<section id="popover">
-		<div id="splash"></div>
+		<div id="splash">
+			<div class="fullscreen--carouselFrame">
+
+						<div id="fullscreenCarousel" class="carousel portfolio-slideDeck" data-interval="false">
+
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<?php 
+									for ($i = 0; $i < count($portfolio); $i++) {
+									    if ($i == 0) {
+									    	echo '<li data-target="#fullscreenCarousel" data-slide-to="' . $i . '" class="active"></li>';
+											
+										}else {
+											echo '<li data-target="#fullscreenCarousel" data-slide-to="' . $i . '"></li>';
+										}
+
+									} 
+								?>
+							</ol>
+
+							
+
+							<div class="carousel-inner">
+								<?php 
+									for ($i = 0; $i < count($portfolio); $i++) {
+									    if ($i == 0) {
+									    	echo '<div class="item active">';
+												echo '<img class="portfolio-photo" src="' . $portfolio[$i] . '"/>';
+											echo '</div>';
+										}else {
+											echo '<div class="item">';
+												echo '<img class="portfolio-photo" src="' . $portfolio[$i] .'"/>';
+											echo '</div>';
+										}
+
+									} 
+								?>
+							</div>
+
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#fullscreenCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+
+							<a class="right carousel-control" href="#fullscreenCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+
+						</div>
+			</div>
+		</div>
 	</section>
-
-
-	<script language="javascript">
-	body.onmousedown=disableclick;
-	status="Right Click Disabled";
-	Function disableclick(event)
-	{
-	  if(event.button==2)
-	   {
-	     alert(status);
-	     return false;    
-	   }
-	}
-	</script>
 
 
 	<script type="text/javascript" src="js/jquery.js"></script>
