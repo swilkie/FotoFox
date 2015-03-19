@@ -81,7 +81,7 @@
 
 					<div class="photographer section--content">
 						<div class="row row-centered">
-							<p class="col-sm-8 col-centered note--text">Based on your preferences, we've created a custom package and pricing for each photographer. However, clicking a photographer lists alternative package and pricing options in the "Package" section lower in this website.</p>
+							<p class="col-sm-8 col-centered note--text">Based on your preferences, we've created a custom package and pricing for each photographer. If you would like to view more options, clicking a photographer lists alternative package and pricing options in the "Package" section below.</p>
 						</div>
 						
 						<div class="row  photographer-choices">
@@ -97,15 +97,15 @@
 										<div class="photographer-option">
 											<h3 class="photographer-name"><?php echo $photographerName1 ?></h3>
 											<div class="photographer-photo-frame">
-												<div class="fullwidth photographer-photo" <?php echo 'style="background-image: url('.$photo1.');"' ?> >
+												<div class="photographer-photo" <?php echo 'style="background-image: url('.$photo1.');"' ?> >
 												</div>
 											</div>
 										
 											<div class="col-centered">
 											<div class="photographer-notes">
+												<p><?php echo $reviews1 ?></p>
 												<p><?php echo $price1 ?></p>
 												<p><?php echo $experience1 ?></p>
-												<p><?php echo $reviews1 ?></p>
 												<p><?php echo nl2br($package1) ?></p>
 											</div>
 											</div>
@@ -124,14 +124,14 @@
 										<div class="photographer-option">
 											<h3 class="photographer-name"><?php echo $photographerName2 ?></h3>
 											<div class="photographer-photo-frame">
-												<div class="fullwidth photographer-photo" <?php echo 'style="background-image: url('.$photo2.');"' ?> >
+												<div class="photographer-photo" <?php echo 'style="background-image: url('.$photo2.');"' ?> >
 												</div>
 											</div>
 										
 											<div class="photographer-notes">
+												<p><?php echo $reviews2 ?></p>
 												<p><?php echo $price2 ?></p>
 												<p><?php echo $experience2 ?></p>
-												<p><?php echo $reviews2 ?></p>
 												<p><?php echo nl2br($package2) ?></p>
 											</div>
 										</div>
@@ -149,14 +149,14 @@
 										<div class="photographer-option">
 											<h3 class="photographer-name"><?php echo $photographerName3 ?></h3>
 											<div class="photographer-photo-frame">
-												<div class="fullwidth photographer-photo" <?php echo 'style="background-image: url('.$photo3.');"' ?> >
+												<div class="photographer-photo" <?php echo 'style="background-image: url('.$photo3.');"' ?> >
 												</div>
 											</div>
 										
 											<div class="photographer-notes">
+												<p><?php echo $reviews3 ?></p>
 												<p><?php echo $price3 ?></p>
 												<p><?php echo $experience3 ?></p>
-												<p><?php echo $reviews3 ?></p>
 												<p><?php echo nl2br($package3) ?></p>
 											</div>
 										</div>
@@ -189,7 +189,6 @@
 					
 					<div class="portfolio section--content">
 						
-						
 
 						<div id="myCarousel" class="carousel portfolio-slideDeck" data-interval="false">
 
@@ -210,7 +209,7 @@
 
 							
 
-							<div class="carousel-inner">
+							<div id="fullscreenButton" class="carousel-inner">
 								<?php 
 									for ($i = 0; $i < count($portfolio); $i++) {
 									    if ($i == 0) {
@@ -250,7 +249,7 @@
 									echo $photographerName3;
 								}
 								?></h2>
-								<p class="note--text"><?php echo nl2br($photographerNote) ?></p>
+								<p class="note--text portfolio--text"><?php echo nl2br($photographerNote) ?></p>
 							</div>
 						</div>
 					</div>
@@ -336,8 +335,30 @@
 		</div>
 	</div>
 
+
+	<!--  This is the full screen view  -->
+	<section id="popover">
+		<div id="splash"></div>
+	</section>
+
+
+	<script language="javascript">
+	body.onmousedown=disableclick;
+	status="Right Click Disabled";
+	Function disableclick(event)
+	{
+	  if(event.button==2)
+	   {
+	     alert(status);
+	     return false;    
+	   }
+	}
+	</script>
+
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/personal.js"></script>
 
 </body>
 </html>
