@@ -489,7 +489,7 @@ h1, h2, h3, h4 {
 /* Popover */
 #splash {
 	position: fixed;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,0.92);
     width: 100%;
     height: 100%;
     top: 0;
