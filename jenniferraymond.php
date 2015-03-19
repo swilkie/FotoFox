@@ -8,9 +8,9 @@ $firstName = "Jennifer and Raymond";
 
 
 $welcomeNote = 
-"Here are the top three photographers in the area who best match your criteria, and most importantly, your preferences. Because for you, quality is the most important, we selected photographers who guarantee quality above anything else. From breathtaking picturesque shots, to candid real moments, to traditional with a touch of creativity, they have the experience, the skills, and the \"eye\" to capture your story in a variety of ways.  They are all experienced in the photography styles you prefer:  photojournalism, traditional, contemporary, fine arts. 
+"We are happy to present to you the top three photographers who best matched your criteria, and most importantly, your preferences. Because quality is most important for you, we began by only selecting photographers who have been able to show guaranteed quality on a consistent basis. Photographers were further refined to only show those capable of the specific styles you found appealing. Each chosen photographer excels in the photography styles you prefer: photojournalism, tradition, contemporary, and fine arts. This means you can expect a range of photographs from breathtaking picturesque shots to candid, real moments, each with a touch of creativity to capture your story in a multitude of ways.
 
-All of them match your budget, availability, and location. This way, you can focus solely on choosing the photographer with the portfolio and personality you like best. Scroll down to quickly compare all three photographers at a glance. Click on the photographers’ profile boxes to view their respective portfolios, package details, and reviews.";
+All photographers were selected to match your proposed dates, location, and budget. We’ve customized a personal package with each photographer to ensure you receive all the features you’re looking for. By customizing your package, we were also able to secure special rates so that all packages are in your desired price range (ranging from 3,100 to 3,863). By ensuring these little details, we hope you can make a choice with the emphasis on simply: which photographer’s portfolio and personality do you like best. Scroll down to quickly compare all three photographers at a glance. Click on the photographer’s profile boxes to view their respective portfolios, package details, and reviews.";
 
 
 $photographerName1 = "Eric";
@@ -20,7 +20,9 @@ $experience1 = "<b>Experience:</b> 5 years";
 $reviews1 = "<b>Overall Compatibility:</b> 92%";
 $package1 = 
 "<b>Package Perks:</b>
-8 hours of coverage
+8 Hours of Coverage
+2nd Photographer
+Engagement Shoot
 Black & White version of all photos";
 
 $photographerName2 = "Jeremy";
@@ -30,8 +32,10 @@ $experience2 = "<b>Experience:</b> 3 years";
 $reviews2 = "<b>Overall Compatibility:</b> 90%";
 $package2 = 
 "<b>Package Perks:</b>
-12 hours of coverage
-DVD slideshow";
+12 Hours of Coverage
+2nd Photographer
+Engagement Shoot
+DVD Slideshow";
 
 $photographerName3 = "Roland";
 $photo3 = "img/Roland/steph-erwin-wedding_0017.jpg";
@@ -40,10 +44,12 @@ $experience3 = "<b>Experience:</b> 5 years";
 $reviews3 = "<b>Overall Compatibility:</b> 84%";
 $package3 = 
 "<b>Package Perks:</b>
-10 hours of coverage";
+10 hours of coverage
+2nd Photographer
+Engagement Shoot";
 
 $photographerCommon = 
-"Included in all three: 2nd photographer, an engagement shoot, all photos post-processed in non-watermarked HD resolution, and digital files on DVD/USB.  They all have liability insurance and sufficient backup equipment.";
+"Included in all three packages: all photos post-processed in non-watermarked HD resolution. Digital files delivered on DVD/USB.  They all have liability insurance and sufficient backup equipment.";
 
 /*****************    Photographer 1    *************************/
 
@@ -87,13 +93,13 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	When you photograph people in black and white, you photograph their soul.\"</i>
 	— Ted Grant
 
-	Eric has an exceptional eye for the artistic, quirky, emotional, and unique. His strength is storytelling:  he is one of the few who is capable of snapping single moments that capture a lifetime of emotions and stories.  Another specialty of his is producing black & white photos. He coordinates a variety of techniques to enhance photos and create the most elegant monochrome versions possible.  On the wedding day, he operates in two different modes:  a discreet ninja who captures candid details, versus an assertive and confident director who will place you exactly where you need to be for a stunning shot.";
+	Eric has an exceptional eye for the artistic, quirky, emotional, and unique. His strength is storytelling:  he is one of the few who is capable of snapping single moments that capture a lifetime of emotions and stories.  Another specialty of his is producing black & white photos. He coordinates a variety of techniques to enhance photos and create the most elegant monochrome versions possible.  On the wedding day, he operates in two different modes:  a discrete ninja who captures candid details, versus an assertive and confident director who will place you exactly where you need to be for a stunning shot.";
 
 
 	$packageHeader = 
 	"<b>Your wedding collection quote: $3,863</b>
 
-	Your custom quote is valued at $4,545 when items are added à la carte. It includes 8 hours of coverage, a 2nd shooter for 4 hours, an engagement shoot, a wedding day portrait session, 400-600 professionally edited and retouched photos, and a black&white version of all photos.
+	Your custom quote is valued at $4,545 when items are added à la carte. It includes 8 hours of coverage, a 2nd shooter for 4 hours, an engagement shoot, a wedding day portrait session, 400 to 600 professionally edited and retouched photos, and a black & white version of all photos.
 
 	If you want to consider more options, here is a detailed breakdown of Eric's package deals and items.";
 
@@ -150,8 +156,14 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	    "comment" => "Thank you so much for those photos. I cannot even begin to describe the reactions they've received. Everyone that looked at them were blown away by their beauty. You truly have a talent.",
 	    "author" => "Emily"
 	    ],
+	    [
+	    "comment" => "More than anything, the quality of Eric's photos blew me away. But I was equally amazed with his presence at our wedding. At the portrait session, he coordinated a really large group into an amazing photo. He kept a great atmosphere, but his efficiency let us get back to our wedding in the shortest time possible.
+
+We didn't noticed him for the rest of the day, we had a really intimate wedding with our friends and family without any intrusion. But his photos were so incredible. We have no idea how he was able to capture so many of our most intimate moments. He somehow captured all of the tiniest details of our day, in such an artistic way. We’re so happy to have worked with Eric.",
+	    "author" => "Joan"
+	    ],
 		[
-	    "comment" => "Wow!  The photos are absolutely amazing… They look like they are from a fairytale.",
+	    "comment" => "Wow!  The photos are absolutely amazing. They look like they are from a fairytale.",
 	    "author" => "Ella & James"
 	    ],
     );
@@ -196,7 +208,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 	$packageHeader = 
 	"<b>Your wedding collection quote: $3,100</b>
-	Your custom quote is valued at $4,799 when items are added à la carte. It includes a 12 hours of coverage, a 2nd shooter, an engagement shoot, a DVD slideshow, and an online Facebook & blog post.
+	Your custom quote is valued at $4,799 when items are added à la carte. It includes 12 hours of coverage, a 2nd shooter, an engagement shoot, a DVD slideshow, and an online Facebook & blog post.
 
 	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.
 
@@ -359,7 +371,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	    "author" => "Courtney"
 	    ],
 	    [
-	    "comment" => "We were extremely pleased with Isbertophoto and both our engagement photos as well as wedding photos turned out amazing! Both Roland and his second photographer Ricki were professional and super friendly. Our shoot had a lot of energy and he truly made us all feel extremely comfortable working together. They did an amazing job at capturing the real candid moments of our wedding but at the same time were able to come up with some amazing creative shots. The truly went the extra mile working for us and stayed even longer than required to capture all of our special moments which definitely did not go unnoticed! Truly an amazing person and photographer to work with and would definitely recommend him to anyone and everyone!",
+	    "comment" => "We were extremely pleased with Roland and both our engagement photos as well as wedding photos turned out amazing! Both Roland and his second photographer Ricki were professional and super friendly. Our shoot had a lot of energy and he truly made us all feel extremely comfortable working together. They did an amazing job at capturing the real candid moments of our wedding but at the same time were able to come up with some amazing creative shots. They truly went the extra mile working for us and stayed even longer than required to capture all of our special moments which definitely did not go unnoticed! Truly an amazing person and photographer to work with and would definitely recommend him to anyone and everyone!",
 	    "author" => "Diane"
 	    ]
     );
