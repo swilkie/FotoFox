@@ -121,6 +121,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 } else if ($_GET["photog"] == "2") {
 	$portfolio = array(
+		"/img/Roland/Yuri-Irene-Gallery-18.jpg",
 		"img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg",
 		"img/portfolio/Most-Romantic-Love-Couple-Hd-Wallpaper.jpg",
 		"img/portfolio/wedding_husband_wife_4860_2560x1440.jpg",
