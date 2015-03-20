@@ -49,7 +49,7 @@ $package3 =
 Engagement Shoot";
 
 $photographerCommon = 
-"Included in all three packages: all photos post-processed in non-watermarked HD resolution. Digital files delivered on DVD/USB.  They all have liability insurance and sufficient backup equipment.";
+"Included in all three: All photos are post-processed in non-watermarked HD resolution. Digital photos are available on DVD/USB. Each selected photographer has liability insurance and proper backup equipment to avoid any issues on the day.";
 
 /*****************    Photographer 1    *************************/
 
@@ -332,7 +332,7 @@ We didn't noticed him for the rest of the day, we had a really intimate wedding 
 
 	$packageHeader = 
 	"<b>Your wedding collection quote: $3,300</b>
-	Your custom quote includes a 10 hours of coverage, a 2nd shooter, an engagement shoot, and a DVD of 500-600 edited HD photos.
+	Your custom quote includes 10 hours of coverage, a 2nd shooter, an engagement shoot, and a DVD of 500-600 edited HD photos.
 
 	If you want to consider more options, here is a detailed breakdown of Roland's package deals and items.
 	";
