@@ -10,7 +10,7 @@ $firstName = "Jennifer and Raymond";
 $welcomeNote = 
 "We are happy to present to you the top three photographers who best match your criteria, and most importantly, your preferences. Because quality is most important for you, we began by only selecting photographers who have been able to show guaranteed quality on a consistent basis. Photographers were further refined to only show those capable of the specific styles you found appealing. Each chosen photographer excels in the photography styles you prefer: photojournalistic, traditional, contemporary, and fine arts. This means you can expect a range of photographs from breathtaking picturesque shots to candid, real moments, each with a touch of creativity to capture your story in a multitude of ways.
 
-All photographers were selected to match your proposed dates, location, and budget. We’ve customized a personal package with each photographer to ensure you receive all the features you’re looking for. By customizing your package, we were also able to secure special rates so that all packages are in your desired price range (ranging from 3,100 to 3,863). By ensuring these little details, we hope we enable you to focus simply on the photographers' portfolios and personalities. 
+All photographers were selected to match your proposed dates, location, and budget. We’ve customized a personal package with each photographer to ensure you receive all the features you’re looking for. By customizing your package, we were also able to secure special rates so that all packages are in your desired price range (ranging from 3,100 to 3,608). By ensuring these little details, we hope we enable you to focus simply on the photographers' portfolios and personalities. 
 
 <b>How to navigate:</b>
 Scroll down to quickly compare all three photographers at a glance. Click on the photographer’s profile boxes to view their respective portfolios, package details, and reviews.";
@@ -18,15 +18,14 @@ Scroll down to quickly compare all three photographers at a glance. Click on the
 
 $photographerName1 = "Eric";
 $photo1 = "img/Eric/13.jpg";
-$price1 = "<b>Price:</b> $3,863";
+$price1 = "<b>Price:</b> $3,608";
 $experience1 = "<b>Experience:</b> 5 years";
 $reviews1 = "<b>Overall Compatibility:</b> 92%";
 $package1 = 
 "<b>Package Perks:</b>
 8 Hours of Coverage
 2nd Photographer
-Engagement Shoot
-Black & White version of all photos";
+Engagement Shoot";
 
 $photographerName2 = "Jeremy";
 $photo2 = "img/Jeremy/Distillery-District-Winter-Wedding.jpg";
@@ -90,7 +89,6 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 		"img/Eric/29.jpg",
 		"img/Eric/64.jpg",
 		"img/Eric/47.jpg",
-		"img/Eric/43.jpg"
 		);
 
 	$photographerNote = 
@@ -98,13 +96,13 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	When you photograph people in black and white, you photograph their soul.\"</i>
 	— Ted Grant
 
-	Eric has an exceptional eye for the artistic, quirky, emotional, and unique. His strength is storytelling:  he is one of the few who is capable of snapping single moments that capture a lifetime of emotions and stories.  Another specialty of his is producing black & white photos. He coordinates a variety of techniques to enhance photos and create the most elegant monochrome versions possible.  On the wedding day, he operates in two different modes:  a discrete ninja who captures candid details, and an assertive and confident director who will place you exactly where you need to be for a stunning shot.";
+	Eric has an exceptional eye for the artistic, quirky, emotional, and unique. His strength is storytelling:  he is one of the few who is capable of snapping single moments that capture a lifetime of emotions and stories.  Another specialty of his is producing black & white photos. He coordinates a variety of techniques to enhance photos and create the most elegant monochrome versions possible.  On the wedding day, he operates in two different modes:  a discreet ninja who captures candid details, and an assertive and confident director who will place you exactly where you need to be for a stunning shot.";
 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,863</b>
+	"<b>Your wedding collection quote: $3,608</b>
 
-	Your custom quote is valued at $4,545 when items are added à la carte. It includes 8 hours of coverage, a 2nd shooter for 4 hours, an engagement shoot, a wedding day portrait session, 400 to 600 professionally edited and retouched photos, and a black & white version of all photos.
+	Your custom quote is valued at $3,775 when items are added à la carte. It includes 8 hours of coverage, a 2nd shooter for 4 hours, an engagement shoot, a wedding day portrait session, and 400 to 600 professionally edited and retouched photos.
 
 	If you want to consider more options, here is a detailed breakdown of Eric's package deals and items.";
 
@@ -130,9 +128,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	Engagement photoshoot
 	Photobooth (2 hours)
 	Black & white version of all photos
-	2nd photographer for 4 hours
-
-	";
+	2nd photographer for 4 hours";
 
 
 	$packageRight = 
@@ -153,9 +149,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	Photobooth overtime <b>$100/hr</b>
 
 	Wedding photo album <b>$800</b> 
-	(further options/upgrades available)
-
-	";
+	(further options/upgrades available)";
 
 	$reviews = array(
 	    [
@@ -206,17 +200,14 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	"<i>\"Taking pictures is savoring life intensely every hundredth of a second.\"</i>
 	— Mark Riboud
 
-	Jeremy’s work speaks for himself, and his level of impeccable professionalism is remarkable. He loves to savor every moment in the easiest way possible with simple posing, creative composition, and critical use of light. By bringing a unique upbeat energy to the wedding day, he has a special way of drawing out genuine emotions and the best smiles from his clients. 
-	";
+	Jeremy’s work speaks for himself, and his level of impeccable professionalism is remarkable. He loves to savor every moment in the easiest way possible with simple posing, creative composition, and critical use of light. By bringing a unique upbeat energy to the wedding day, he has a special way of drawing out genuine emotions and the best smiles from his clients. ";
 
 
 	$packageHeader = 
 	"<b>Your wedding collection quote: $3,150</b>
-	Your custom quote is valued at $6,098 when items are added à la carte. It includes 12 hours of coverage, an assistant 2nd shooter, an engagement shoot, a pre-bridal shoot, a 1-year online protected gallery, and a handcrafted Italian Origianal Premium 16x12 30 page deluxe wedding album.
+	Your custom quote is valued at $4,000 when items are added à la carte. It includes 12 hours of coverage, an assistant 2nd shooter, an engagement shoot, a pre-bridal shoot, a 1-year online protected gallery, and a handcrafted Italian Original Premium 16x12 30 page wedding album.
 
-	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.
-
-	";
+	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.";
 
 
 	$packageLeft = 
@@ -250,8 +241,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	Mobile Smartphone gallery app
 	DVD slideshow
 	10x10 Engagement album
-	18x14 handmade Italian album
-	";
+	18x14 handmade Italian album";
 
 
 	$packageRight = 
@@ -287,9 +277,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 	Wedding photo album (starting at) <b>$1,499</b>
 
-	various prints & canvas options
-
-	";
+	various prints & canvas options";
 
 	$reviews = array(
 		[
@@ -325,7 +313,6 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 		"img/Roland/Steph-Cilian-Gallery-75.jpg",
 		"img/Roland/Kevin-Sheila-140.jpg",
 		"img/Roland/Steph-Cilian-Gallery-77.jpg",
-		"img/Roland/Kevin-Sheila-140.jpg",
 		"img/Roland/steph-erwin-wedding_0004.jpg",
 		"img/Roland/Ed-Mae-Web-117.jpg"
 		);
@@ -341,8 +328,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	"<b>Your wedding collection quote: $3,300</b>
 	Your custom quote includes 10 hours of coverage, a 2nd shooter, an engagement shoot, and a DVD of 500-600 edited HD photos.
 
-	If you want to consider more options, here is a detailed breakdown of Roland's package deals and items.
-	";
+	If you want to consider more options, here is a detailed breakdown of Roland's package deals and items.";
 
 
 	$packageLeft = 
@@ -359,8 +345,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	Gold package: <b>$3,600</b>
 	12 hours of coverage
 	600-800 photos
-	2 photographers
-	";
+	2 photographers";
 
 
 	$packageRight = 
