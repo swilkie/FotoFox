@@ -100,9 +100,9 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,608</b>
+	"<b>Your customized wedding collection quote: $3,608</b>
 
-	Your custom quote is valued at $3,775 when items are added à la carte. It includes 8 hours of coverage, a 2nd shooter for 4 hours, an engagement shoot, a wedding day portrait session, and 400 to 600 professionally edited and retouched photos.
+	It includes 8 hours of coverage, a 2nd shooter for 4 hours, an engagement shoot, a wedding day portrait session, and 400 to 600 professionally edited and retouched photos.
 
 	If you want to consider more options, here is a detailed breakdown of Eric's package deals and items.";
 
@@ -204,9 +204,9 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,150</b>
+	"<b>Your customized wedding collection quote: $3,150</b>
 
-	Your custom quote is valued at $4,000 when items are added à la carte. It includes 12 hours of coverage, an assistant 2nd shooter, an engagement shoot, a pre-bridal shoot, a 1-year online protected gallery, and a handcrafted Italian Original Premium 16x12 30 page wedding album.
+	It includes 12 hours of coverage, an assistant 2nd shooter, an engagement shoot, a pre-bridal shoot, a 1-year online protected gallery, and a handcrafted Italian Original Premium 16x12 30 page wedding album.
 
 	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.";
 
@@ -327,7 +327,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 	$packageHeader = 
 	"<b>Your wedding collection quote: $3,300</b>
-	
+
 	Your custom quote includes 10 hours of coverage, a 2nd shooter, an engagement shoot, and a DVD of 500-600 edited HD photos.
 
 	If you want to consider more options, here is a detailed breakdown of Roland's package deals and items.";

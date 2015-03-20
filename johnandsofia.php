@@ -97,9 +97,9 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,180</b>
+	"<b>Your customized wedding collection quote: $3,180</b>
 
-	Your custom quote is valued at $3,800 when items are added à la carte. It includes 12 hours of coverage, a professional 2nd shooter, an engagement shoot, professionally edited and retouched photos on USB, and a handcrafted Italian Original Premium 16x12 30 page wedding album.
+	It includes 12 hours of coverage, a professional 2nd shooter, an engagement shoot, professionally edited and retouched photos on USB, and a handcrafted Italian Original Premium 16x12 30 page wedding album.
 
 	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.";
 
@@ -220,8 +220,8 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	Roland is a photographer who goes above and beyond expectations, every time. With his cheerful, fun personality, he befriends his clients in a way that helps bring out their best and authentic selves for the photoshoot. Combined with his tasteful creativity and contagious energy, the result is an unforgettable experience and a collection of elegant photos that tell your story. He captures stolen moments and the meaningful details of your wedding in an unobstructive way."; 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,300</b>
-	
+	"<b>Your customized wedding collection quote: $3,300</b>
+
 	Your custom quote includes 10 hours of coverage, a 2nd shooter, an engagement shoot, and a DVD of 500-600 edited HD photos.
 
 	If you want to consider more options, here is a detailed breakdown of Roland's package deals and items.";
@@ -304,9 +304,9 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	Eric has an exceptional eye for the artistic, quirky, emotional, and unique. His strength is storytelling:  he is one of the few who is capable of snapping single moments that capture a lifetime of emotions and stories.  Another specialty of his is producing black & white photos. He coordinates a variety of techniques to enhance photos and create the most elegant monochrome versions possible.  On the wedding day, he operates in two different modes:  a discreet ninja who captures candid details, and an assertive and confident director who will place you exactly where you need to be for a stunning shot.";
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,608</b>
+	"<b>Your customized wedding collection quote: $3,608</b>
 	
-	Your custom quote is valued at $3,775 when items are added à la carte. It includes 8 hours of coverage, a 2nd shooter for 4 hours, a wedding portrait session, an engagement shoot, and 400 to 600 professionally edited and retouched photos on disc.
+	It includes 8 hours of coverage, a 2nd shooter for 4 hours, a wedding portrait session, an engagement shoot, and 400 to 600 professionally edited and retouched photos on disc.
 
 	If you want to consider more options, here is a detailed breakdown of Eric's package deals and items.";
 
