@@ -221,6 +221,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 	$packageHeader = 
 	"<b>Your wedding collection quote: $3,300</b>
+	
 	Your custom quote includes 10 hours of coverage, a 2nd shooter, an engagement shoot, and a DVD of 500-600 edited HD photos.
 
 	If you want to consider more options, here is a detailed breakdown of Roland's package deals and items.";
