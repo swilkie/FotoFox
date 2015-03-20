@@ -100,9 +100,9 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,608</b>
+	"<b>Your customized wedding collection quote: $3,608</b>
 
-	Your custom quote is valued at $3,775 when items are added à la carte. It includes 8 hours of coverage, a 2nd shooter for 4 hours, an engagement shoot, a wedding day portrait session, and 400 to 600 professionally edited and retouched photos.
+	It includes 8 hours of coverage, a 2nd shooter for 4 hours, an engagement shoot, a wedding day portrait session, and 400 to 600 professionally edited and retouched photos.
 
 	If you want to consider more options, here is a detailed breakdown of Eric's package deals and items.";
 
@@ -200,12 +200,13 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	"<i>\"Taking pictures is savoring life intensely every hundredth of a second.\"</i>
 	— Mark Riboud
 
-	Jeremy’s work speaks for himself, and his level of impeccable professionalism is remarkable. He loves to savor every moment in the easiest way possible with simple posing, creative composition, and critical use of light. By bringing a unique upbeat energy to the wedding day, he has a special way of drawing out genuine emotions and the best smiles from his clients. ";
+	Jeremy’s work speaks for himself, and his level of impeccable professionalism is remarkable. He loves to savor every moment in the easiest way possible with simple posing, creative composition, and critical use of light. By bringing a unique upbeat energy to the wedding day, he has a special way of drawing out genuine emotions and the best smiles from his clients. He is particularly skilled at taking shots from different, unique angles, resulting in photos that stand out.";
 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,150</b>
-	Your custom quote is valued at $4,000 when items are added à la carte. It includes 12 hours of coverage, an assistant 2nd shooter, an engagement shoot, a pre-bridal shoot, a 1-year online protected gallery, and a handcrafted Italian Original Premium 16x12 30 page wedding album.
+	"<b>Your customized wedding collection quote: $3,150</b>
+
+	It includes 12 hours of coverage, an assistant 2nd shooter, an engagement shoot, a pre-bridal shoot, a 1-year online protected gallery, and a handcrafted Italian Original Premium 16x12 30 page wedding album.
 
 	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.";
 
@@ -321,11 +322,12 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	"<i>\"It is more important to click with people than to click the shutter.\"</i>
 	- Alfred Eisenstaedt
 
-	Roland is a photographer who goes above and beyond expectations, every time. With his cheerful, friendly personality, he befriends his clients in a way that helps bring out their best and authentic selves for the photoshoot. Combined with his tasteful creativity, the result is an unforgettable experience and a collection of elegant photos that  tell your story. He captures stolen moments and the meaningful details of your wedding in an unobstructive way.";
+	Roland is a photographer who goes above and beyond expectations, every time. With his cheerful, fun personality, he befriends his clients in a way that helps bring out their best and authentic selves for the photoshoot. Combined with his tasteful creativity and contagious energy, the result is an unforgettable experience and a collection of elegant photos that tell your story. He captures stolen moments and the meaningful details of your wedding in an unobstructive way.";
 
 
 	$packageHeader = 
 	"<b>Your wedding collection quote: $3,300</b>
+
 	Your custom quote includes 10 hours of coverage, a 2nd shooter, an engagement shoot, and a DVD of 500-600 edited HD photos.
 
 	If you want to consider more options, here is a detailed breakdown of Roland's package deals and items.";
