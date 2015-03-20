@@ -200,7 +200,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	"<i>\"Taking pictures is savoring life intensely every hundredth of a second.\"</i>
 	— Mark Riboud
 
-	Jeremy’s work speaks for himself, and his level of impeccable professionalism is remarkable. He loves to savor every moment in the easiest way possible with simple posing, creative composition, and critical use of light. By bringing a unique upbeat energy to the wedding day, he has a special way of drawing out genuine emotions and the best smiles from his clients. ";
+	Jeremy’s work speaks for himself, and his level of impeccable professionalism is remarkable. He loves to savor every moment in the easiest way possible with simple posing, creative composition, and critical use of light. By bringing a unique upbeat energy to the wedding day, he has a special way of drawing out genuine emotions and the best smiles from his clients. He is particularly skilled at taking shots from different, unique angles, resulting in photos that stand out.";
 
 
 	$packageHeader = 
@@ -322,7 +322,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	"<i>\"It is more important to click with people than to click the shutter.\"</i>
 	- Alfred Eisenstaedt
 
-	Roland is a photographer who goes above and beyond expectations, every time. With his cheerful, friendly personality, he befriends his clients in a way that helps bring out their best and authentic selves for the photoshoot. Combined with his tasteful creativity, the result is an unforgettable experience and a collection of elegant photos that  tell your story. He captures stolen moments and the meaningful details of your wedding in an unobstructive way.";
+	Roland is a photographer who goes above and beyond expectations, every time. With his cheerful, fun personality, he befriends his clients in a way that helps bring out their best and authentic selves for the photoshoot. Combined with his tasteful creativity and contagious energy, the result is an unforgettable experience and a collection of elegant photos that tell your story. He captures stolen moments and the meaningful details of your wedding in an unobstructive way.";
 
 
 	$packageHeader = 
