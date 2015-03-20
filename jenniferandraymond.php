@@ -8,13 +8,16 @@ $firstName = "Jennifer and Raymond";
 
 
 $welcomeNote = 
-"We are happy to present to you the top three photographers who best matched your criteria, and most importantly, your preferences. Because quality is most important for you, we began by only selecting photographers who have been able to show guaranteed quality on a consistent basis. Photographers were further refined to only show those capable of the specific styles you found appealing. Each chosen photographer excels in the photography styles you prefer: photojournalism, tradition, contemporary, and fine arts. This means you can expect a range of photographs from breathtaking picturesque shots to candid, real moments, each with a touch of creativity to capture your story in a multitude of ways.
+"We are happy to present to you the top three photographers who best match your criteria, and most importantly, your preferences. Because quality is most important for you, we began by only selecting photographers who have been able to show guaranteed quality on a consistent basis. Photographers were further refined to only show those capable of the specific styles you found appealing. Each chosen photographer excels in the photography styles you prefer: photojournalistic, traditional, contemporary, and fine arts. This means you can expect a range of photographs from breathtaking picturesque shots to candid, real moments, each with a touch of creativity to capture your story in a multitude of ways.
 
-All photographers were selected to match your proposed dates, location, and budget. We’ve customized a personal package with each photographer to ensure you receive all the features you’re looking for. By customizing your package, we were also able to secure special rates so that all packages are in your desired price range (ranging from 3,100 to 3,863). By ensuring these little details, we hope you can make a choice with the emphasis on simply: which photographer’s portfolio and personality do you like best. Scroll down to quickly compare all three photographers at a glance. Click on the photographer’s profile boxes to view their respective portfolios, package details, and reviews.";
+All photographers were selected to match your proposed dates, location, and budget. We’ve customized a personal package with each photographer to ensure you receive all the features you’re looking for. By customizing your package, we were also able to secure special rates so that all packages are in your desired price range (ranging from 3,100 to 3,863). By ensuring these little details, we hope we enable you to focus simply on the photographers' portfolios and personalities. 
+
+<b>How to navigate:</b>
+Scroll down to quickly compare all three photographers at a glance. Click on the photographer’s profile boxes to view their respective portfolios, package details, and reviews.";
 
 
 $photographerName1 = "Eric";
-$photo1 = "img/Eric/EllaJames_Blog-71.jpg";
+$photo1 = "img/Eric/13.jpg";
 $price1 = "<b>Price:</b> $3,863";
 $experience1 = "<b>Experience:</b> 5 years";
 $reviews1 = "<b>Overall Compatibility:</b> 92%";
@@ -27,18 +30,19 @@ Black & White version of all photos";
 
 $photographerName2 = "Jeremy";
 $photo2 = "img/Jeremy/Distillery-District-Winter-Wedding.jpg";
-$price2 = "<b>Price:</b> $3,100";
+$price2 = "<b>Price:</b> $3,150";
 $experience2 = "<b>Experience:</b> 3 years";
-$reviews2 = "<b>Overall Compatibility:</b> 90%";
+$reviews2 = "<b>Overall Compatibility:</b> 91%";
 $package2 = 
 "<b>Package Perks:</b>
 12 Hours of Coverage
 2nd Photographer
 Engagement Shoot
-DVD Slideshow";
+Pre-bridal shoot
+16x12 handcrafted Italian wedding album";
 
 $photographerName3 = "Roland";
-$photo3 = "img/Roland/steph-erwin-wedding_0017.jpg";
+$photo3 = "img/Roland/Stan-Diane-Engagement-Web-6.jpg";
 $price3 = "<b>Price:</b> $3,300";
 $experience3 = "<b>Experience:</b> 5 years";
 $reviews3 = "<b>Overall Compatibility:</b> 84%";
@@ -49,7 +53,7 @@ $package3 =
 Engagement Shoot";
 
 $photographerCommon = 
-"Included in all three: All photos are post-processed in non-watermarked HD resolution. Digital photos are available on DVD/USB. Each selected photographer has liability insurance and proper backup equipment to avoid any issues on the day.";
+"Included in all three: All photos are post-processed in non-watermarked HD resolution. Digital photos are available on DVD/USB. Each selected photographer has liability insurance and proper backup equipment.";
 
 /*****************    Photographer 1    *************************/
 
@@ -57,35 +61,36 @@ $photographerCommon =
 if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 {
 	$portfolio = array(
-		"img/Eric/EllaJames_Blog-71.jpg",
-		"img/Eric/DariaMirek_Blog-1009.jpg",
-		"img/Eric/TheresaJoey_872px-1014.jpg",
-		"img/Eric/MackenzieMichael_Blog-1017.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1055.jpg",
-		"img/Eric/MeaganKris_Blog-1005.jpg",
-		"img/Eric/ShannonChris_Wedding_Blog_872px-1032.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1016.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1024.jpg",
-		"img/Eric/KristaDave_Blog-1067.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1060.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1065.jpg",
-		"img/Eric/KristaChad_872px-1161.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1071.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1076.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1179.jpg",
-		"img/Eric/KristaDave_Blog-1034.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1201.jpg",
-		"img/Eric/KristaDave_Blog-1006.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1263.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1323.jpg",
-		"img/Eric/Wedding_Slideshow_1080p-1327.jpg",
-		"img/Eric/anniejon-1001.jpg",
-		"img/Eric/KristaChad_872px-1008.jpg",
-		"img/Eric/DariaMirek_Blog-1013.jpg",
-		"img/Eric/MackenzieMichael_Blog-1006.jpg",
-		"img/Eric/EllaJamesBlog-61.jpg",
-		"img/Eric/KristaChad_872px-1046.jpg",
-		"img/Eric/Sue_Bridal-1001.jpg"
+		"img/Eric/13.jpg",
+		"img/Eric/52.jpg",
+		"img/Eric/14.jpg",
+		"img/Eric/60.jpg",
+		"img/Eric/49.jpg",
+		"img/Eric/53.jpg",
+		"img/Eric/12.jpg",
+		"img/Eric/4.jpg",		
+		"img/Eric/10.jpg",
+		"img/Eric/51.jpg",
+		"img/Eric/65.jpg",
+		"img/Eric/24.jpg",
+		"img/Eric/41.jpg",
+		"img/Eric/59.jpg",
+		"img/Eric/55.jpg",
+		"img/Eric/54.jpg",
+		"img/Eric/48.jpg",
+		"img/Eric/42.jpg",
+		"img/Eric/45.jpg",
+		"img/Eric/63.jpg",
+		"img/Eric/35.jpg",
+		"img/Eric/1.jpg",
+		"img/Eric/3.jpg",
+		"img/Eric/11.jpg",
+		"img/Eric/26.jpg",
+		"img/Eric/19.jpg",
+		"img/Eric/29.jpg",
+		"img/Eric/64.jpg",
+		"img/Eric/47.jpg",
+		"img/Eric/43.jpg"
 		);
 
 	$photographerNote = 
@@ -93,7 +98,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	When you photograph people in black and white, you photograph their soul.\"</i>
 	— Ted Grant
 
-	Eric has an exceptional eye for the artistic, quirky, emotional, and unique. His strength is storytelling:  he is one of the few who is capable of snapping single moments that capture a lifetime of emotions and stories.  Another specialty of his is producing black & white photos. He coordinates a variety of techniques to enhance photos and create the most elegant monochrome versions possible.  On the wedding day, he operates in two different modes:  a discrete ninja who captures candid details, versus an assertive and confident director who will place you exactly where you need to be for a stunning shot.";
+	Eric has an exceptional eye for the artistic, quirky, emotional, and unique. His strength is storytelling:  he is one of the few who is capable of snapping single moments that capture a lifetime of emotions and stories.  Another specialty of his is producing black & white photos. He coordinates a variety of techniques to enhance photos and create the most elegant monochrome versions possible.  On the wedding day, he operates in two different modes:  a discrete ninja who captures candid details, and an assertive and confident director who will place you exactly where you need to be for a stunning shot.";
 
 
 	$packageHeader = 
@@ -139,7 +144,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 	Black & White versions of all shots <b>$300</b>
 
-	Online Gallery: <b>$200</b>
+	Online Gallery <b>$200</b>
 
 	Engagement Photoshoot <b>$600</b>
 
@@ -147,7 +152,8 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 	Photobooth overtime <b>$100/hr</b>
 
-	Wedding photo album <b>$800</b> (further options/upgrades available)
+	Wedding photo album <b>$800</b> 
+	(further options/upgrades available)
 
 	";
 
@@ -157,10 +163,10 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 	    "author" => "Emily"
 	    ],
 	    [
-	    "comment" => "More than anything, the quality of Eric's photos blew me away. But I was equally amazed with his presence at our wedding. At the portrait session, he coordinated a really large group into an amazing photo. He kept a great atmosphere, but his efficiency let us get back to our wedding in the shortest time possible.
+	    "comment" => "More than anything, the quality of Eric's photos blew me away. But I was equally amazed with his presence at our wedding. At the portrait session, he coordinated a really large group into amazing photos. He kept a great atmosphere, but his efficiency let us get back to our wedding in the shortest time possible.
 
-We didn't noticed him for the rest of the day, we had a really intimate wedding with our friends and family without any intrusion. But his photos were so incredible. We have no idea how he was able to capture so many of our most intimate moments. He somehow captured all of the tiniest details of our day, in such an artistic way. We’re so happy to have worked with Eric.",
-	    "author" => "Joan"
+		We didn't notice him for the rest of the day, we had a really intimate wedding with our friends and family without any intrusion. But his photos were simply incredible. We have no idea how he was able to capture so many of our most intimate moments. He somehow captured all of the tiniest details of our day, in such an artistic way. We couldn't have asked for a better photographer.",
+	    "author" => "Joanne"
 	    ],
 		[
 	    "comment" => "Wow!  The photos are absolutely amazing. They look like they are from a fairytale.",
@@ -173,29 +179,27 @@ We didn't noticed him for the rest of the day, we had a really intimate wedding 
 } else if ($_GET["photog"] == "2") {
 	$portfolio = array(
 		"img/Jeremy/Distillery-District-Winter-Wedding.jpg",
-		"img/Jeremy/3.jpg",
-		"img/Jeremy/1.jpg",
+		"img/Jeremy/13.jpg",		
+		"img/Jeremy/12.jpg",		
 		"img/Jeremy/2.jpg",
-		"img/Jeremy/4.jpg",
-		"img/Jeremy/6.jpg",
-		"img/Jeremy/8.jpg",
 		"img/Jeremy/9.jpg",
 		"img/Jeremy/11.jpg",
+		"img/Jeremy/6.jpg",
+		"img/Jeremy/3.jpg",
+		"img/Jeremy/1.jpg",
 		"img/Jeremy/7.jpg",
-		"img/Jeremy/16.jpg",
-		"img/Jeremy/12.jpg",
-		"img/Jeremy/13.jpg",
-		"img/Jeremy/14.jpg",
 		"img/Jeremy/21.jpg",
+		"img/Jeremy/Destination-Wedding-Photography-Spa-Getting-Ready.jpg",				
+		"img/Jeremy/18.jpg",		
+		"img/Jeremy/16.jpg",
+		"img/Jeremy/14.jpg",
+		"img/Jeremy/15.jpg",
 		"img/Jeremy/22.jpg",
-		"img/Jeremy/18.jpg",
-		"img/Jeremy/17.jpg",
+		"img/Jeremy/Cancun-Destination-Wedding-Photography-Toronto.jpg",
 		"img/Jeremy/KW-Destination-Wedding-Photography.jpg",
 		"img/Jeremy/Cancun-Saphhire-Wedding-Resort-Photographer.jpg",
-		"img/Jeremy/Destination-Wedding-Photography-Spa-Getting-Ready.jpg",
-		"img/Jeremy/GTA-wedding-photography-destination-travel-photographer.jpg",
+		"img/Jeremy/Kitchener-Waterloo-Wedding-Photographer.jpg",
 		"img/Jeremy/Kitchener-Destination-Wedding-Photography.jpg",
-		"img/Jeremy/Kitchener-Waterloo-Wedding-Photographer.jpg"
 		);
 
 	$photographerNote = 
@@ -207,8 +211,8 @@ We didn't noticed him for the rest of the day, we had a really intimate wedding 
 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,100</b>
-	Your custom quote is valued at $4,799 when items are added à la carte. It includes 12 hours of coverage, a 2nd shooter, an engagement shoot, a DVD slideshow, and an online Facebook & blog post.
+	"<b>Your wedding collection quote: $3,150</b>
+	Your custom quote is valued at $6,098 when items are added à la carte. It includes 12 hours of coverage, an assistant 2nd shooter, an engagement shoot, a pre-bridal shoot, a 1-year online protected gallery, and a handcrafted Italian Origianal Premium 16x12 30 page deluxe wedding album.
 
 	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.
 
@@ -267,7 +271,7 @@ We didn't noticed him for the rest of the day, we had a really intimate wedding 
 
 	Post-trash the dress session <b>$200</b>
 
-	Online gallery: <b>$100/yr</b>
+	Online gallery <b>$100/yr</b>
 
 	Mobile Smartphone gallery app <b>$250</b>
 
@@ -303,24 +307,27 @@ We didn't noticed him for the rest of the day, we had a really intimate wedding 
     );
 } else if ($_GET["photog"] == "3") {
 	$portfolio = array(
-		"img/Roland/steph-erwin-wedding_0017.jpg",
-		"img/Roland/Lauren-Chris-Wedding-Web-10.jpg",
-		"img/Roland/Ed-Mae-Web-19.jpg",
-		"img/Roland/Marilyn-Jonathan-Gallery-23.jpg",
-		"img/Roland/Nadia-Chris-Web-1.jpg",
-		"img/Roland/qssis-kristina-wedding-014.jpg",
-		"img/Roland/qssis-kristina-wedding-024.jpg",
-		"img/Roland/rachael-miles-blog_0037.jpg",
-		"img/Roland/sharon-yushi-hart-house_0001.jpg",
 		"img/Roland/Stan-Diane-Engagement-Web-6.jpg",
+		"img/Roland/Nadia-Chris-Web-1.jpg",
 		"img/Roland/Stan-Diane-Engagement-Web-9.jpg",
+		"img/Roland/Steph-Cilian-Gallery-125.jpg",
+		"img/Roland/steph-erwin-wedding_0017.jpg",
+		"img/Roland/qssis-kristina-wedding-014.jpg",
+		"img/Roland/Lauren-Chris-Wedding-Web-10.jpg",
+		"img/Roland/qssis-kristina-wedding-024.jpg",
+		"img/Roland/Marilyn-Jonathan-Gallery-23.jpg",
+		"img/Roland/sharon-yushi-hart-house_0001.jpg",
+		"img/Roland/Ed-Mae-Web-19.jpg",
+		"img/Roland/rachael-miles-blog_0006.jpg",		
+		"img/Roland/rachael-miles-blog_0041.jpg",		
+		"img/Roland/rachael-miles-blog_0037.jpg",
 		"img/Roland/Steph-Cilian-Gallery-12.jpg",
 		"img/Roland/Steph-Cilian-Gallery-75.jpg",
 		"img/Roland/Kevin-Sheila-140.jpg",
 		"img/Roland/Steph-Cilian-Gallery-77.jpg",
-		"img/Roland/Steph-Cilian-Gallery-125.jpg",
+		"img/Roland/Kevin-Sheila-140.jpg",
 		"img/Roland/steph-erwin-wedding_0004.jpg",
-		"img/Roland/Yuri-Irene-Gallery-18.jpg"
+		"img/Roland/Ed-Mae-Web-117.jpg"
 		);
 
 	$photographerNote = 
