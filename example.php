@@ -119,7 +119,62 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 
-} else {
+} else if ($_GET["photog"] == "2") {
+	$portfolio = array(
+		"img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg",
+		"img/portfolio/Most-Romantic-Love-Couple-Hd-Wallpaper.jpg",
+		"img/portfolio/wedding_husband_wife_4860_2560x1440.jpg",
+		"img/portfolio/Couple-Love-Photography-Background-HD-Wallpaper.jpg",
+		"img/portfolio/couple_dance_happiness_rain_wet_love_54364_2560x1440.jpg"
+		);
+
+	$photographerNote = 
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit";
+
+
+	$packageHeader = 
+	"<b>Lorem ipsum dolor sit amet, consectetur</b>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
+
+	$packageLeft = 
+	"Lorem ipsum dolor: <b>$2,000</b>
+	1 Lorem ipsum
+	8 Lorem ipsum dolor
+
+	Lorem ipsum dolor sit: <b>$2,850</b>
+	2 Lorem ipsum
+	10 Lorem ipsum dolor
+
+	Lorem ipsum dolor sit: <b>$3,600</b>
+	2 Lorem ipsum
+	Lorem ipsum dolor sit";
+
+
+	$packageRight = 
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+
+
+	Lorem ipsum (1 or 2 hours): <b>$135/hr</b>
+	Lorem ipsum dolor: <b>$225</b>
+	Lorem ipsum dolor: (2-3 hours): <b>$550</b>
+	Lorem ipsum (8 x 10): <b>$425</b>";
+
+	$reviews = array(
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit",
+	    "author" => "Janice"
+	    ],
+		[
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+	    "author" => "Allison"
+	    ],
+	    [
+	    "comment" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex",
+	    "author" => "Jessica"
+	    ]
+    );
+} else if ($_GET["photog"] == "3") {
 	$portfolio = array(
 		"img/portfolio/steam_rain_love_date_smile_67491_2560x1440.jpg",
 		"img/portfolio/Most-Romantic-Love-Couple-Hd-Wallpaper.jpg",
