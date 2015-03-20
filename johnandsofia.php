@@ -22,13 +22,13 @@ $price1 = "<b>Price:</b> $3,180";
 $experience1 = "<b>Experience:</b> 5 years";
 $reviews1 = "<b>Overall Compatibility:</b> 93%";
 $package1 = 
-"<b>Price:</b> $3,180
-
-<b>Package Perks:</b>
+"<b>Package Perks:</b>
 12 Hours of Coverage
 2nd Photographer
 Engagement Shoot
-16x12 handcrafted Italian wedding album";
+16x12 handcrafted Italian wedding album
+
+<b>Price:</b> $3,180";
 
 $photographerName2 = "Roland";
 $photo2 = "img/Roland/Stan-Diane-Engagement-Web-6.jpg";
@@ -36,12 +36,12 @@ $price2 = "";
 $experience2 = "<b>Experience:</b> 5 years";
 $reviews2 = "<b>Overall Compatibility:</b> 89%";
 $package2 = 
-"<b>Price:</b> $3,300
-
-<b>Package Perks:</b>
+"<b>Package Perks:</b>
 10 Hours of Coverage
 2nd Photographer
-Engagement Shoot";
+Engagement Shoot
+
+<b>Price:</b> $3,300";
 
 $photographerName3 = "Eric";
 $photo3 = "img/Eric/12.jpg";
@@ -49,12 +49,12 @@ $price3 = "";
 $experience3 = "<b>Experience:</b> 5 years";
 $reviews3 = "<b>Overall Compatibility:</b> 78%";
 $package3 = 
-"<b>Price:</b> $3,608
-
-<b>Package Perks:</b>
+"<b>Package Perks:</b>
 8 Hours of Coverage
 2nd Photographer
-Engagement Shoot";
+Engagement Shoot
+
+<b>Price:</b> $3,608";
 
 $photographerCommon = 
 "Included in all three: All photos are post-processed in non-watermarked HD resolution. Digital photos are available on DVD/USB. Each selected photographer has liability insurance and proper backup equipment.";
@@ -304,6 +304,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 	$packageHeader = 
 	"<b>Your wedding collection quote: $3,608</b>
+	
 	Your custom quote is valued at $3,775 when items are added à la carte. It includes 8 hours of coverage, a 2nd shooter for 4 hours, a wedding portrait session, an engagement shoot, and 400 to 600 professionally edited and retouched photos on disc.
 
 	If you want to consider more options, here is a detailed breakdown of Eric's package deals and items.";
