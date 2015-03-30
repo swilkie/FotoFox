@@ -107,7 +107,7 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 	It includes 12 hours of coverage, professional 2nd photographer, 3rd videographer, an engagement shoot, professionally edited and retouched photos on USB, a 1-yr online protected gallery, a wedding love story video, and two DVDs with your video in MP4 formats. His videography and photography services are not mutually exclusive — he directs both in a way that captures the story of your entire day.
 
-	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.";
+	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items. Note that the following prices do not yet include HST.";
 
 
 	$packageLeft = 
