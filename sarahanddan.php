@@ -8,7 +8,7 @@ $firstName = "Sarah and Dan";
 
 
 $welcomeNote = 
-"We are happy to present to you the top three photographers who best match your criteria, and most importantly, your preferences. Because the relationship with the photographer is the most important for you, we began by only selecting photographers who are particularly talented at befriending their clients in order to help them feel comfortable and natural in front of the camera.  All of them have an impeccable customer relationship record.  They have also been able to show guaranteed quality on a consistent basis over a number of years. Photographers were further refined to only show those capable of the specific styles you found appealing. Each chosen photographer excels in the photography styles you prefer: photojournalistic, fine arts, contemporary, and traditional. This means you can expect a balanced mix of photographs from breathtaking picturesque shots to candid, real moments, each with exceptional creativity to capture your story in a multitude of ways.
+"We are happy to present to you the top three photographers who best match your criteria, and most importantly, your preferences. Because the relationship with the photographer is the most important for you, we began by only selecting photographers who are particularly talented at befriending their clients in order to help them feel comfortable and natural. They have shown guaranteed quality on a consistent basis over a number of years. Photographers were further refined to only show those capable of the specific styles you found appealing. Each chosen photographer excels in the photography styles you prefer: photojournalistic, fine arts, contemporary, and traditional. This means you can expect a balanced mix of photographs from breathtaking picturesque shots to candid, real moments, each with exceptional creativity to capture your story in a multitude of ways.
 
 All photographers were selected to match your proposed dates, location, and budget. We’ve customized a personal package with each photographer to ensure you receive all the features you’re looking for. By customizing your package, we were also able to secure special rates so that all packages are in your desired price range. <b>All prices already include HST, there are no additional charges.</b> By ensuring these little details, we hope we enable you to focus simply on the photographers' portfolios and personalities. 
 
@@ -18,7 +18,7 @@ Scroll down to quickly compare all three photographers at a glance. Click on the
 
 $photographerName1 = "Jeremy";
 $photo1 = "img/Jeremy/Distillery-District-Winter-Wedding.jpg";
-$price1 = "<b>Price:</b> $3,850";
+$price1 = "<b>Price:</b> $3,833";
 $experience1 = "<b>Experience:</b> 5 years";
 $reviews1 = "<b>Overall Compatibility:</b> 94%";
 $package1 = 
@@ -28,12 +28,10 @@ $package1 =
 3rd Videographer
 Engagement Shoot
 Wedding Videography 
-5 DVDs of Video
-DVD Slideshow
-10-yr Online Gallery
-Smartphone Gallery App
+2 DVDs of Video
+1-yr Online Gallery
 
-<b>Price:</b> $3,850
+<b>Price:</b> $3,833
 <i>(includes photography + videography)</i>";
 
 $photographerName2 = "Roland";
@@ -105,9 +103,9 @@ if (!isset($_GET["photog"]) || $_GET["photog"] == "1")
 
 
 	$packageHeader = 
-	"<b>Your wedding collection quote: $3,850</b>
+	"<b>Your wedding collection quote: $3,833</b>
 
-	It includes 12 hours of coverage, professional 2nd photographer, 3rd videographer, an engagement shoot, professionally edited and retouched photos on USB, a wedding love story videography, five DVDs with your film in MP4 formats. His videography and photography services are not mutually exclusive — he directs both in a way that captures the story of your entire day. With this package, he is also offering a complimentary DVD slideshow, 10-yr online protected gallery, blog web posting, and a shareable mobile gallery app.
+	It includes 12 hours of coverage, professional 2nd photographer, 3rd videographer, an engagement shoot, professionally edited and retouched photos on USB, a 1-yr online protected gallery, a wedding love story video, and two DVDs with your video in MP4 formats. His videography and photography services are not mutually exclusive — he directs both in a way that captures the story of your entire day.
 
 	If you want to consider more options, here is a detailed breakdown of Jeremy's package deals and items.";
 
