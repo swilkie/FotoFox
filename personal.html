@@ -193,7 +193,6 @@
 						<div id="myCarousel" class="carousel portfolio-slideDeck" data-interval="false" oncontextmenu="return false;">
 
 							<!-- Indicators -->
-							<!--
 							<ol class="carousel-indicators">
 								<?php 
 									for ($i = 0; $i < count($portfolio); $i++) {
@@ -207,7 +206,6 @@
 									} 
 								?>
 							</ol>
-							-->
 
 							
 
@@ -230,7 +228,6 @@
 
 
 							<!-- Controls -->
-							<!--
 							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 								<span class="glyphicon glyphicon-chevron-left"></span>
 							</a>
@@ -238,29 +235,9 @@
 							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
 								<span class="glyphicon glyphicon-chevron-right"></span>
 							</a>
-							-->
+
 						</div>
-
-						
-						<div class="slider-nav">
-					    	<img class="arrow-prev" src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png">
-					    	<ol class="slider-dots">
-					    		<?php 
-									for ($i = 0; $i < count($portfolio); $i++) {
-									    if ($i == 0) {
-									    	echo '<li class="dot active-dot">&bull;</li>';
-											
-										}else {
-											echo '<li class="dot">&bull;</li>';
-										}
-
-									} 
-								?>
-					    	</ol>
-					     	<img class="arrow-next" src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png">
-					    </div>
-						
-
+					
 
 						<div class="row">
 							<div class="col-sm-8 col-sm-offset-2">
@@ -359,61 +336,8 @@
 	</div>
 
 
-	<!--  This is the full screen view  -->
-	<section id="popover">
-		<div id="splash">
-			<div class="fullscreen--carouselFrame">
+	
 
-						<div id="fullscreenCarousel" class="carousel portfolio-slideDeck" data-interval="false">
-
-							<!-- Indicators -->
-							<ol class="carousel-indicators">
-								<?php 
-									for ($i = 0; $i < count($portfolio); $i++) {
-									    if ($i == 0) {
-									    	echo '<li data-target="#fullscreenCarousel" data-slide-to="' . $i . '" class="active"></li>';
-											
-										}else {
-											echo '<li data-target="#fullscreenCarousel" data-slide-to="' . $i . '"></li>';
-										}
-
-									} 
-								?>
-							</ol>
-
-
-
-							<div class="carousel-inner">
-								<?php 
-									for ($i = 0; $i < count($portfolio); $i++) {
-									    if ($i == 0) {
-									    	echo '<div class="item active">';
-												echo '<img class="portfolio-photo" src="' . $portfolio[$i] . '"/>';
-											echo '</div>';
-										}else {
-											echo '<div class="item">';
-												echo '<img class="portfolio-photo" src="' . $portfolio[$i] .'"/>';
-											echo '</div>';
-										}
-
-									} 
-								?>
-							</div>
-
-
-							<!-- Controls -->
-							<a class="left carousel-control" href="#fullscreenCarousel" role="button" data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left"></span>
-							</a>
-
-							<a class="right carousel-control" href="#fullscreenCarousel" role="button" data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right"></span>
-							</a>
-
-						</div>
-			</div>
-		</div>
-	</section>
 
 
 	<script type="text/javascript" src="js/jquery.js"></script>
